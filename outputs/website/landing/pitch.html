@@ -39,7 +39,7 @@ p { margin: 0; }
 .s-title { justify-content: center; }
 .s-title .octo { position: absolute; right: 70px; bottom: 60px; width: 470px; filter: drop-shadow(0 40px 80px rgba(0,0,0,.5)); }
 .s-title .sub { font-size: 32px; line-height: 1.35; color: var(--soft); max-width: 900px; margin-top: 34px; }
-.s-title .url { margin-top: 48px; font-family: "Geist Mono", monospace; font-size: 20px; color: var(--soft2); letter-spacing: .06em; }
+.s-title .url { margin-top: 28px; font-family: "Geist Mono", monospace; font-size: 20px; color: var(--soft2); letter-spacing: .06em; }
 
 /* 2 icp */
 .icp { display: grid; grid-template-columns: 640px 1fr; gap: 72px; margin-top: 48px; align-items: center; }
@@ -242,6 +242,11 @@ p { margin: 0; }
 .chg .arr { color: var(--lime); text-align: center; }
 .chg .aft { color: var(--text); }
 
+.kpis { display: flex; gap: 18px; margin-top: 40px; }
+.kpis div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px 22px; font-size: 19px; color: var(--soft2); }
+.kpis b { display: block; font-size: 38px; color: var(--text); letter-spacing: -0.03em; line-height: 1.05; }
+.tgt { margin-top: 22px; font-size: 18px; line-height: 1.4; color: var(--soft2); }
+.tgt b { color: var(--text); font-weight: 600; }
 /* chrome */
 #bar { position: fixed; left: 0; top: 0; height: 4px; background: var(--lime); transition: width .25s ease; z-index: 5; }
 #ctl { position: fixed; right: 18px; bottom: 14px; display: flex; gap: 8px; align-items: center; z-index: 5; font-family: "Geist Mono", monospace; font-size: 13px; color: var(--mute); }
@@ -266,6 +271,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <p class="eb">Growth hackathon · Portugal · 8 Nov 2026 · Go-to-market</p>
     <h1>Note-takers record the meeting. <span class="lime">Octo takes part in it.</span></h1>
     <p class="sub">An AI teammate on every call, for small teams that don't have a project manager yet. Here's how we take it to market, and what we shipped today.</p>
+    <div class="kpis"><div><b>€1,000</b>7 days</div><div><b>2</b>paid channels</div><div><b>4+1</b>Meta videos</div><div><b>10+</b>invites, target</div></div>
     <p class="url">octo-landing-47q.pages.dev</p>
     <img class="octo" src="media/pitch/octo-10-talking.png" alt="">
   </section>
@@ -321,12 +327,12 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <div class="matrix" role="table">
       <div class="hd"></div><div class="hd">Speaks on the call</div><div class="hd">Each person's tasks, with the quote</div><div class="hd">Closes tasks on "done"</div><div class="hd">Any of 6 platforms</div>
       <div class="rowname">Note-takers<small>Otter, Fireflies</small></div><div><i class="d y"></i><span class="cell-note">On a wake word</span></div><div><i class="d h"></i><span class="cell-note">Summary, action items</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">Meet, Zoom, Teams</span></div>
-      <div class="rowname">Sembly<small>AI meeting agent</small></div><div><i class="d h"></i><span class="cell-note">By text</span></div><div><i class="d h"></i><span class="cell-note">Owners, deadlines</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">4 platforms</span></div>
-      <div class="rowname">Suite AI<small>ZoomMate, Teams</small></div><div><i class="d h"></i><span class="cell-note">In-meeting questions</span></div><div><i class="d h"></i><span class="cell-note">Inside its suite</span></div><div><i class="d n"></i></div><div><i class="d n"></i><span class="cell-note">Own suite only</span></div>
+      <div class="rowname">Sembly<small>AI meeting agent</small></div><div><i class="d h"></i><span class="cell-note">In the meeting, voice not claimed</span></div><div><i class="d h"></i><span class="cell-note">Owners, deadlines</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">4 platforms</span></div>
+      <div class="rowname">Suite AI<small>ZoomMate, Teams</small></div><div><i class="d h"></i><span class="cell-note">In-meeting questions</span></div><div><i class="d h"></i><span class="cell-note">Inside its suite</span></div><div><i class="d n"></i></div><div><i class="d n"></i><span class="cell-note">Needs Zoom Workplace or Microsoft 365</span></div>
       <div class="rowname us last">Octo</div><div class="us last"><i class="d y"></i><span class="cell-note">By voice and on its tile</span></div><div class="us last"><i class="d y"></i><span class="cell-note">By DM, exact quote</span></div><div class="us last"><i class="d y"></i><span class="cell-note">On the next call</span></div><div class="us last"><i class="d y"></i><span class="cell-note">Meet to GoTo</span></div>
     </div>
     <div class="keyline"><span><i class="d y"></i>Claims it</span><span><i class="d h"></i>Partly</span><span><i class="d n"></i>Not claimed</span><span style="margin-left:auto">"AI teammate", "meeting agent", "follow-up": taken. These four: open.</span></div>
-    <p class="src">From each vendor's own pages, checked 7 to 8 Nov 2026 · full table: octo-landing-47q.pages.dev/compare</p>
+    <p class="src">From the vendors' own pages, checked 7 to 8 Nov 2026. Absence on a page is not proof · full table: octo-landing-47q.pages.dev/compare</p>
   </section>
 
   <!-- 5 -->
@@ -394,6 +400,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
         <div class="total">€1,000 <small>for 7 days</small></div>
         <div class="split"><div class="meta">€700</div><div class="yt">€300</div></div>
         <div class="blabels"><div><b>Meta ads · main channel</b>5 vertical creatives, retargeting from day 3</div><div><b>YouTube creators</b>2 or 3 segments</div></div>
+        <p class="tgt"><b>Meta targeting:</b> ages 25 to 55 · ClickUp, Asana, Trello, Notion, Monday.com, small business · Founder, Owner, CEO, Ops Manager, Agency Owner · PT, ES, UK, IE, NL, DE, Nordics</p>
         <div class="organic"><span>LinkedIn one-liner A/B · €0</span><span>Reddit answers · €0</span><span>AI answers (/compare, llms.txt) · €0</span></div>
       </div>
       <div>
