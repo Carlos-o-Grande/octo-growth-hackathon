@@ -1,5 +1,7 @@
 # Campaign Brief
 
+> **Superseded (8 Nov, afternoon):** the team's source of truth is now the root brief, [`../../brief/campaign-brief.md`](../../brief/campaign-brief.md) (v2: ICP 1 to 50 with no PM, Meta as main channel, YouTube creators second, "can / cannot" table). Kit agents should read that file. This file keeps the morning research trail.
+
 Draft by product-scout, 2026-11-08, aligned at 13:40 WET with the founder's defaults in `launch/hackathon-plan.md`, `launch/audiences.md` and the root `brief/campaign-brief.md` (those win on any conflict until the team freezes the brief). Research and sources: `outputs/research/`. Repo paths (for example `product/overview.md`) are relative to the repo root, one level above `growth-kit/`.
 
 ## Deliverable language
