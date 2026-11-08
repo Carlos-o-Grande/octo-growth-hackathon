@@ -19,14 +19,14 @@ Each one is a separate ad, so Meta can find the winner. Hook = the first 2 secon
 - **Hook:** "This meeting bot talks back."
 - **Primary text:** Every call ends with "so who's doing what?" Octo answers before you hang up, then sends everyone their tasks.
 - **Headline:** Your AI teammate on every call
-- **CTA button:** Sign up
+- **CTA button:** Sign up (landing CTA: Invite Octo to your next call)
 
 ### 2. The junior PM (the idea)
 - **Video:** a 15-second cut of the demo. Open on a founder's face (stock or team member), text over: "No PM? No problem." Then Octo's tile with the task list, then the task message.
 - **Hook:** "Your team doesn't have a project manager. Now it does."
 - **Primary text:** Octo joins your calls like a junior PM: it tracks who promised what, sends each person their tasks, and keeps ClickUp or Asana up to date.
 - **Headline:** The PM your team doesn't have yet
-- **CTA button:** Sign up
+- **CTA button:** Sign up (landing CTA: Invite Octo to your next call)
 
 ### 3. Note-taker vs Octo (the comparison)
 - **Video:** split screen, 15 seconds. Left: a long AI summary email scrolling, label "Your note-taker". Right: Octo's task message with the exact quote, label "Octo".
@@ -41,21 +41,21 @@ Each one is a separate ad, so Meta can find the winner. Hook = the first 2 secon
 - **Hook:** "No more 'I never said that.'"
 - **Primary text:** Every task Octo sends comes with the exact words from the call. And when someone says "done" on the next call, it's done in your tracker too.
 - **Headline:** Every task comes with a receipt
-- **CTA button:** Sign up
+- **CTA button:** Sign up (landing CTA: Invite Octo to your next call)
 
 ### 5. Founder to camera (UGC style)
 - **Video:** Oleksii or a team member, selfie camera, 20 to 30 seconds, no editing beyond captions.
 - **Script:** "I run a small team and we don't have a project manager. Every call ended with 'so who's doing what?' and then nothing happened. So we built Octo. It joins the call, you can ask it things out loud, and after the call everyone gets their own tasks with the exact words they said. It's on our calls every day. Early access is open, link below."
 - **Hook:** "We don't have a PM. We have Octo."
 - **Headline:** Get early access to Octo
-- **CTA button:** Sign up
+- **CTA button:** Sign up (landing CTA: Invite Octo to your next call)
 - **Before posting:** the speaker checks every line is true for them.
 
 ## Retargeting ad (from day 3)
 - **Creative:** the winning cold creative, or `assets/screenshots/octo-tile-status.png`.
 - **Primary text:** Still ending calls with "so who's doing what?" Early access to Octo is open this month.
 - **Headline:** Get early access
-- **CTA button:** Sign up
+- **CTA button:** Sign up (landing CTA: Invite Octo to your next call)
 
 ## What to measure
 

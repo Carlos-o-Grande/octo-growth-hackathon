@@ -8,7 +8,7 @@
 
 **One-liner:** Note-takers record the meeting. Octo takes part in it.
 
-**Offer:** Get early access. Self-serve SaaS later; for now, a work email on the landing page.
+**Offer:** Invite Octo to your next call. Self-serve SaaS later; for now the button opens an email and we set up the call.
 
 **Proof:** the 36-second demo (9:16 for Meta), the per-person task message with the exact quote, the comparison with note-takers ([`outputs/website/comparison.md`](../website/comparison.md)).
 
@@ -39,7 +39,7 @@ The winner goes on the landing hero and into the Meta creatives in week two.
 
 ## Funnel
 
-Meta ad, creator video or post → landing page with Grona (one CTA: Get early access) → work email → Oleksii invites them to a call where Octo joins.
+Meta ad, creator video or post → landing page with Grona (one CTA: Invite Octo to your next call) → work email → Oleksii invites them to a call where Octo joins.
 
 Visitors who don't sign up go into Meta retargeting.
 
@@ -64,7 +64,6 @@ Visitors who don't sign up go into Meta retargeting.
 
 ## Open questions
 
-- The statement names remote agencies; the audience is any small team without a PM. Keep agencies as the slice we name, or widen the statement?
-- CTA: "Get early access" or "Invite Octo to your next call"?
+- Decided: landing copy says "small teams without a project manager, from remote agencies to startups". ClickUp sync confirmed by Oleksii.
 - Price for self-serve: per seat, per team, free tier?
 - Grok Bot: is there a public plugin API? Not confirmed.

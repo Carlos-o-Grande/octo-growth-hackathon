@@ -130,6 +130,17 @@ details p { color: var(--sub); margin: 12px 0 0; }
 footer { background: var(--night); color: var(--soft2); font-size: 14px; padding: 28px 0; }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 footer a { color: var(--soft); }
+/* compare */
+.cmp-wrap { overflow-x: auto; margin-top: 36px; border: 1px solid var(--line); border-radius: 20px; background: var(--card); }
+.cmp { width: 100%; border-collapse: collapse; min-width: 640px; font-size: 17px; }
+.cmp th, .cmp td { text-align: left; vertical-align: top; padding: 18px 22px; border-bottom: 1px solid var(--line); }
+.cmp thead th { font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.cmp thead th.octo { color: var(--main); }
+.cmp tbody th { font-weight: 600; width: 22%; }
+.cmp td { color: var(--muted); }
+.cmp td.octo { color: var(--ink); background: rgba(196,232,51,.14); }
+.cmp tr:last-child th, .cmp tr:last-child td { border-bottom: 0; }
+.cmp-note { margin-top: 20px; color: var(--sub); font-size: 18px; }
 </style>
 </head>
 <body>
@@ -140,8 +151,9 @@ footer a { color: var(--soft); }
     <div class="links">
       <a href="#demo">Demo</a>
       <a href="#how">How it works</a>
+      <a href="#compare">Compare</a>
       <a href="#faq">FAQ</a>
-      <a class="btn lime" href="#access">Get early access</a>
+      <a class="btn lime" href="#access">Invite Octo</a>
     </div>
   </div>
 </nav>
@@ -150,11 +162,11 @@ footer a { color: var(--soft); }
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eb">AI teammate for your calls</p>
+        <p class="eb">For small teams without a project manager</p>
         <h1>Every call ends with “so who’s doing what?”</h1>
-        <p class="sub">Note-takers record the meeting. <b>Octo takes part in it</b>: it answers on the call, shows it on screen, and turns what you agreed into tasks in your tracker.</p>
+        <p class="sub">Note-takers record the meeting. <b>Octo takes part in it</b>: it answers on the call, shows it on screen, and afterwards each person gets their own tasks while ClickUp or Asana stays up to date. A junior project manager for teams that don’t have one yet, from remote agencies to startups.</p>
         <div class="cta-row">
-          <a class="btn lime" href="#access">Get early access →</a>
+          <a class="btn lime" href="#access">Invite Octo to your next call →</a>
           <a class="btn ghost" href="#demo">Watch the 36-second demo</a>
         </div>
       </div>
@@ -215,11 +227,31 @@ footer a { color: var(--soft); }
       <p class="eb">Your tracker, kept honest</p>
       <h2>It doesn’t just take notes. It follows up.</h2>
       <ul class="checks">
-        <li>Tasks go straight into Notion, Asana, Trello and other trackers you already use.</li>
+        <li>Tasks go straight into ClickUp, Asana, Notion, Trello and other trackers you already use.</li>
         <li>Say on a later call that something is done or has changed, and Octo updates it.</li>
         <li>Each person gets only their own tasks, with a deadline and where the task came from.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section id="compare" style="padding-top:0">
+  <div class="wrap">
+    <p class="eb">Octo vs note-takers</p>
+    <h2>Note-takers give you notes. Octo gives everyone their tasks.</h2>
+    <p class="lede">Granola, Fireflies and Otter are great at writing the meeting down. Octo is built for what happens next.</p>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th></th><th>Note-takers</th><th class="octo">Octo</th></tr></thead>
+        <tbody>
+          <tr><th>On the call</th><td>Record. Some answer on a wake word.</td><td class="octo">Takes part: answers by name, shows lists and tables on its own video tile.</td></tr>
+          <tr><th>After the call</th><td>A summary and action items.</td><td class="octo">Each person gets their own tasks, with a deadline and the exact quote.</td></tr>
+          <tr><th>Your tracker</th><td>Export or integration, if you set it up.</td><td class="octo">Tasks land in ClickUp, Asana, Notion or Trello.</td></tr>
+          <tr><th>Next week’s call</th><td>Starts from scratch.</td><td class="octo">Knows what’s still open, and closes tasks when someone says “done”.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note">Want notes with no bot in the room? Granola does that well. Want your team’s follow-ups done? That’s Octo.</p>
   </div>
 </section>
 
@@ -240,11 +272,12 @@ footer a { color: var(--soft); }
   <div class="wrap faq">
     <p class="eb">Questions</p>
     <h2>Good questions</h2>
+    <details><summary>Who is it for?</summary><p>Small teams of up to 50 people that don’t have a project manager yet: remote agencies, studios, startups. On your calls, Octo works like a junior project manager that tracks who’s doing what.</p></details>
     <details><summary>How is this different from a note-taker?</summary><p>A note-taker records and summarises. Octo takes part: it answers questions on the call, shows things on screen, and after the call turns what you agreed into tasks in your tracker and keeps them up to date.</p></details>
     <details><summary>Does it talk all the time?</summary><p>No. It joins visibly as a participant and speaks only when you call it by name.</p></details>
     <details><summary>Which platforms does it work on?</summary><p>Google Meet, Microsoft Teams, Zoom, Slack Huddles, Webex and GoTo.</p></details>
-    <details><summary>Which trackers does it work with?</summary><p>Notion, Asana, Trello and others. Tell us yours when you sign up.</p></details>
-    <details><summary>How much does it cost?</summary><p>We’re opening early access now. Get in touch, and we’ll set it up with your team.</p></details>
+    <details><summary>Which trackers does it work with?</summary><p>ClickUp, Asana, Notion, Trello and others. Tell us yours when you invite Octo.</p></details>
+    <details><summary>How much does it cost?</summary><p>We’re opening early access now. Invite Octo to your next call, and we’ll set it up with your team.</p></details>
   </div>
 </section>
 
@@ -252,9 +285,9 @@ footer a { color: var(--soft); }
   <div class="wrap">
     <p class="eb">Early access</p>
     <h2>Let your next call end with a plan, not a question</h2>
-    <p>Tell us about your team and the tools you use. We’ll get Octo onto your calls.</p>
+    <p>Tell us about your team, the tools you use and when your next call is. We’ll get Octo onto it.</p>
     <div class="cta-row">
-      <a class="btn lime" href="mailto:hello@octocrew.ai?subject=Octo%20early%20access">Get early access →</a>
+      <a class="btn lime" href="mailto:hello@octocrew.ai?subject=Invite%20Octo%20to%20our%20next%20call">Invite Octo to your next call →</a>
       <a class="btn ghost" href="https://octocrew.ai">octocrew.ai</a>
     </div>
   </div>
