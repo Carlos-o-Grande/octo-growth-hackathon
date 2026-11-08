@@ -22,7 +22,7 @@ The team keeps one persona (founders, heads of ops and delivery leads at remote 
 | H1 | Follow-through: the task reaches the tracker and updates itself | Ops and delivery leads at agencies, 10 to 50 | **Lead angle.** Backed by the market gap and the founder's defaults |
 | H2 | Client-call prep: walk into every client call knowing what was promised and what they pushed back on | Account managers and founders who run client or sales calls | **Test.** Diego's hypothesis. Strong hook, two capability checks first |
 | H3 | The PM you don't have: nobody has to chase follow-ups | Founder-led businesses, 2 to 50, no PM | **Test.** Founder default audience #3 |
-| H4 | Trust: joins only when invited, each person sees only their own tasks | Everyone; answers the top objection | **Support line on every asset, not a lead angle** |
+| H4 | Trust: quiet until you call it, each person sees only their own tasks (corrected: Octo auto-joins calendar events) | Everyone; answers the top objection | **Support line on every asset, not a lead angle** |
 
 ## H1. Follow-through (lead)
 
@@ -57,7 +57,7 @@ The team keeps one persona (founders, heads of ops and delivery leads at remote 
 
 ## H4. Trust (support line)
 
-- **Promise:** Octo joins only when you invite it, speaks only when called by name, and each person gets only their own tasks.
+- **Promise:** Octo stays silent and speaks only when called by name, and each person gets only their own tasks. (Corrected 2026-11-08: the founder confirmed Octo joins calendar events on its own, so "joins only when you invite it" is false and must not be used.)
 - **Backed by:** "joins visibly as a participant and speaks only when called by name" (`pitch/faq.md`); each person gets only their own tasks (v0 landing, https://octocrew-hq.github.io/octo-landing/).
 - **Confirm with Oleksii:** does Octo ever auto-join calls from the calendar? How do guests consent? What will it never do?
 - **Why it matters:** consent and bot fatigue are 19 of 34 customer quotes (`voice-of-customer.md`); auto-join is the most repeated complaint about Fireflies and Otter (`competitor-teardown.md`, gap 2).
