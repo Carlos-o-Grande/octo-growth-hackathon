@@ -231,7 +231,7 @@ footer a { color: var(--ink); display: inline-block; padding: 12px 0; margin: -1
 @media (max-width: 1080px) { .plans { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 620px) { .plans { grid-template-columns: 1fr; } }
 .calc { background: var(--deep); color: #fff; border-radius: 28px; padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.calc .eb { color: var(--lime); }
+.calc .eb { color: var(--lime); background: rgba(255,255,255,.08); }
 .calc label { display: block; font-size: 18px; color: var(--soft); margin-bottom: 14px; }
 .calc output { font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #fff; }
 .calc input[type=range] { width: 100%; accent-color: var(--lime); height: 44px; }
