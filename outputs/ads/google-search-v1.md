@@ -1,5 +1,7 @@
 # Google Search v1
 
+**Not a paid channel this week.** The team picked Meta as the main channel on 8 Nov; LinkedIn is organic for one-liner A/B tests. Kept for later.
+
 **Budget:** €200 over 7 days (~€28/day). **Bidding:** maximise clicks with a €4 max CPC for the first 3 days, then maximise conversions once early-access requests are tracked. **Locations:** Portugal, Spain, UK, Ireland, Netherlands, Germany. **Language:** English. **Final URL:** the landing page with `?utm_source=google&utm_medium=cpc&utm_campaign=octo-early-access&utm_content={adgroupid}`.
 
 Responsive search ads: headlines are 30 characters max, descriptions 90 max. All lines below are counted.

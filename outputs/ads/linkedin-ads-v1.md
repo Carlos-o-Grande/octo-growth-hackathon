@@ -1,5 +1,7 @@
 # LinkedIn ads v1
 
+**Not a paid channel this week.** The team picked Meta as the main channel on 8 Nov; LinkedIn is organic for one-liner A/B tests. Kept for later.
+
 **Budget:** €400 over 7 days. **Objective:** website visits (switch to leads once the Grona page has a form). **Destination:** the landing page, with UTM `?utm_source=linkedin&utm_medium=paid&utm_campaign=octo-early-access&utm_content=<ad>`.
 
 ## Targeting (primary audience)

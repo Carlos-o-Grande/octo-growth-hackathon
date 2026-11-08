@@ -1,5 +1,7 @@
 # Meta ads v1 (Instagram Reels, Facebook)
 
+**Replaced by [meta-ads-v2.md](meta-ads-v2.md)** after the team picked Meta as the main channel on 8 Nov.
+
 **Budget:** €250 over 7 days: €170 cold, €80 retargeting from day 4. **Objective:** traffic, optimised for landing page views. **Placements:** Reels and Stories first, then Feed. **Destination:** the landing page with `?utm_source=meta&utm_medium=paid&utm_campaign=octo-early-access&utm_content=<ad>`.
 
 ## Audiences

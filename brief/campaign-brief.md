@@ -1,79 +1,66 @@
-# Campaign Brief: Octo (v2, team decisions of 8 Nov, afternoon)
+# Campaign Brief: Octo
 
-This replaces the morning version. It records what the team decided in the afternoon discussion: the ICP, the promise, the trial, the two channels and what Octo can and cannot do. Research behind it: [`growth-kit/outputs/research/`](../growth-kit/outputs/research/) and [`outputs/research/market-research-v1.md`](../outputs/research/market-research-v1.md). Plan: [`outputs/positioning/campaign-plan-v2.md`](../outputs/positioning/campaign-plan-v2.md).
+**Decided by the team on 8 Nov, ~14:40.** This is the source of truth for the landing page, the ads and the creatives. Plan: [`outputs/positioning/campaign-plan.md`](../outputs/positioning/campaign-plan.md). Product facts: [`product/overview.md`](../product/overview.md), or ask Oleksii.
 
 ## Product
 
-Octo is an AI agent that joins your team's calls. You just talk: it answers when you call it by name, and after the call it sends each person their tasks and keeps your tracker, CRM and Notion up to date. For a small team, it works like the junior project manager you haven't hired yet.
+Octo is an AI teammate that joins your team's calls, answers when you call it by name, and after the call does the follow-up: everyone gets their own tasks, and ClickUp or Asana stays up to date. For a small team, it works like a junior project manager that tracks who's doing what.
+
+## Positioning statement
+
+For founders and ops leaders at remote agencies, Octo is a teammate that joins every client and team call on whatever platform the client picks. It answers when you call it by name. Afterwards, each person gets their own tasks with exact quotes and deadlines, and ClickUp or Asana stays up to date until the work is done.
 
 ## Audience
 
-Small teams of 1 to 50 people with no project manager yet: founders, small agencies and studios, startups and service businesses. The founder or a team lead is the one chasing follow-ups today. They run their work on Meet, Zoom or Teams and keep tasks in Notion, Asana or Trello (or a spreadsheet). Trigger moment: a task agreed on Tuesday's call is still nobody's on Friday, and the founder is the only one who noticed.
+Small teams of up to 50 people that don't have a project manager yet. The founder or an ops lead runs the calls and is the only one who follows up. Remote agencies are the sharpest slice: many client calls, on whatever platform the client picks, and work tracked in ClickUp, Asana, Trello or Notion.
+
+Trigger moment: a client or teammate asks "did that get done?" about something said on last week's call, and nobody wrote it down.
 
 ## Problem they have
 
-Every call ends with "so who's doing what?". Nobody's job is to take notes or chase follow-ups, so the founder does it, or nobody does. The tracker is stale the day after, the CRM never gets the notes, and the same status questions come back every week.
+Every call ends with "so who's doing what?". There is no PM to chase follow-ups, so it falls on the founder. Note-takers send a summary nobody acts on. The tracker goes stale the day after the call.
 
 ## Promise
 
-**Just talk. Octo keeps your tracker, CRM and Notion up to date.**
-
-Creative angle for small teams: **"The project manager your team doesn't have yet."** Supporting line: "Note-takers record the meeting. Octo takes part in it."
-
-## What Octo can and cannot do (use only the left column in ads and on the page)
-
-| Octo can, today | Octo cannot, or not yet |
-|---|---|
-| Join Google Meet, Teams, Zoom, Slack Huddles, Webex and GoTo calls | Sign up by yourself and start alone (no self-serve yet: our team sets it up) |
-| Join the calendar events you choose, on its own | Be invisible to guests on the call |
-| Stay silent and speak when called by name ("Octo, ...") *(confirm: the stage demo notes say it answers everything it hears)* | Run the "sales copilot" side panel (agenda, what to ask, sentiment): not built, "coming soon" only |
-| Answer from your knowledge base and CRM, search the web, show answers on its own tile | Translate calls |
-| Book calendar events after you confirm | Answer "think deeply" questions fast (20 to 60 seconds) |
-| Send a brief before the call: who's attending, what was discussed last time, what's open | Work at full power when an outside guest joins (it switches to a reduced client mode) |
-| Send each person their own tasks by DM, with a deadline and the exact quote | Plan your project or prioritise the work for you: it tracks what the team agrees |
-| Put tasks in Notion, Asana, Trello *(ClickUp and Jira said verbally, confirm in writing)* and update them when someone says "done" on a later call | Show a public price |
-| Update your CRM and Notion from the call transcript *(which CRMs: to confirm)* | Show every label in English yet (some rare screens still in Ukrainian) |
-| A page for every meeting, a weekly task review by voice, your own agent name and voice | |
-
-Sources: [`product/overview.md`](../product/overview.md), [`product/live-demo.md`](../product/live-demo.md), [`pitch/faq.md`](../pitch/faq.md), and Oleksii in the team discussion (8 Nov).
+Octo takes part in the call and does the follow-up: each person gets their tasks, and the tracker stays current until the work is done.
 
 ## Proof
 
-- The live demo on a real Google Meet call, today. The 36-second video (16:9 and 9:16), the screenshots and the Octo poses: cleared by Oleksii for ads and social (8 Nov). The people in the video are made up; say so where the format allows.
-- Octocrew runs on Octo every day: "we're not writing anything, we just speak and discuss and then all the information in our Notion, in our CRM is being updated" (Oleksii, 8 Nov).
-- No customer names, counts or usage numbers exist yet. Do not invent any.
+- Live demo: Octo answers by voice on a real Google Meet call.
+- The 36-second demo video: `assets/octo-demo-36s-9x16.mp4` (Meta, Reels) and `assets/octo-demo-36s-16x9.mp4`.
+- Each person gets their own tasks by message, with a deadline and the exact quote from the call.
+- Tasks land in Notion, Asana, Trello and others, and update when someone says "done" on a later call.
+- Works on Google Meet, Microsoft Teams, Zoom, Slack Huddles, Webex and GoTo.
+- It runs every day on the Octocrew team's own calls.
+
+Do not invent customer counts, percentages, certifications or logos. There are no public customers or metrics yet.
+
+## How it's sold
+
+Self-serve SaaS for small teams, not enterprise sales. For now: early access from the landing page.
 
 ## Conversion goal
 
-**Start free trial**: one button on the landing page. A short form (work email, tracker, CRM, call platform); our team then sets Octo up on the trial team's calls. Trial length: *to decide*.
+Get early access: leave a work email on the landing page. One button.
 
-## Channels
+## Main channel
 
-1. **Meta ads, main channel.** Several vertical (9:16) creatives on Reels and Stories, one per creative theme, plus retargeting.
-2. **YouTube creator integrations, second channel.** Creators who cover productivity, small business, Notion and remote work get free access and integrate Octo into a video, with a tracked link.
-
-LinkedIn and Google Search are out of the paid plan for this launch. Organic founder posts on LinkedIn stay.
+Meta ads (Instagram and Facebook), vertical video creatives. Second channel: sponsored segments by YouTube productivity and AI-tools creators.
 
 ## Tone
 
-Direct, practical, a little cheeky. Show the product working, not big words.
+Direct, practical, a little cheeky.
 
-## Do not say
+## Second audience (optional)
 
-- "AI teammate" or "AI meeting agent" as the headline: ZoomMate, Fireflies, Sembly and Otter already use them.
-- "Joins only when you invite it": false, it joins the calendar events you pick on its own. Say "You choose which calls it joins."
-- That the sales copilot exists, that Octo is invisible to guests, or that it translates.
-- CRM brand names until the list is confirmed. Say "your CRM".
-- Any number of customers, calls or hours saved.
-- "Bot" in a headline.
+People who already pay for a note-taker (Granola, Fireflies, Otter, Fathom). For them, the comparison does the work: [`outputs/website/comparison.md`](../outputs/website/comparison.md).
 
 ## Landing page URL
 
-https://octo-landing-47q.pages.dev (Cloudflare Pages, Grona snippet installed). Changes needed for this brief: [`outputs/website/landing-changes-v1.md`](../outputs/website/landing-changes-v1.md).
+https://octo-landing-47q.pages.dev (Grona is installed on it)
 
 ## Competitors
 
-- https://www.sembly.ai (closest: "AI meeting agent for professional services", self-serve 7-day trial, $10 to $30 per user)
-- https://fireflies.ai (free "Hey Fireflies" voice Q&A on Meet, Zoom, Teams)
-- https://www.zoom.com/en/products/ai-assistant/ (ZoomMate, "your AI teammate", $20 per user)
-- Gemini in Meet (built in, notes into a Doc, Google only)
+- https://www.granola.ai (no bot, notes from your device audio)
+- https://fireflies.ai (note-taker bot, "Talk to Fireflies" voice Q&A, tasks)
+- https://otter.ai (note-taker with a "Hey Otter" meeting agent)
