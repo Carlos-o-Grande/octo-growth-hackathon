@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Octo video overlays</title>
+<!--
+  Renders one overlay element at a time for build.js (Chrome headless via playwright-core).
+  build.js calls window.renderItem(spec) and screenshots the returned box with a transparent background.
+  Fonts and poses are loaded by relative path from the repo, so this file must stay at
+  outputs/creative/meta/video/source/overlay.html.
+-->
+<style>
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../../../website/landing/fonts/Inter-Regular.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 500; src: url("../../../../website/landing/fonts/Inter-Medium.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 600; src: url("../../../../website/landing/fonts/Inter-SemiBold.ttf"); }
+  @font-face { font-family: "Geist Mono"; font-weight: 500; src: url("../../../../website/landing/fonts/GeistMono-Medium.ttf"); }
+  :root {
+    --ink-0: #0D0818; --ink-deep: #1A0033; --brand: #3F007F; --lime: #C4E833; --on-lime: #1A2200;
+    --text: #F3EEFB; --sub: #CBC0DD; --label: #9A8FAE;
+  }
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body { width: 1080px; height: 1920px; position: relative; overflow: hidden;
+         font-family: "Inter", sans-serif; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+  #stage { position: absolute; inset: 0; }
+  .abs { position: absolute; }
+  .headline { font-weight: 600; letter-spacing: -0.03em; line-height: 1.02; color: var(--text); }
+  .headline .line { display: block; white-space: nowrap; }
+  .lime { color: var(--lime); }
+  .label { font-family: "Geist Mono", monospace; font-weight: 500; font-size: 24px; letter-spacing: 0.14em;
+           text-transform: uppercase; color: var(--label); line-height: 1; white-space: nowrap; }
+  .caption-text { font-weight: 500; font-size: 44px; line-height: 1.22; letter-spacing: -0.012em; color: var(--text); }
+  .caption .label { display: block; margin-bottom: 14px; }
+  .hair { height: 1px; background: rgba(255,255,255,0.12); }
+  /* generic summary email (creative 3, left window); no real product UI or logo */
+  .email { background: #FAF9FB; color: #15111F; font-family: "Inter"; font-weight: 400; }
+  .email .bar { height: 44px; border-bottom: 1px solid #E7E3EC; display: flex; align-items: center; gap: 8px; padding: 0 18px; }
+  .email .bar i { width: 10px; height: 10px; border-radius: 50%; background: #DCD6E3; display: block; }
+  .email .body { padding: 22px 24px 40px; }
+  .email h1 { font-size: 23px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 6px; line-height: 1.25; }
+  .email .meta { font-size: 14px; color: #6E6680; margin-bottom: 18px; }
+  .email h2 { font-size: 16px; font-weight: 600; margin: 20px 0 6px; }
+  .email p, .email li { font-size: 15.5px; line-height: 1.5; color: #3A3347; margin: 0 0 8px; }
+  .email ul { padding-left: 20px; margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const stage = document.getElementById('stage');
+const POSE_DIR = '../../../../../assets/octo-poses/';
+
+function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+// *word* marks the single lime word or phrase
+function markup(s) { return esc(s).replace(/\*([^*]+)\*/g, '<span class="lime">$1</span>'); }
+
+function box(el, pad = 0) {
+  const r = el.getBoundingClientRect();
+  return { x: Math.max(0, Math.floor(r.left - pad)), y: Math.max(0, Math.floor(r.top - pad)),
+           w: Math.ceil(r.width + 2 * pad), h: Math.ceil(r.height + 2 * pad) };
+}
+
+async function ready() {
+  await document.fonts.ready;
+  const imgs = [...stage.querySelectorAll('img')];
+  await Promise.all(imgs.map(i => i.complete ? null : new Promise(r => { i.onload = r; i.onerror = r; })));
+}
+
+// Returns { box, info } ; box is what build.js screenshots (page coordinates).
+window.renderItem = async function (spec) {
+  document.body.style.width = spec.W + 'px';
+  document.body.style.height = spec.H + 'px';
+  stage.innerHTML = '';
+  stage.style.background = 'transparent';
+  let el, info = {};
+  switch (spec.kind) {
+    case 'bg': {
+      // near-black violet, one large soft off-center glow (grain is added in ffmpeg, temporal)
+      const g = spec.glow;
+      stage.style.background =
+        `radial-gradient(${g.r}px ${g.r * 0.85}px at ${g.x}px ${g.y}px, rgba(63,0,127,0.55), rgba(63,0,127,0.18) 45%, rgba(63,0,127,0) 75%),` +
+        `linear-gradient(180deg, #0D0818 0%, #12091F 55%, #1A0033 100%)`;
+      await ready();
+      return { box: { x: 0, y: 0, w: spec.W, h: spec.H }, info };
+    }
+    case 'headline': {
+      el = document.createElement('div');
+      el.className = 'abs headline';
+      el.style.left = spec.x + 'px'; el.style.top = spec.y + 'px';
+      el.innerHTML = spec.lines.map(l => `<span class="line">${markup(l)}</span>`).join('');
+      stage.appendChild(el);
+      await ready();
+      // auto-fit: largest size <= spec.size whose widest line fits spec.w (floor spec.min)
+      let size = spec.size;
+      for (; size >= spec.min; size -= 2) {
+        el.style.fontSize = size + 'px';
+        const widest = Math.max(...[...el.children].map(c => c.getBoundingClientRect().width));
+        if (widest <= spec.w) break;
+      }
+      info.size = size;
+      return { box: box(el, 6), info };
+    }
+    case 'caption': {
+      el = document.createElement('div');
+      el.className = 'abs caption';
+      el.style.left = spec.x + 'px'; el.style.top = spec.y + 'px'; el.style.width = spec.w + 'px';
+      el.innerHTML = (spec.label ? `<span class="label">${esc(spec.label)}</span>` : '') +
+        `<div class="caption-text" style="font-size:${spec.size || 44}px">${markup(spec.text)}</div>`;
+      stage.appendChild(el);
+      await ready();
+      const t = el.querySelector('.caption-text');
+      info.lines = Math.round(t.getBoundingClientRect().height / ((spec.size || 44) * 1.22));
+      return { box: box(el, 6), info };
+    }
+    case 'label': {
+      el = document.createElement('div');
+      el.className = 'abs label';
+      el.style.left = spec.x + 'px'; el.style.top = spec.y + 'px';
+      el.textContent = spec.text;
+      stage.appendChild(el);
+      if (spec.hairline) {
+        const h = document.createElement('div');
+        h.className = 'abs hair';
+        h.style.left = spec.x + 'px'; h.style.top = (spec.y + 40) + 'px'; h.style.width = spec.hairline + 'px';
+        stage.appendChild(h);
+        await ready();
+        const a = box(el, 4), b = box(h, 2);
+        const x = Math.min(a.x, b.x), y = Math.min(a.y, b.y);
+        return { box: { x, y, w: Math.max(a.x + a.w, b.x + b.w) - x, h: Math.max(a.y + a.h, b.y + b.h) - y }, info };
+      }
+      await ready();
+      return { box: box(el, 4), info };
+    }
+    case 'img': {
+      el = document.createElement('img');
+      el.className = 'abs';
+      el.src = POSE_DIR + spec.src;
+      el.style.left = spec.x + 'px'; el.style.top = spec.y + 'px'; el.style.width = spec.w + 'px'; el.style.height = spec.w + 'px';
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 0), info };
+    }
+    case 'shadow': {
+      // long soft shadow under a window (the window content covers the inside)
+      const r = spec.rect;
+      el = document.createElement('div');
+      el.className = 'abs';
+      Object.assign(el.style, { left: r.x + 'px', top: r.y + 'px', width: r.w + 'px', height: r.h + 'px',
+        borderRadius: '24px', background: '#0B0714', boxShadow: '0 40px 120px rgba(0,0,0,0.5), 0 12px 32px rgba(0,0,0,0.25)' });
+      stage.appendChild(el);
+      await ready();
+      return { box: { x: 0, y: 0, w: spec.W, h: spec.H }, info };
+    }
+    case 'border': {
+      // 1 px hairline + faint top inner highlight, transparent inside
+      const r = spec.rect;
+      el = document.createElement('div');
+      el.className = 'abs';
+      Object.assign(el.style, { left: r.x + 'px', top: r.y + 'px', width: r.w + 'px', height: r.h + 'px', boxSizing: 'border-box',
+        borderRadius: '24px', border: '1px solid rgba(255,255,255,0.12)',
+        background: 'linear-gradient(180deg, rgba(255,255,255,0.07) 0px, rgba(255,255,255,0) 3px)' });
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 0), info };
+    }
+    case 'mask': {
+      // white rounded rect on black, exact window size, for alphamerge
+      document.body.style.width = spec.w + 'px'; document.body.style.height = spec.h + 'px';
+      stage.style.background = '#000';
+      el = document.createElement('div');
+      el.className = 'abs';
+      Object.assign(el.style, { left: 0, top: 0, width: spec.w + 'px', height: spec.h + 'px', borderRadius: '24px', background: '#fff' });
+      stage.appendChild(el);
+      await ready();
+      return { box: { x: 0, y: 0, w: spec.w, h: spec.h }, info, opaque: true };
+    }
+    case 'rect': {
+      el = document.createElement('div');
+      el.className = 'abs';
+      Object.assign(el.style, { left: spec.x + 'px', top: spec.y + 'px', width: spec.w + 'px', height: spec.h + 'px',
+        background: spec.color, borderRadius: (spec.radius || 0) + 'px' });
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 0), info };
+    }
+    case 'check': {
+      // lime check mark (no circle, no box)
+      el = document.createElement('div');
+      el.className = 'abs';
+      el.style.left = spec.x + 'px'; el.style.top = spec.y + 'px';
+      el.innerHTML = `<svg width="${spec.size}" height="${spec.size}" viewBox="0 0 48 48"><path d="M10 25.5 L20 35 L39 14" fill="none" stroke="#C4E833" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 2), info };
+    }
+    case 'scrim': {
+      el = document.createElement('div');
+      el.className = 'abs';
+      Object.assign(el.style, { left: 0, top: spec.y + 'px', width: spec.W + 'px', height: (spec.H - spec.y) + 'px',
+        background: 'linear-gradient(180deg, rgba(13,8,24,0) 0%, rgba(13,8,24,0.55) 45%, rgba(13,8,24,0.78) 100%)' });
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 0), info };
+    }
+    case 'email': {
+      document.body.style.width = spec.w + 'px'; document.body.style.height = '4000px';
+      el = document.createElement('div');
+      el.className = 'abs email';
+      el.style.left = 0; el.style.top = 0; el.style.width = spec.w + 'px';
+      el.innerHTML = document.getElementById('email-tpl').innerHTML;
+      stage.appendChild(el);
+      await ready();
+      return { box: box(el, 0), info, opaque: true };
+    }
+    case 'endcard': {
+      // fallback end card, only used when outputs/creative/meta/static/end-card-*.png is missing
+      const W = spec.W, H = spec.H, m = 96;
+      stage.style.background =
+        `radial-gradient(${W * 0.9}px ${W * 0.75}px at ${W * 0.62}px ${H * 0.42}px, rgba(63,0,127,0.55), rgba(63,0,127,0) 72%),` +
+        `linear-gradient(180deg, #0D0818 0%, #12091F 55%, #1A0033 100%)`;
+      // 9:16: everything between y 250 and y 1250 (Reels safe zone); 4:5: 96 px margins
+      const tall = H > 1500;
+      stage.innerHTML =
+        `<div class="abs headline" style="left:${m}px;top:${tall ? 300 : 120}px;font-size:${tall ? 104 : 96}px;width:${W - 2 * m}px;white-space:normal">` +
+        `<span style="color:var(--sub)">Note-takers record the meeting.</span> Octo takes part in it.</div>` +
+        `<img class="abs" src="${POSE_DIR}02-happy.png" style="left:${W - m - 260}px;top:${tall ? 760 : 640}px;width:260px;height:260px">` +
+        `<div class="abs" style="left:${m}px;top:${tall ? 1010 : 920}px;background:var(--lime);color:var(--on-lime);font-weight:600;font-size:44px;letter-spacing:-0.01em;padding:26px 48px;border-radius:999px;white-space:nowrap">Invite Octo to your next call</div>` +
+        `<div class="abs" style="left:${m}px;top:${tall ? 1150 : 1080}px;display:flex;align-items:baseline;gap:14px"><span style="font-weight:600;font-size:48px;letter-spacing:-0.03em;color:var(--text)">Octo</span><span class="label" style="font-size:22px">by Octocrew</span></div>`;
+      await ready();
+      return { box: { x: 0, y: 0, w: W, h: H }, info, opaque: true };
+    }
+  }
+  throw new Error('unknown kind ' + spec.kind);
+};
+</script>
+
+<template id="email-tpl">
+  <div class="bar"><i></i><i></i><i></i></div>
+  <div class="body">
+    <h1>Meeting summary: Launch sync</h1>
+    <div class="meta">To: team &middot; Recording and transcript attached</div>
+    <h2>Overview</h2>
+    <p>The team met to review the status of the landing page launch. The discussion covered the progress of design, layout and copy, open questions about timing, and the next check-in. Overall sentiment was positive, with some concern about the copy timeline.</p>
+    <h2>Key discussion points</h2>
+    <ul>
+      <li>Mark opened the call and asked for an update on the landing page launch and where each workstream currently stands.</li>
+      <li>Design was reported as complete. The team agreed the current direction works and no further rounds are expected at this stage.</li>
+      <li>Layout was reported as complete. Some minor spacing adjustments may be revisited later if needed.</li>
+      <li>Copy is still in progress. It was noted that it has been waiting for some time and is currently the main open item for the launch.</li>
+      <li>The team discussed the overall launch timeline and whether the current plan is still realistic given the open copy work.</li>
+      <li>There was a brief conversation about scheduling a follow-up sync later in the week to review progress.</li>
+    </ul>
+    <h2>Decisions</h2>
+    <ul>
+      <li>The launch plan stays as discussed for now.</li>
+      <li>A follow-up sync will take place later this week.</li>
+    </ul>
+    <h2>Action items</h2>
+    <ul>
+      <li>Follow up on the landing page copy.</li>
+      <li>Schedule the follow-up sync.</li>
+      <li>Review the launch timeline after the copy is ready.</li>
+    </ul>
+    <h2>Sentiment</h2>
+    <p>The conversation was constructive. Participants were aligned on priorities, and the main risk identified was the timing of the remaining copy work.</p>
+    <h2>Topics</h2>
+    <p>Landing page, launch, design, layout, copy, timeline, follow-up, scheduling.</p>
+    <h2>Full notes</h2>
+    <p>The meeting began with a request for a status update on the landing page launch. Each workstream was reviewed in turn. Design and layout were confirmed as done. Copy was identified as the remaining item, and the team talked through what is needed to move it forward and when the next review should happen.</p>
+    <p>Participants also touched on how the launch would be announced, what still needs sign-off, and who should be kept in the loop. No final owner was recorded for the announcement.</p>
+    <p>The call ended with agreement to meet again later in the week.</p>
+  </div>
+</template>
+</body>
+</html>
