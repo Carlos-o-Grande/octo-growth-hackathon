@@ -67,5 +67,5 @@ Visitors who don't sign up go into Meta retargeting.
 ## Open questions
 
 - Decided: landing copy says "small teams without a project manager, from remote agencies to startups". ClickUp sync confirmed by Oleksii.
-- Price for self-serve: per seat, per team, free tier?
+- Decided: pricing per company with credits. Pay as you go (100 credits per $1, from $20), Starter $49, Team $99, Business $249, Enterprise. See https://octo-landing-47q.pages.dev/pricing
 - Grok Bot: is there a public plugin API? Not confirmed.
