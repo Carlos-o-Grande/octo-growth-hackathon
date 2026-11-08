@@ -22,7 +22,7 @@
 | Channel | Role | € | What runs | Metric | *Assumption* |
 |---|---|---|---|---|---|
 | Meta ads (Instagram Reels, Stories, Facebook) | **Main** | 700 | 5 vertical creatives, cold for 7 days, retargeting from day 3. [`outputs/ads/meta-ads-v2.md`](../ads/meta-ads-v2.md) | Cost per early-access request | €1 to 2 per click, 350 to 700 clicks, 2 to 4% sign up: 7 to 28 requests |
-| YouTube creators | Second | 300 | 2 or 3 small productivity or AI-tools creators, a 30 to 60 second sponsored segment each, or free access plus a flat fee | Requests per creator, via a tagged link | Small creators charge €100 to 300 per segment, not verified |
+| YouTube creators | Second | 300 | 2 or 3 small productivity or AI-tools creators, a 30 to 60 second sponsored segment each, or free access plus a flat fee. Shortlist: [`youtube-creators-v1.md`](../research/youtube-creators-v1.md) | Requests per creator, via a tagged link | Small creators charge €100 to 300 per segment, not verified |
 | LinkedIn | Organic, €0 | 0 | Founder posts A/B testing three one-liners (below) | Comments and profile clicks per post | n/a |
 | Reddit and communities | Organic, €0 | 0 | Answer threads about note-takers that don't follow up and tasks lost after calls. No link spam | Replies, sign-ups by tagged link | n/a |
 
