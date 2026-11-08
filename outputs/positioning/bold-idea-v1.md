@@ -1,6 +1,6 @@
 # Bold idea v1
 
-The brief: "one move a normal campaign wouldn't make". Three candidates, each with how it would actually run. The recommendation is at the bottom.
+The brief: "one move a normal campaign wouldn't make". Four candidates, each with how it would actually run. The recommendation is at the bottom.
 
 ## 1. The product runs its own sales call
 
@@ -45,6 +45,22 @@ The brief: "one move a normal campaign wouldn't make". Three candidates, each wi
 
 **Cost:** product work, not ad money. **Risk:** messaging guests without consent. It needs an opt-out and the host's approval per call. Not shippable today, so pitch it as the growth loop, not a weekend experiment.
 
+## 4. Octo as a plugin for Claude Code and Grok Bot
+
+**The move:** don't ask teams to adopt one more tool. Ship Octo inside the AI assistants they already work in, so their own assistant can join calls through Octo.
+
+- **Claude Code plugin.** `/octo join <meeting link>` sends Octo to the call. After the call, the tasks come back into the developer's session, and Claude Code can start on them right away. "The standup ends, and your coding agent already has the ticket."
+- **Grok Bot plugin.** Ask Grok Bot to join your call. It joins through Octo, speaks there as your assistant, and reports back in the chat.
+
+**Why a normal campaign wouldn't:** the plugin directory listing is the ad. Developers share plugins with each other, and every install brings Octo into a new team's calls.
+
+**How it runs:**
+1. **Claude Code:** Octo's actions (join a call, ask Octo, list my tasks from the last call, mark one done) packaged as an MCP server, plus a plugin with `/octo` commands, published in a public plugin marketplace repo. People install it with `/plugin install`.
+2. **Grok Bot:** first check that Grok Bot has a public plugin or tool API. A quick search on 31 Oct found none, and no call plugin for it either, so treat it as a hypothesis for now.
+3. **For the hackathon:** a landing section "Octo for Claude Code and Grok Bot" with one waitlist button per plugin, plus a 20-second terminal clip showing `/octo join`. Count sign-ups per plugin.
+
+**Cost:** product work. Octo needs a public API first, because today it runs on our own setup. **Risk:** Claude Code users are developers, so this speaks to audience #2 (startup product and engineering leads), not the agency owners in the main campaign.
+
 ## Recommendation
 
 **Pitch #1 as the bold idea, and #3 as the long-term loop.**
@@ -52,3 +68,4 @@ The brief: "one move a normal campaign wouldn't make". Three candidates, each wi
 - **#1** fits the hackathon: the room just watched Octo run a live demo on stage. "The product sells itself on your call" is one line and easy to believe after that.
 - **#3** is how it grows after the campaign: every call brings in the next customer.
 - **#2** is the safest to run this week with no product work, so keep it as a backup if Oleksii says no to #1.
+- **#4** is where Octo goes next. Show it in the pitch as the distribution bet, and test demand today with the waitlist buttons.
