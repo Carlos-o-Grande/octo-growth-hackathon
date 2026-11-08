@@ -20,7 +20,20 @@ Note-takers such as Granola, Fireflies, Otter and Fathom record the meeting and 
 
 - [Home](https://octo-landing-47q.pages.dev/): what Octo does, the demo videos, FAQ
 - [Octo vs Granola, Fireflies, Otter and Fathom](https://octo-landing-47q.pages.dev/compare): side-by-side comparison with sources
+- [Pricing](https://octo-landing-47q.pages.dev/pricing): plans, credits and pay as you go
+
+## Pricing
+
+Priced per company, not per seat. Octo runs on credits shared by the whole team, about 300 credits per hour of calls (an average).
+
+- Pay as you go: 100 credits per $1, top up from $20.
+- Starter: $49 a month, 6,000 credits, about 20 hours of calls.
+- Team: $99 a month, 12,000 credits, about 40 hours.
+- Business: $249 a month, 30,000 credits, about 100 hours.
+- Enterprise: custom credits and volume pricing.
+
+Plans include about 20% more credits than pay as you go. Unused plan credits roll over one month.
 
 ## Status
 
-Early access. No self-serve sign-up or public price yet. To try it, invite Octo to your next call: hello@octocrew.ai.
+Early access. No self-serve checkout yet. To try it, invite Octo to your next call: hello@octocrew.ai.

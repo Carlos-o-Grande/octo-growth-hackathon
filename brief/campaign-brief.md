@@ -37,7 +37,7 @@ Do not invent customer counts, percentages, certifications or logos. There are n
 
 ## How it's sold
 
-Self-serve SaaS for small teams, not enterprise sales. For now: early access, by inviting Octo to a call.
+Self-serve SaaS for small teams, not enterprise sales. Priced per company, not per seat, with credits shared by the team: pay as you go from $20, Starter $49, Team $99, Business $249, Enterprise custom (https://octo-landing-47q.pages.dev/pricing). For now: early access, by inviting Octo to a call.
 
 ## Conversion goal
 

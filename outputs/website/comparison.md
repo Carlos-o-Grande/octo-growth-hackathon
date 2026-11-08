@@ -31,7 +31,7 @@ For note-taker switchers, the comparison explains Octo faster than any headline.
 | Brief before the call | Yes: who's coming, what's still open | Not found | Not found | Not found | Not found |
 | Platforms | Meet, Teams, Zoom, Slack Huddles, Webex, GoTo | Any (device audio) | Not checked | Zoom first for the agent [4] | Not checked |
 | Its own name and voice per team | Yes | n/a | Not found | Not found | Not found |
-| Price per user per month | Not public yet (early access) | Business $14 [1] | Pro about $10 yearly, $18 monthly (third-party source) [6] | Pro $8.33 yearly, $16.99 monthly [7] | Free tier, Premium $16 yearly, $20 monthly [8] |
+| Price per user per month | Per company, not per seat: from $49 a month with credits included, or pay as you go ([pricing](https://octo-landing-47q.pages.dev/pricing)) | Business $14 [1] | Pro about $10 yearly, $18 monthly (third-party source) [6] | Pro $8.33 yearly, $16.99 monthly [7] | Free tier, Premium $16 yearly, $20 monthly [8] |
 
 "Not found" means it didn't show up on the vendor's homepage or pricing page during a short check. It doesn't mean the product can't do it.
 
