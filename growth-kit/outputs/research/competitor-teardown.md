@@ -185,3 +185,24 @@ Search excerpts (read in results, not fetched in full):
 Files read: `AGENTS.md`, `.github/agents/competitor-teardown.agent.md`, `brief/campaign-brief.md`, `outputs/research/product-scout.md`, `market/landscape.md` (repo root). No `data/` files (folder empty).
 
 Ad library links built, none loaded: Meta https://www.facebook.com/ads/library/?q=<brand>&ad_type=all&country=ALL for fireflies, otter.ai, zoommate, fathom.ai, read.ai; Google https://adstransparency.google.com/?region=anywhere
+
+## Addendum: Sembly (added 2026-11-08, flagged by the team as a direct competitor)
+
+Fetched live 2026-11-08: https://www.sembly.ai/ and https://www.sembly.ai/pricing/ (both 200).
+
+| Field | Sembly |
+|---|---|
+| Positioning line | "Meetings, minus the busywork." "Sembly is the AI meeting agent that runs all workflow stages from the first meeting to the last deliverable." Page title: "AI Meeting Agent for Professional Services" |
+| ICP | "client-facing teams", "five professional services verticals"; per-client workspaces ("A client is a dedicated space inside your workspace that holds one customer's context, meetings, and knowledge") |
+| What it does | "joins scheduled Zoom, Google Meet, Microsoft Teams, and Webex meetings"; "captures meetings you can't join with proxy attendance"; "tasks with owners and deadlines"; "Ask Sembly add a task or a decision during the meeting"; generates "client proposals, consulting reports, project change requests, and pitch decks" as .pptx and .docx in the client's brand; 45+ languages, "Mixed-language meetings" |
+| Pricing | Free $0 (1 meeting hour); Basic "$10 per month, billed annually" (1 user, $14 monthly); Pro "$20 per user / month, billed annually" ($29 monthly); MAX "$30 per user / month" annual ($39 monthly, min 3 users); Enterprise custom (min 10). "Start 7-day free trial" on every paid plan |
+| Consent | "Notification and consent tracking" on Pro and above |
+| Sign-up path | Self-serve, sign up "with-calendar"; "Book a Demo" for enterprise |
+
+**Why it matters:** Sembly aims at the same buyer (agencies and consultancies running client calls), already uses "AI meeting agent", auto-joins from the calendar, offers a self-serve 7-day trial and handles mixed-language calls, which overlaps with the team's translation idea for the sales copilot.
+
+**Where Octo still differs (from the pages fetched):** Sembly's page does not claim that it answers by voice or shows answers on its own video tile, that it updates a task in the team's tracker when someone says "done" on a later call, that it sends each person only their own tasks by DM with the quote, or that it works on Slack Huddles or GoTo. Absence on a page is not proof; trial it before using any comparison in copy.
+
+**Where Sembly is ahead:** branded client deliverables (proposals, decks), 45+ languages and mixed-language meetings, public prices, self-serve trial, SOC 2 Type II (per its pricing page).
+
+**Implications:** do not lead with "AI meeting agent" (Sembly and Otter own it). Lead with "Just talk": the update across tracker, CRM and Notion plus answers on the call. The sales-copilot idea of translation for non-native speakers is already covered by Sembly's mixed-language transcription; it is not a differentiator.
