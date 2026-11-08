@@ -1,0 +1,51 @@
+1
+00:00:00,400 --> 00:00:02,252
+I run a small team
+
+2
+00:00:02,302 --> 00:00:04,894
+and we don’t have a project manager.
+
+3
+00:00:05,144 --> 00:00:06,626
+Every call ended with
+
+4
+00:00:06,676 --> 00:00:08,157
+‘so who’s doing what?’
+
+5
+00:00:08,407 --> 00:00:09,889
+and then nothing happened.
+
+6
+00:00:10,139 --> 00:00:11,620
+So we built Octo.
+
+7
+00:00:11,870 --> 00:00:13,352
+It joins the call,
+
+8
+00:00:13,402 --> 00:00:15,994
+you can ask it things out loud,
+
+9
+00:00:16,044 --> 00:00:17,526
+and after the call
+
+10
+00:00:17,576 --> 00:00:19,428
+everyone gets their own tasks
+
+11
+00:00:19,478 --> 00:00:21,700
+with the exact words they said.
+
+12
+00:00:21,950 --> 00:00:24,172
+It’s on our calls every day.
+
+13
+00:00:24,422 --> 00:00:26,644
+Early access is open, link below.

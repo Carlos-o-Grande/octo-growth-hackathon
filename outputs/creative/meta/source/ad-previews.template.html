@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Octo Meta ad previews</title>
+<!-- Template. render.js inlines the data and images and writes ../ad-previews.html (self-contained). -->
+<style>
+  :root { --bg-0: #0D0818; --bg-1: #1A0033; --text: #F3EEFB; --sub: #CBC0DD; --label: #9A8FAE; --hair: rgba(255,255,255,0.12); --lime: #C4E833; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg-0); color: var(--text); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 72px 40px 80px; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .lab { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--label); }
+  header h1 { font-size: 44px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; margin-top: 14px; }
+  header p { color: var(--sub); font-size: 16px; margin-top: 14px; max-width: 860px; line-height: 1.55; }
+
+  section.ad { display: grid; grid-template-columns: 360px 1fr; gap: 48px; padding: 48px 0; border-top: 1px solid var(--hair); }
+  section.ad:first-of-type { margin-top: 48px; }
+  .info h2 { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; margin: 10px 0 0; }
+  .info dl { margin-top: 26px; display: grid; gap: 18px; }
+  .info dt { margin-bottom: 6px; }
+  .info dd { font-size: 15px; line-height: 1.5; color: var(--sub); }
+  .info dd b { color: var(--text); font-weight: 600; }
+  .info dd.missing { color: var(--label); font-style: italic; }
+  .info dd.url { font-size: 12px; word-break: break-all; border: 1px solid var(--hair); border-radius: 10px; padding: 10px 12px; color: var(--sub); }
+
+  .phones { display: flex; gap: 36px; flex-wrap: wrap; align-items: flex-start; }
+  .slot .lab { margin-bottom: 12px; }
+  .slot .under { font-size: 13px; color: var(--label); margin-top: 12px; width: 360px; line-height: 1.45; }
+
+  /* Instagram feed mockup */
+  .phone { width: 360px; border-radius: 36px; border: 10px solid #1d1b22; background: #fff; color: #050505; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,.5); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .status { height: 30px; display: flex; justify-content: space-between; align-items: center; padding: 0 18px; font-size: 12px; font-weight: 600; }
+  .igbar { padding: 6px 12px 10px; border-bottom: 1px solid #efefef; font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+  .post-h { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+  .av { width: 32px; height: 32px; border-radius: 50%; background: #1A0033; display: grid; place-items: center; overflow: hidden; flex: none; }
+  .av img { width: 44px; height: 44px; object-fit: contain; }
+  .who { line-height: 1.2; flex: 1; }
+  .who b { font-size: 13.5px; }
+  .who span { display: block; font-size: 11.5px; color: #737373; }
+  .media { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .ctabar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; background: #F3F3F5; border-bottom: 1px solid #ececec; }
+  .ctabar .hl { font-size: 13.5px; font-weight: 700; line-height: 1.25; }
+  .btn { flex: none; background: #E4E6EB; color: #050505; font-weight: 600; font-size: 13px; border-radius: 8px; padding: 8px 14px; }
+  .acts { display: flex; gap: 14px; padding: 10px 12px 4px; }
+  .acts svg { width: 24px; height: 24px; }
+  .cap { padding: 4px 12px 14px; font-size: 13.5px; line-height: 1.4; }
+  .cap b { margin-right: 4px; }
+  .cap i { color: #8e8e8e; }
+
+  /* Reels mockup */
+  .reel { position: relative; width: 360px; aspect-ratio: 9 / 16; border-radius: 36px; border: 10px solid #1d1b22; overflow: hidden; background: #000; box-shadow: 0 40px 120px rgba(0,0,0,.5); color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .reel > img.poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .reel .top { position: absolute; top: 12px; left: 14px; font-weight: 700; font-size: 17px; text-shadow: 0 1px 4px rgba(0,0,0,.4); }
+  .reel .play { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.42); border: 1.5px solid rgba(255,255,255,.8); display: grid; place-items: center; backdrop-filter: blur(6px); }
+  .reel .play::after { content: ""; margin-left: 6px; border-style: solid; border-width: 14px 0 14px 22px; border-color: transparent transparent transparent #fff; }
+  .reel .side { position: absolute; right: 10px; bottom: 130px; display: flex; flex-direction: column; gap: 18px; align-items: center; }
+  .reel .side svg { width: 26px; height: 26px; filter: drop-shadow(0 1px 3px rgba(0,0,0,.5)); }
+  .reel .bottom { position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 12px 14px; background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0)); }
+  .reel .rwho { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .reel .rwho span { color: #ddd; font-size: 11.5px; }
+  .reel .rhl { font-size: 13px; font-weight: 700; margin-top: 8px; padding-right: 44px; }
+  .reel .rcap { font-size: 12.5px; line-height: 1.35; margin-top: 4px; padding-right: 44px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .reel .rbtn { margin-top: 10px; background: rgba(255,255,255,.92); color: #050505; text-align: center; font-weight: 600; font-size: 13.5px; border-radius: 8px; padding: 9px; }
+  footer { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--hair); color: var(--label); font-size: 13px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="lab">Octo by Octocrew &middot; Meta &middot; Who&rsquo;s doing what?</div>
+    <h1>Ad previews</h1>
+    <p>Each ad as it reads in an Instagram feed or Reels placement: page name, primary text, headline, button and tracked link, verbatim from <span class="mono">outputs/ads/meta-ads-v2.md</span>. Feed shows the 4:5 static. Video ads show a poster with a play badge; the real creative is the video.</p>
+  </header>
+  <main id="ads"></main>
+  <footer>Mockups for review only; Instagram chrome is simplified. Statics in <span class="mono">static/</span>, videos in <span class="mono">video/</span>. The poster of creative 1 is the demo&rsquo;s own frame at 3 s; the poster of creative 5 is a placeholder until the selfie video is shot.</footer>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const ICON = {
+  heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 20.5s-7.5-4.6-9.2-9.3C1.7 8 3.7 4.8 7 4.8c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.3 0 5.3 3.2 4.2 6.4-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg>',
+  comment: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20.5 12a8.5 8.5 0 1 1-3.6-6.9A8.5 8.5 0 0 1 20.5 12z"/><path d="M20.5 20.5l-3.2-1.6"/></svg>',
+  share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21.5 3 10.5 13.5"/><path d="M21.5 3 15 21l-4.5-7.5L3 9z"/></svg>',
+  save: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M19 21l-7-5-7 5V4.5A1.5 1.5 0 0 1 6.5 3h11A1.5 1.5 0 0 1 19 4.5z"/></svg>'
+};
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const S = DATA.SHARED, IM = DATA.images;
+const avatar = `<div class="av"><img src="${IM.avatar}" alt=""></div>`;
+const NO_PRIMARY = 'No primary text in meta-ads-v2.md yet';
+
+function feed(ad) {
+  return `<div class="slot"><div class="lab">Instagram feed &middot; static 4:5</div>
+  <div class="phone">
+    <div class="status"><span>9:41</span><span>&#9679;&#9679;&#9679;</span></div>
+    <div class="igbar">Instagram</div>
+    <div class="post-h">${avatar}<div class="who"><b>${esc(S.pageName)}</b><span>Sponsored</span></div><div>&middot;&middot;&middot;</div></div>
+    <img class="media" src="${IM[ad.id].feed}" alt="${esc(ad.name)}, static">
+    <div class="ctabar"><div class="hl">${esc(ad.headline)}</div><div class="btn">${esc(ad.button)}</div></div>
+    <div class="acts">${ICON.heart}${ICON.comment}${ICON.share}<span style="margin-left:auto">${ICON.save}</span></div>
+    <div class="cap"><b>${esc(S.pageName)}</b>${ad.primary ? esc(ad.primary) : `<i>${NO_PRIMARY}</i>`}</div>
+  </div></div>`;
+}
+function reel(ad) {
+  const video = ad.reel.kind === 'video';
+  return `<div class="slot"><div class="lab">${video ? 'Reels &middot; video 9:16 (poster)' : 'Reels and Stories &middot; static 9:16'}</div>
+  <div class="reel">
+    <img class="poster" src="${IM[ad.id].reel}" alt="${esc(ad.name)}, ${video ? 'video poster' : 'static'}">
+    <div class="top">Reels</div>
+    ${video ? '<div class="play" aria-label="play"></div>' : ''}
+    <div class="side">${ICON.heart}${ICON.comment}${ICON.share}</div>
+    <div class="bottom">
+      <div class="rwho">${avatar}<b>${esc(S.pageName)}</b><span>&middot; Sponsored</span></div>
+      <div class="rhl">${esc(ad.headline)}</div>
+      <div class="rcap">${ad.primary ? esc(ad.primary) : `<i>${NO_PRIMARY}</i>`}</div>
+      <div class="rbtn">${esc(ad.button)} &rsaquo;</div>
+    </div>
+  </div>
+  <div class="under">${video ? `${esc(ad.reel.dur)} video, see ../video/${ad.reel.note ? '<br>' + esc(ad.reel.note) : ''}` : 'Static card, same file in static/'}</div></div>`;
+}
+document.getElementById('ads').innerHTML = DATA.ADS.map(ad => `
+  <section class="ad">
+    <div class="info">
+      <div class="lab">${ad.n === 'R' ? 'Retargeting' : 'Creative ' + ad.n} &middot; utm_content=${esc(ad.utm.split('utm_content=')[1])}</div>
+      <h2>${esc(ad.name)}</h2>
+      <dl>
+        ${ad.hook ? `<div><dt class="lab">Hook (on screen)</dt><dd>${esc(ad.hook)}</dd></div>` : ''}
+        <div><dt class="lab">Primary text</dt>${ad.primary ? `<dd>${esc(ad.primary)}</dd>` : `<dd class="missing">${NO_PRIMARY}</dd>`}</div>
+        <div><dt class="lab">Headline</dt><dd><b>${esc(ad.headline)}</b></dd></div>
+        <div><dt class="lab">CTA button</dt><dd>${esc(ad.button)}${ad.button === 'Sign up' ? ` (landing CTA: ${esc(S.landingCta)})` : ''}</dd></div>
+        <div><dt class="lab">Link</dt><dd class="url mono">${esc(ad.utm)}</dd></div>
+      </dl>
+    </div>
+    <div class="phones">${ad.feed ? feed(ad) : ''}${ad.reel ? reel(ad) : ''}</div>
+  </section>`).join('');
+</script>
+</body>
+</html>
