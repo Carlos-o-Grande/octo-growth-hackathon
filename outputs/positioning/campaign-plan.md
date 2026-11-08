@@ -28,6 +28,8 @@
 
 **Later, not this week:** the Claude Code and Grok Bot plugins as an awareness channel, AI-influencer demos, ads inside AI assistants and marketplaces. See [`bold-idea-v1.md`](bold-idea-v1.md) #4.
 
+**Growth beyond paid:** a product-led loop where every Meet call is a demo (Oleksii's pick), winning AI answers (AEO), and one narrow use case. See [`growth-strategies-v1.md`](growth-strategies-v1.md).
+
 ## One-liners to A/B test on LinkedIn
 
 1. Note-takers record the meeting. Octo takes part in it.

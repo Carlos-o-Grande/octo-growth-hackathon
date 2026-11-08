@@ -68,4 +68,5 @@ The brief: "one move a normal campaign wouldn't make". Four candidates, each wit
 - **#1** fits the hackathon: the room just watched Octo run a live demo on stage. "The product sells itself on your call" is one line and easy to believe after that.
 - **#3** is how it grows after the campaign: every call brings in the next customer.
 - **#2** is the safest to run this week with no product work, so keep it as a backup if Oleksii says no to #1.
+- **Oleksii's pick (8 Nov): make every Meet call a demo.** It builds on #3 as the growth loop. Plan and rules: [`growth-strategies-v1.md`](growth-strategies-v1.md).
 - **#4** is where Octo goes next. Show it in the pitch as the distribution bet, and test demand today with the waitlist buttons.
