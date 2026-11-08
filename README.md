@@ -8,6 +8,10 @@ The product works today. What it doesn't have yet is a launch. This repo is the 
 
 ![Octo on a Google Meet call](assets/screenshots/octo-tile-status.png)
 
+## Today's brief
+
+**Six things in three hours** (Plan, Landing page, Targeting & campaign, Social, Paid, Bold idea): see [`launch/hackathon-plan.md`](launch/hackathon-plan.md) for who does what and when.
+
 ## Start here (10 minutes)
 
 1. Watch the 36-second demo: [`assets/octo-demo-36s-16x9.mp4`](assets/octo-demo-36s-16x9.mp4)
@@ -37,6 +41,8 @@ The product works today. What it doesn't have yet is a launch. This repo is the 
 
 **Oleksii Nikitin**, founder of Octocrew ([octocrew.ai](https://octocrew.ai)): product, demo, access, anything about Octo.
 
-## Confidentiality
+## This repo is public
 
-This is a private repo for the hackathon team. Please don't repost the materials outside the team without asking. © Octocrew, all rights reserved.
+Anyone can read it. Don't put client names, real numbers, call transcripts, CRM exports or any keys and passwords here. The people and the project in the demo videos and screenshots are made up.
+
+© Octocrew, all rights reserved. Ask Oleksii before reusing the materials outside this hackathon.

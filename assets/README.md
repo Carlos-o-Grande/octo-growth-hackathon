@@ -8,4 +8,4 @@
 | `octo-demo-36s-9x16.mp4` | 36-second demo, vertical (Reels, TikTok, Shorts) |
 | `screenshots/` | Octo on a call, and the Octo character |
 
-The videos are illustrations: the people and the project in them are made up. Ask Oleksii before posting anything publicly.
+The videos are illustrations: the people and the project in them are made up. Use them on the hackathon landing page and in draft posts and ads. Ask Oleksii before posting them on social media or anywhere else.
