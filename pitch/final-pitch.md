@@ -2,42 +2,26 @@
 
 The closing pitch for the judges, after the build. The morning pitch ([`pitch-script.md`](pitch-script.md)) recruited the team; this one shows the launch. Live demo setup and backup lines: [`product/live-demo.md`](../product/live-demo.md).
 
-**On screen:** the live site https://octo-landing-47q.pages.dev in one tab, a fresh Google Meet with Octo in another. The 36-second video is the backup if the call fails.
+**Slides:** https://octo-landing-47q.pages.dev/pitch (not linked from the site, not indexed). Arrow keys or click to move, F for full screen. A fresh Google Meet with Octo in a second tab for slide 5.
 
-## Flow
+## Flow, slide by slide (2 minutes)
 
-| Time | On screen | Who | What |
-|---|---|---|---|
-| 0:00–0:15 | Landing hero | Oleksii | The problem and the one-liner |
-| 0:15–0:55 | Google Meet | Oleksii | Live: two lines to Octo |
-| 0:55–1:15 | Landing, scroll to Compare | Team | Who it's for and why it's different |
-| 1:15–1:35 | Meta creatives + plan | Team | The campaign and the €1,000 |
-| 1:35–1:50 | Pricing page | Team | How it makes money |
-| 1:50–2:00 | Landing hero | Oleksii | The bold move and the close |
-
-## Word for word
-
-**0:00 Hook (landing hero).** Every small team ends its calls with the same question: so who's doing what? Teams under fifty people don't have a project manager, so it lands on the founder. Note-takers record the meeting. Octo takes part in it.
-
-**0:15 Live demo (Meet).** Octo is on this call. Let me ask it.
-
-*[Line 1: "Octo, show our high-priority tasks in progress, by owner, on your tile." Wait about 9 seconds.]*
-
-*[Line 2: "Octo, sum up this call in one sentence." Wait about 3 seconds.]*
-
-After the call, everyone here gets their own tasks, with the exact words they said, and ClickUp or Asana updates itself. That's a junior project manager on every call.
-
-**0:55 Who and why (Compare section).** We picked one customer: small teams without a project manager, from remote agencies to startups. We checked twelve competitors. "AI teammate" and "follow-up" are taken. Nobody claims what Octo does: it takes part on any platform, gives each person their tasks with the quote, and closes them when someone says "done" on the next call.
-
-**1:15 The campaign (creatives, plan).** One campaign: "Who's doing what?". Meta is the main channel, with five vertical creatives built from the real product. €700 on Meta, €300 for YouTube creators who already review meeting tools. The landing page is live, with Grona on it, and every ad points to one button: invite Octo to your next call.
-
-**1:35 Pricing.** One price for the whole team, no seats. Pay as you go from twenty dollars, or plans from forty-nine with credits included.
-
-**1:50 Bold move and close.** Our bold move: every call is a demo. Every guest on an Octo call sees it work, and gets their own task with a link to get Octo. Note-takers grew by sitting in other people's meetings. Octo grows by being useful in them. Thank you.
+| Time | Slide | Say (short) |
+|---|---|---|
+| 0:00 | 1 · Title | "Note-takers record the meeting. Octo takes part in it. Here's how we take it to market, and what we shipped today." |
+| 0:10 | 2 · Who we sell to | "Small teams, up to fifty people, with no project manager. The founder chases every follow-up. Sharpest slice: remote agencies." |
+| 0:22 | 3 · Market | "Fifty-five percent of people leave meetings without clear next steps. Agency leaders spend sixty-nine percent of their time in meetings or managing the team. And buyers are switching: the biggest note-taker lost thirty-four points of share in a year." |
+| 0:37 | 4 · Why we win | "Twelve competitors checked. Nobody claims all four: speaking on the call, each person's tasks with the quote, closing tasks on 'done', any platform." |
+| 0:47 | 5 · Live (switch to Meet) | Line 1: "Octo, show our high-priority tasks by owner, on your tile." Then: "After the call, everyone gets their tasks, and the tracker updates itself." |
+| 1:12 | 6 · Go-to-market | "One campaign, 'Who's doing what?'. Seven hundred on Meta, three hundred on creators, organic on LinkedIn and Reddit. One button: invite Octo to your next call." |
+| 1:24 | 7 · Creatives | "Twenty-eight creatives, built from the real product, ready to run." |
+| 1:32 | 8 · Shipped today | "Not a plan on slides. The landing is live with Grona, plus the comparison and pricing pages, and forty-five creators shortlisted." |
+| 1:42 | 9 · Growth engine | "Our bold move: every call is a demo. Guests see Octo work and get their own task, with a link to get Octo. Per company pricing, from forty-nine dollars." |
+| 1:52 | 10 · First 7 days | "In seven days: ten invites, one winning creative, one winning line. Invite Octo to your next call. Thank you." |
 
 ## 90-second cut
 
-Drop the Pricing beat and line 2 of the demo. Keep the hook, line 1, who and why, the campaign, and the close.
+Skip slides 3 and 8: say the market in one line on slide 2, and point at the live pages on slide 7.
 
 ## Before going on stage
 
