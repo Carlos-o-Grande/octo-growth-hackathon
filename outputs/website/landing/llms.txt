@@ -18,7 +18,8 @@ Note-takers such as Granola, Fireflies, Otter and Fathom record the meeting and 
 
 ## Pages
 
-- [Home](https://octo-landing-47q.pages.dev/): what Octo does, the demo videos, FAQ
+- [Home](https://octo-landing-47q.pages.dev/): what Octo does, the demo videos
+- [FAQ](https://octo-landing-47q.pages.dev/faq): who it is for, note-takers, platforms, trackers, cost
 - [Octo vs Granola, Fireflies, Otter and Fathom](https://octo-landing-47q.pages.dev/compare): side-by-side comparison with sources
 - [Pricing](https://octo-landing-47q.pages.dev/pricing): plans, credits and pay as you go
 
