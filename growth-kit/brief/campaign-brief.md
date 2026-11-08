@@ -22,7 +22,7 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 
 - **Category:** AI meeting assistant / AI note-taker. [ASSUMED]
 - **Main alternative:** Fireflies or Otter, which already answer questions in calls on a wake word ("Hey Fireflies" is free on Meet, Zoom and Teams). ([source](https://guide.fireflies.ai/articles/8186888414-talk-to-fireflies-in-live-meetings)) Also ZoomMate, sold as "your AI teammate" at $20 per user. ([source](https://www.zoom.com/en/products/ai-assistant/))
-- **Only Octo [ASSUMED, to test with buyers]:** closes the loop in the team's own tracker, updating tasks when someone says "done" on a later call, sends each person their tasks by DM with the exact quote, and does it as one agent across six platforms including Slack Huddles, Webex and GoTo. ([source](../../market/landscape.md), team)
+- **Only Octo [ASSUMED, to test with buyers]:** updates the task in the team's own tracker when someone says "done" on a later call, and sends each person only their own tasks by DM with the exact quote, as one agent across six platforms including Slack Huddles, Webex and GoTo. Creating tasks from a call is NOT unique (Teams Facilitator, ClickUp AI Notetaker, Mina claim it), and neither is speaking on a wake word. ([source](../outputs/research/market-landscape.md), [teardown](../outputs/research/competitor-teardown.md))
 
 ## Promise
 
