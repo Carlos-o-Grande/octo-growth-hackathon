@@ -51,7 +51,7 @@ Review bar before anything ships: look at every frame at phone size next to a Li
 
 | Placement | Size | Safe zone |
 |---|---|---|
-| Reels / Stories (9:16) | 1080 x 1920 | Keep text and CTA out of the top 250 px and bottom 420 px (Reels UI) |
+| Reels / Stories (9:16) | 1080 x 1920 | Keep text and CTA out of the top 250 px and the bottom 35% (670 px, Meta's Reels ads guidance) |
 | Feed (4:5) | 1080 x 1350 | 60 px margin |
 | LinkedIn / Instagram carousel | 1080 x 1350 | 72 px margin |
 | LinkedIn single image | 1200 x 1200 | 72 px margin |
@@ -60,7 +60,7 @@ Review bar before anything ships: look at every frame at phone size next to a Li
 
 - Source of truth for every word: `brief/campaign-brief.md`, `outputs/ads/meta-ads-v2.md` (5 Meta creatives + retargeting) and `outputs/social/social-posts-v1.md`. Use their copy verbatim; do not rewrite it.
 - Campaign: "Who's doing what?". One-liner: "Note-takers record the meeting. Octo takes part in it."
-- CTA: "Get early access" (Meta button: as written per ad, "Sign up" or "Learn more").
+- CTA: "Invite Octo to your next call" (landing button, decided 15:10; replaces "Get early access"). Meta button: as written per ad ("Sign up" or "Learn more").
 - UTM: `utm_source=meta&utm_medium=paid&utm_campaign=whos-doing-what&utm_content=<creative>`; social: `utm_source=<network>&utm_medium=social&utm_campaign=octo-early-access`.
 - No invented numbers, customers or logos. People in the demo are made up.
 - No em dashes.
