@@ -2,7 +2,20 @@
 
 2026-11-08. Input for the team's alignment and for campaign-builder. Each hypothesis is a campaign angle we could test with the €150 to €200 test budget. Capabilities are cited to the repo (`product/`, `launch/`) or to `outputs/research/`. Anything Octo would need to do that is not documented is marked **Confirm with Oleksii**.
 
-## Summary
+## Team decision (2026-11-08): one persona, four value-prop variants
+
+The team keeps one persona (founders, heads of ops and delivery leads at remote agencies, 10 to 50 people) and tests several value propositions against it as ad and landing variants, instead of widening the persona to "anyone who wants to be more productive". Reasons: the generic productivity message is what free note-takers already say, the individual-productivity audience shows the least willingness to pay (`voice-of-customer.md`), and "productive people" cannot be targeted on LinkedIn or Meta.
+
+| Variant | Value proposition | Hook draft | Backed by |
+|---|---|---|---|
+| V1 Follow-through | Every task reaches the tracker and updates itself | "Your client said it on the call. Did it make it into Asana?" | Tasks by DM with quote; tracker create and update (`product/overview.md`) |
+| V2 Prep | Walk into every call already knowing what matters | "The brief is ready before you join." | Pre-call brief: attendees, last discussion, open items (`product/overview.md`) |
+| V3 Presence | Talk instead of taking notes | "Nobody on your team has to be the note-taker." | Octo captures and distributes tasks (`product/overview.md`) |
+| V4 Decide on the call | Status answered on the spot, so the decision happens in the meeting | "Where are we on the launch? Octo puts it on its tile." | Answers from tracker, CRM and knowledge base; shows it on its tile (`product/overview.md`, `product/live-demo.md`) |
+
+"Shorter meetings" is a benefit we may describe, never a measured claim: there is no number behind it. The client-facing side of V2 (objections, pertinent info for the client) stays out of ads until Oleksii confirms what client mode allows (H2 below).
+
+## Original hypotheses
 
 | # | Angle | Who it is for | Status |
 |---|---|---|---|
