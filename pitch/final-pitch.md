@@ -6,22 +6,25 @@ The closing pitch for the judges, after the build. The morning pitch ([`pitch-sc
 
 ## Flow, slide by slide (2 minutes)
 
-| Time | Slide | Say (short) |
-|---|---|---|
-| 0:00 | 1 · Title | "Note-takers record the meeting. Octo takes part in it. Here's how we take it to market, and what we shipped today." |
-| 0:10 | 2 · Who we sell to | "Small teams, up to fifty people, with no project manager. The founder chases every follow-up. Sharpest slice: remote agencies." |
-| 0:22 | 3 · Market | "Fifty-five percent of people leave meetings without clear next steps. Agency leaders spend sixty-nine percent of their time in meetings or managing the team. And buyers are switching: the biggest note-taker lost thirty-four points of share in a year." |
-| 0:37 | 4 · Why we win | "Twelve competitors checked. Nobody claims all four: speaking on the call, each person's tasks with the quote, closing tasks on 'done', any platform." |
-| 0:47 | 5 · Live (switch to Meet) | Line 1: "Octo, show our high-priority tasks by owner, on your tile." Then: "After the call, everyone gets their tasks, and the tracker updates itself." |
-| 1:12 | 6 · Go-to-market | "One campaign, 'Who's doing what?'. Seven hundred on Meta, three hundred on creators, organic on LinkedIn and Reddit. One button: invite Octo to your next call." |
-| 1:24 | 7 · Creatives | "Twenty-eight creatives, built from the real product, ready to run." |
-| 1:32 | 8 · Shipped today | "Not a plan on slides. The landing is live with Grona, plus the comparison and pricing pages, and forty-five creators shortlisted." |
-| 1:42 | 9 · Growth engine | "Our bold move: every call is a demo. Guests see Octo work and get their own task, with a link to get Octo. Per company pricing, from forty-nine dollars." |
-| 1:52 | 10 · First 7 days | "In seven days: ten invites, one winning creative, one winning line. Invite Octo to your next call. Thank you." |
+The judges score four questions, 15 points each: **Insight**, **Website**, **Reality**, **Agents**. Every slide is labelled with the one it answers.
+
+| Time | Slide | Criterion | Say (short) |
+|---|---|---|---|
+| 0:00 | 1 · Title | | "Note-takers record the meeting. Octo takes part in it. Here's how we take it to market." |
+| 0:08 | 2 · The buyer | Insight | "The founder of a fifteen-person agency, no project manager. Thursday, a client asks: did that get done? The AI summary went to everyone. A summary sent to everyone belongs to no one. So Octo gives each person their own tasks." |
+| 0:25 | 3 · Market | Insight | "Fifty-five percent leave meetings without clear next steps, and buyers are switching note-takers fast." |
+| 0:32 | 4 · Why we win | Insight | "Nobody else claims all four." |
+| 0:38 | 5 · Live (switch to Meet) | Product | Line 1 to Octo, then: "after the call, everyone gets their own tasks." |
+| 1:00 | 6 · Website | Website | "The ad and the page say the same thing, to the same buyer, with one button." |
+| 1:10 | 7 · Reality | Reality | "Live page, Grona on every page, four audiences, and the headline changes for each one." |
+| 1:22 | 8 · Campaign | Reality | "Seven hundred on Meta, three hundred on creators, one funnel to the invite." |
+| 1:32 | 9 · Agents | Agents | "Claude Code agents did the work and checked each other: here's what they caught and what changed." |
+| 1:45 | 10 · Growth engine | | "Every call is a demo. Per company pricing from forty-nine dollars." |
+| 1:53 | 11 · First 7 days | | "Ten invites in seven days. Invite Octo to your next call. Thank you." |
 
 ## 90-second cut
 
-Skip slides 3 and 8: say the market in one line on slide 2, and point at the live pages on slide 7.
+Skip slides 3, 8 and 10. Keep one slide per criterion: 2 (Insight), 6 (Website), 7 (Reality), 9 (Agents), plus the demo.
 
 ## Before going on stage
 
@@ -31,7 +34,7 @@ Skip slides 3 and 8: say the market in one line on slide 2, and point at the liv
 - [ ] Octo joins as "Octo Notetaker Agent". On stage that name contradicts "not a note-taker". Ask `ops-okto` whether the display name can be just "Octo" today.
 - [ ] Tabs open: the landing, `/compare`, `/pricing`, the Meta creatives pack, the plan.
 - [ ] Backup video ready: `assets/octo-demo-36s-16x9.mp4`.
-- [ ] Grona campaign switched on, so the "live in Grona" claim is true.
+- [ ] Grona campaign switched on (setup: `outputs/website/grona-setup.md`). Then flip the Reality slide status from "Setting up" to "Live".
 
 ## Likely questions
 
