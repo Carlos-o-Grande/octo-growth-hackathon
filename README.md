@@ -26,6 +26,7 @@ Drafts, ready to argue with:
 | Bold idea | [`outputs/positioning/bold-idea-v1.md`](outputs/positioning/bold-idea-v1.md) |
 | Targeting | Audiences in [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md) |
 | Market research | [`outputs/research/market-research-v1.md`](outputs/research/market-research-v1.md) |
+| Final pitch (2 min, with live demo) | [`pitch/final-pitch.md`](pitch/final-pitch.md) |
 | Pricing | Live at https://octo-landing-47q.pages.dev/pricing, source `outputs/website/landing/pricing.html` |
 | Growth strategies (PLG loop, AEO, narrow use case) | [`outputs/positioning/growth-strategies-v1.md`](outputs/positioning/growth-strategies-v1.md) |
 
