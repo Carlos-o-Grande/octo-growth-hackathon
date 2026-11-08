@@ -1,6 +1,6 @@
 # Campaign Brief
 
-Draft by product-scout, 2026-11-08. Research and sources: `outputs/research/product-scout.md`. Repo paths (for example `product/overview.md`) are relative to the repo root, one level above `growth-kit/`. Next step: brand-strategist confirms the [ASSUMED] items with Oleksii.
+Draft by product-scout, 2026-11-08, aligned at 13:40 WET with the founder's defaults in `launch/hackathon-plan.md`, `launch/audiences.md` and the root `brief/campaign-brief.md` (those win on any conflict until the team freezes the brief). Research and sources: `outputs/research/`. Repo paths (for example `product/overview.md`) are relative to the repo root, one level above `growth-kit/`.
 
 ## Deliverable language
 
@@ -12,7 +12,7 @@ Octo is an AI teammate that joins your team's video calls as a participant: you 
 
 ## Audience / ICP
 
-[ASSUMED] Operations or delivery leads at remote agencies and studios of 10 to 50 people who run many client and team calls on mixed platforms and live in ClickUp, Asana or Trello. Trigger moment: a client asks for something agreed on a call two weeks ago and nobody owns it. Today they use a human note-taker, an AI note-taker (Otter, Fireflies, Fathom) plus manual copy into the tracker, or nothing. ([source](../../launch/hypotheses.md), team hypothesis 1 of 3; alternatives: startup product teams on Jira or Linear, founder-led businesses with no PM)
+Founders, managing directors and heads of operations at remote agencies and studios with 10 to 50 people. They run many client and team calls a week, on Google Meet, Zoom and Teams depending on the client. The team lives in ClickUp, Asana or Trello. Trigger moment: a client asks "did you get to the thing I mentioned on Tuesday's call?" and nobody wrote it down. ([source](../../brief/campaign-brief.md), founder default; audience #1 in [audiences.md](../../launch/audiences.md)) Intent audience: note-taker switchers searching "Otter alternative" (#4). Always on: retargeting (#6). Tests: product leads on Jira or Linear (#2), founder-led SMBs (#3).
 
 ## Problem they have
 
@@ -26,7 +26,7 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 
 ## Promise
 
-[ASSUMED] Note-takers record the meeting. Octo takes part in it and keeps the work moving after. ([source](../../assets/octo-pitch-deck.pdf), deck slide 1, self-reported)
+Note-takers record the meeting. Octo takes part in it, and makes sure every task from the call lands with an owner in your tracker. ([source](../../brief/campaign-brief.md), founder) Short one-liner: "Note-takers record the meeting. Octo takes part in it." Hook: "Every call ends with: so who's doing what?" ([source](../../launch/hackathon-plan.md))
 
 ## Proof
 
@@ -37,11 +37,11 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 
 ## Conversion goal
 
-[ASSUMED] Join the waitlist (or "bring Octo to your next call") on the Octo landing page. [TO ADD] the real destination; none exists yet.
+"Get early access" on the landing page: one button. ([source](../../brief/campaign-brief.md)) [TO ADD] the team must pick one mechanic, the sources disagree: root brief says "leave a work email", the plan says "book a demo", the v0 page opens an email to hello@octocrew.ai ([source](https://octocrew-hq.github.io/octo-landing/)). The offer behind it: Octo set up on the team's calls with their tracker, free pilot, length [TO ADD]. ([source](../../launch/hackathon-plan.md))
 
 ## Tone
 
-[ASSUMED] Plain, concrete, dryly confident. Sounds like Linear's product copy: short sentences that show the work. Must never sound like generic AI hype (big verbs, no proof, no product on screen). Basis: the deck's own voice. ([source](../../assets/octo-pitch-deck.pdf), self-reported)
+Direct, practical, a little cheeky. ([source](../../brief/campaign-brief.md), founder) [ASSUMED] Sounds like Linear's product copy; never like generic AI hype (big verbs, no proof, no product on screen).
 
 ## Do not say
 
@@ -58,7 +58,7 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 
 ## Landing page URL
 
-[TO ADD] exact URL. Decision (team, verbal, 2026-11-08): Octo lives on a subdomain of the official site, octocrew.ai. No Octo page exists yet; https://www.octocrew.ai/ sells Octocrew's marketing agents and does not mention Octo.
+Today: v0 at https://octocrew-hq.github.io/octo-landing/ (fetched 2026-11-08, 200). Event: the Grona page replaces it once live. Later: a subdomain of octocrew.ai (team, verbal, 2026-11-08), exact URL [TO ADD]. https://www.octocrew.ai/ itself sells Octocrew's marketing agents and does not mention Octo.
 
 ## Competitors
 
@@ -69,7 +69,8 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 ## Constraints (optional)
 
 - Event: Growth Marketing Hackathon, Portugal, 8 Nov 2026. Final pitch is 90 seconds, built around a live Google Meet demo with Octo, with the 36-second video as backup. ([source](../../pitch/pitch-script.md))
-- Repo is private; materials are not to be reposted outside the team without asking Oleksii. ([source](../../README.md))
+- The repo is public since 2026-11-08: no client names, real numbers, transcripts, CRM exports or keys. Demo videos may be used on the hackathon landing page and in draft posts and ads; ask Oleksii before posting them on social media. ([source](../../README.md), [assets](../../assets/README.md))
+- Who does what and the 180-minute timeline: [hackathon-plan.md](../../launch/hackathon-plan.md). Default €1,000 split: LinkedIn 400, Meta/Reels 250, Google Search 200, test 150.
 - Team workstreams: positioning and ICP, growth loop, brand, landing page, content and video, pricing. ([source](../../launch/workstreams.md))
 - Event deliverables, from the organiser's slide "What every team ships" (Grona x 42, photo, team, 2026-11-08): six things in three hours, and only the Grona work goes live.
   1. Plan: one page on audience, offer, channels and how you'd spend €1,000.
@@ -78,6 +79,6 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
   4. Social: posts ready to publish; they don't need to go live.
   5. Paid: ads ready to run; they don't need to go live.
   6. Bold idea: one move a normal campaign wouldn't make.
-- Team split: Diego owns Targeting and campaign plus Social posts. [TO ADD] owners for the other four.
+- Team split: Diego owns Targeting and campaign plus Social posts (team, verbal). The founder's plan has Targeting and campaign with Paid (person C) and Social with ad creatives (person D). [TO ADD] confirm who takes Paid.
 - Budget: €1,000 hypothetical spend for the Plan (organiser's slide). No real spend agreed. Any paid media generation or crawl needs the team's OK first.
 - [TO ADD] Judging criteria and submission deadline.

@@ -3,7 +3,7 @@
 ## Snapshot
 
 - **Checked:** 2026-11-08 13:25 WET (Lisbon), during the Growth Marketing Hackathon, Portugal.
-- **Input received:** the team repo (github.com/pandore/octo-growth-hackathon, private): `README.md`, `product/`, `launch/`, `market/`, `pitch/`, `assets/octo-pitch-deck.pdf`. Plus the company site octocrew.ai.
+- **Input received:** the team repo (github.com/pandore/octo-growth-hackathon, public since 2026-11-08): `README.md`, `product/`, `launch/`, `market/`, `pitch/`, `assets/octo-pitch-deck.pdf`. Plus the company site octocrew.ai.
 - **Official URL:** https://www.octocrew.ai/ (company). **Octo has no public page of its own.** The site sells a different product line (AI marketing agents) and does not mention Octo or a meeting agent anywhere on the pages fetched.
 - **Repo paths below** are relative to the repo root. Type `team` = written by the founder in the repo; `self-reported` = Octocrew's own public site or deck.
 
