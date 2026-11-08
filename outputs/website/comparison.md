@@ -23,7 +23,7 @@ For note-taker switchers, the comparison explains Octo faster than any headline.
 
 | | Octo | Granola | Fireflies | Otter | Fathom |
 |---|---|---|---|---|---|
-| Joins the call as a participant | Yes, visible bot | No bot, uses your device audio [1] | Yes, bot | Yes, bot | Yes, bot, plus a bot-free option [2] |
+| Joins the call as a participant | Yes, a visible participant | No bot, uses your device audio [1] | Yes, bot | Yes, bot | Yes, bot, plus a bot-free option [2] |
 | Speaks on the call | Yes, when called by name | No | Yes, "Talk to Fireflies" on a wake word [3] | Yes, "Hey Otter" Meeting Agent, Zoom first [4] | Not found |
 | Shows answers on its own video tile | Yes: lists, tables, tasks by owner | No | Not found | Not found | Not found |
 | Tasks after the call | Each person gets their own tasks by message, with a deadline and the exact quote | Notes, sent to Notion, Attio or HubSpot [1] | "Create tasks automatically after every meeting" [5] | Action items, follow-up email drafts [4] | Summaries and action items, Asana and Zapier integrations [2] |

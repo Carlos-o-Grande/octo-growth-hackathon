@@ -20,14 +20,14 @@ Drafts, ready to argue with:
 |---|---|
 | Brief (every agent reads it first) | [`brief/campaign-brief.md`](brief/campaign-brief.md) |
 | Plan | [`outputs/positioning/campaign-plan.md`](outputs/positioning/campaign-plan.md) |
-| Landing page | Live at https://octo-landing-47q.pages.dev (Grona installed), source in [`outputs/website/`](outputs/website/), comparison section: [`outputs/website/comparison.md`](outputs/website/comparison.md) |
+| Landing page | Live at https://octo-landing-47q.pages.dev (Grona installed), source in [`outputs/website/`](outputs/website/), comparison live at https://octo-landing-47q.pages.dev/compare, copy in [`outputs/website/comparison.md`](outputs/website/comparison.md) |
 | Paid (main channel: Meta) | [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md): 5 vertical creatives |
 | Social | [`outputs/social/social-posts-v1.md`](outputs/social/social-posts-v1.md) |
 | Bold idea | [`outputs/positioning/bold-idea-v1.md`](outputs/positioning/bold-idea-v1.md) |
 | Targeting | Audiences in [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md) |
 | Market research | [`outputs/research/market-research-v1.md`](outputs/research/market-research-v1.md) |
 | Final pitch (2 min, with live demo) | [`pitch/final-pitch.md`](pitch/final-pitch.md) |
-| Pitch deck (11 slides, mapped to the judging criteria) | https://octo-landing-47q.pages.dev/pitch (hidden, noindex) |
+| Pitch deck (12 slides, mapped to the judging criteria) | https://octo-landing-47q.pages.dev/pitch (hidden, noindex) |
 | Grona setup: audiences and campaign | [`outputs/website/grona-setup.md`](outputs/website/grona-setup.md) |
 | Pricing | Live at https://octo-landing-47q.pages.dev/pricing, source `outputs/website/landing/pricing.html` |
 | Influencers beyond YouTube (27) and YouTube re-check | [`outputs/research/influencers-v1.md`](outputs/research/influencers-v1.md) |
