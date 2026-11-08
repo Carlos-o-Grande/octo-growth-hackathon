@@ -10,9 +10,9 @@
 |---|---|---|---|
 | 1. Nobody types (answers "AI notes die in a doc nobody checks") | You talk; Octo turns the call into updates in your tracker, CRM and Notion. Everyone gets their own tasks by DM with the exact quote, and a task updates when someone says "done" on a later call. | Founder on Octocrew's own calls: "we're not writing anything, we just speak and discuss and then all the information in our Notion, in our CRM is being updated"; tracker create and update, per-person DM with quote | Brief Proof 4 (founder, verbal, self-reported); `product/overview.md`; gap 1 in `outputs/research/competitor-teardown.md` |
 | 2. Decide on the call (answers "we still have to go look it up after") | Ask Octo by name; it answers from your tracker, CRM and knowledge base and shows it on its tile. No tab-switching, so the decision happens in the meeting. | Live demo: tasks by owner on its tile in about 9 seconds, calendar event booked after a spoken "yes"; founder: "faster decisions ... because everything [is] integrated" | `product/live-demo.md`; Brief Proof 4 |
-| 3. Quiet until you call it, on every platform (answers "another bot in my calls" and "we already have Gemini") | Octo joins the calls on your calendar and stays silent. It speaks only when you call it by name. It works on Meet, Teams, Zoom, Slack Huddles, Webex and GoTo, while built-in AI stays inside one platform. | Founder: "it just sits there and in silence ... if we call him and ask something, it can interact"; six platforms documented; Gemini in Meet takes notes into a Doc | Brief Proof 4; `product/overview.md`; `market/landscape.md` [24][25] |
+| 3. Quiet until you call it, on every platform (answers "another bot in my calls" and "we already have Gemini") | You choose which calendar events Octo joins, and it stays silent there. It speaks only when you call it by name. It works on Meet, Teams, Zoom, Slack Huddles, Webex and GoTo, while built-in AI stays inside one platform. | Founder: "it just sits there and in silence ... if we call him and ask something, it can interact"; six platforms documented; Gemini in Meet takes notes into a Doc | Brief Proof 4; `product/overview.md`; `market/landscape.md` [24][25] |
 
-CTA: Get early access -> https://octocrew-hq.github.io/octo-landing/ (v0 today; replaced by the Grona page URL once live, [TO ADD])
+CTA: Start free trial -> the Grona landing page ([TO ADD] URL, being built by the team; v0 https://octocrew-hq.github.io/octo-landing/ until then). The trial is set up by the Octocrew team on the trial team's calls, not self-serve.
 
 The four variants are entry hooks into this same house (`value-prop-hypotheses.md`): V1 the task lands in your tracker, V2 the brief is ready before you join, V3 nobody types, V4 decide on the call. They change the first line of an ad and the landing hero, never the promise or the CTA.
 
@@ -48,7 +48,7 @@ One agent the whole team talks to on internal calls (what Octo does today), and 
 | #1 Agencies by interest | Meta | Interests: Asana, Trello, Notion, ClickUp, Monday.com, HubSpot, agency owners, small business owners. Age 25-55. Exclude page visitors | V1, V2, V3, V4 |
 | #3 Founder-led SMB | Meta | Small business owners, interests Notion, Trello, productivity; 2-50 | "The PM you don't have" vs the best V |
 | Intent | Google | Phrase match: "meeting notes to asana", "meeting notes to crm", "update crm from meetings", "meeting notes to notion", "ai meeting assistant that creates tasks". Negatives: free, transcription, "otter alternative", jobs, template | V3, V1 |
-| #6 Retargeting | Meta (LinkedIn once the audience reaches the minimum size) | Landing visitors 30 days, 50%+ demo viewers, excluding sign-ups | The winning variant + "Still typing up notes after calls? Get early access." |
+| #6 Retargeting | Meta (LinkedIn once the audience reaches the minimum size) | Landing visitors 30 days, 50%+ demo viewers, excluding sign-ups | The winning variant + "Still typing up notes after calls? Start a free trial." |
 
 Ad copy names only tools confirmed in writing (Notion, Asana, Trello, "your CRM"). ClickUp and Jira were confirmed verbally in the team discussion: name them once Oleksii confirms in writing. Which CRMs Octo writes to is [TO ADD]; until then say "your CRM". Grona's real targeting options are [TO ADD]: check whether it offers title and size or interests only.
 
@@ -75,7 +75,7 @@ Hackathon mapping (3 hours): Plan = this file. Landing page = Day 1 landing row.
 
 ## Budget split
 
-Assumptions: euros treated at parity with the USD benchmarks (conservative if the euro is above the dollar) [ASSUMED]. Landing conversion = "Get early access" with a work email.
+Assumptions: euros treated at parity with the USD benchmarks (conservative if the euro is above the dollar) [ASSUMED]. Landing conversion = "Start free trial" form (work email, tracker, CRM, call platforms). Free-trial pages convert at a median of about 8% (https://www.saashero.net/strategy/b2b-saas-conversion-rate-benchmarks/, snippet), but this trial is set up by the team and the form is longer, so the conservative rates below are kept.
 
 | Assumption | Value | Source |
 |---|---|---|
@@ -98,7 +98,7 @@ Math per line: clicks = spend / CPC; sign-ups = clicks x conversion rate; cost p
 
 ## KPIs
 
-- **North star: early-access sign-ups (work email) on the landing page.** Target for the €1,000 flight: 9 (from the budget math). Real goal behind it: 3 to 5 agencies start a pilot [ASSUMED].
+- **North star: free-trial sign-ups on the landing page.** Target for the €1,000 flight: 9 (from the budget math). Real goal behind it: 3 to 5 agencies start a set-up trial [ASSUMED].
 - **Cost per sign-up:** target ≤ €113 blended; LinkedIn benchmark $202 per lead (Metadata 2025), so the blend leans on cheaper Meta clicks.
 - **Ad CTR:** LinkedIn ≥ 0.67% (Metadata 2025); Meta ≥ 1.40% (Superads SaaS).
 - **Landing conversion rate:** ≥ 3% of paid clicks (292 clicks, 9 sign-ups); B2B SaaS demo-request pages run 1.5% to 4% (https://www.saashero.net/strategy/b2b-saas-conversion-rate-benchmarks/, snippet).
@@ -141,6 +141,6 @@ Examples (v0 base until the Grona URL exists):
 
 ## Risks and assumptions
 
-1. **Auto-join is the top objection.** Octo joins calendar events on its own, and uninvited bots are the most repeated complaint about Fireflies and Otter (19 of 34 customer quotes are about consent or bot fatigue). Pillar 3 answers with "quiet until you call it", which is true; it does not claim "only when invited". [TO ADD] whether a team can pick which events Octo joins, and what Octo never does.
-2. **The main proof is the founder's own use.** "We just talk and everything updates" comes from Octocrew's internal calls, self-reported, with no number. One internal number (calls per week, records updated) would make every asset stronger. Which CRMs are supported is also [TO ADD].
-3. **The numbers are directional, and the CTA mechanic is open.** €1,000 buys about 290 clicks and 9 sign-ups at benchmark rates, Meta conversion rates are [ASSUMED], and the math assumes a one-field work-email form. A demo booking or a mailto link would convert lower. The team still has to choose between the brief's work email, the plan's demo booking and the v0 page's email to hello@octocrew.ai.
+1. **Auto-join is the top objection.** Octo joins calendar events on its own, and uninvited bots are the most repeated complaint about Fireflies and Otter (19 of 34 customer quotes are about consent or bot fatigue). Pillar 3 answers with "quiet until you call it", which is true; it does not claim "only when invited". Teams can pick which events Octo joins (founder, verbal), so the line "You choose which calls it joins" is true. [TO ADD] what Octo never does.
+2. **The main proof is the founder's own use.** "We just talk and everything updates" comes from Octocrew's internal calls, self-reported, with no number. No internal number exists today (team, 2026-11-08), so the live demo and the founder's words carry the proof. CRM names stay out of ads until Oleksii confirms the list; the landing FAQ may list the main ones with "tell us yours".
+3. **The numbers are directional.** €1,000 buys about 290 clicks and 9 sign-ups at benchmark rates; Meta conversion rates are [ASSUMED]. The CTA is now a free trial set up by the team: if the form asks for too much, conversion drops, so keep it to work email plus three dropdowns (tracker, CRM, call platform). Trial length is [TO ADD].

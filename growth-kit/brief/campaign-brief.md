@@ -37,11 +37,13 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 3. Live demo: tasks by owner on its tile in about 9 seconds, a calendar event booked after a spoken "yes", a one-line recap in about 3 seconds. ([source](../../product/live-demo.md), team)
 4. Founder, verbal, 2026-11-08 (team, self-reported): Octo reads the calendar and joins those events on its own; it sits silent and speaks only when called; on Octocrew's own calls it analyses the transcript and updates their CRM and Notion, "we're not writing anything, we just speak and discuss and then all the information in our Notion, in our CRM is being updated"; benefit named: faster decisions, because "everything [is] integrated" and nobody has to go to other tools.
 5. Integrations named in the team discussion (verbal, 2026-11-08, confirm in writing with Oleksii before naming them in ads): Jira, Google Calendar, ClickUp, Asana. Documented in writing: Notion, Asana, Trello (`product/overview.md`).
-6. [TO ADD] Any external user, pilot or usage number for Octo (internal numbers from Octocrew's own use would also help: calls per week, CRM or Notion records updated). Note: Octocrew's public case studies and testimonials (Podavach, seed-stage fintech) are about its marketing agents, not Octo, and must not be used as Octo proof.
+6. Teams choose which calendar events Octo joins (founder, verbal, 2026-11-08).
+7. CRMs: the team will name the main ones (team decision, 2026-11-08); exact list [TO ADD] and confirmed by Oleksii before any ad names a CRM. Ads say "your CRM".
+8. No internal usage numbers available today (team, 2026-11-08). [TO ADD] Any external user, pilot or usage number for Octo (internal numbers from Octocrew's own use would also help: calls per week, CRM or Notion records updated). Note: Octocrew's public case studies and testimonials (Podavach, seed-stage fintech) are about its marketing agents, not Octo, and must not be used as Octo proof.
 
 ## Conversion goal
 
-"Get early access" on the landing page: one button. ([source](../../brief/campaign-brief.md)) [TO ADD] the team must pick one mechanic, the sources disagree: root brief says "leave a work email", the plan says "book a demo", the v0 page opens an email to hello@octocrew.ai ([source](https://octocrew-hq.github.io/octo-landing/)). The offer behind it: Octo set up on the team's calls with their tracker, free pilot, length [TO ADD]. ([source](../../launch/hackathon-plan.md))
+Start a free trial on the landing page: one button, "Start free trial" (team decision, 2026-11-08). The form asks for a work email, the tracker, the CRM and the call platforms; the Octocrew team then sets Octo up on the trial team's calls. Not self-serve. Trial length [TO ADD]. Landing page is being built in Grona by the team.
 
 ## Tone
 
