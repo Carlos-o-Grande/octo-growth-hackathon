@@ -7,5 +7,6 @@
 | `octo-demo-36s-16x9.mp4` | 36-second demo, landscape |
 | `octo-demo-36s-9x16.mp4` | 36-second demo, vertical (Reels, TikTok, Shorts) |
 | `screenshots/` | Octo on a call, and the Octo character |
+| `octo-poses/` | 16 Octo character poses (transparent PNG), see its README |
 
 The videos are illustrations: the people and the project in them are made up. Use them on the hackathon landing page and in draft posts and ads. Ask Oleksii before posting them on social media or anywhere else.

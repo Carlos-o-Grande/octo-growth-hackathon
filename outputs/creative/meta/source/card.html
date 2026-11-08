@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Octo Meta card</title>
+<!--
+  One template for every static card, the video end cards and the preview posters.
+  URL params: ?id=creative-2|creative-3|creative-4|retargeting|creative-5|end  &fmt=9x16|4x5  [&guides=1 draws the safe zones]
+  Rendered to PNG by render.js (see README.md). Copy lives in ads-data.js.
+-->
+<style>
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../../website/landing/fonts/Inter-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Inter"; font-weight: 500; src: url("../../../website/landing/fonts/Inter-Medium.ttf") format("truetype"); }
+  @font-face { font-family: "Inter"; font-weight: 600; src: url("../../../website/landing/fonts/Inter-SemiBold.ttf") format("truetype"); }
+  @font-face { font-family: "Geist Mono"; font-weight: 500; src: url("../../../website/landing/fonts/GeistMono-Medium.ttf") format("truetype"); }
+
+  :root {
+    --bg-0: #0D0818; --bg-1: #1A0033; --brand: #3F007F; --lime: #C4E833; --on-lime: #1A2200;
+    --text: #F3EEFB; --sub: #CBC0DD; --label: #9A8FAE; --mute: rgba(243, 238, 251, 0.50);
+    --hair: rgba(255, 255, 255, 0.12); --light-text: #15111F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg-0); }
+  body { font-family: "Inter", sans-serif; color: var(--text); -webkit-font-smoothing: antialiased; }
+
+  /* Canvas: near-black violet, one soft off-centre glow, fine grain */
+  .canvas { position: relative; overflow: hidden; background: linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 100%); }
+  .canvas::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse 70% 45% at var(--gx, 78%) var(--gy, 34%), rgba(63, 0, 127, 0.62) 0%, rgba(63, 0, 127, 0) 100%); }
+  .canvas::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.03; z-index: 40;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -0.2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+  .f9x16 { width: 1080px; height: 1920px; }
+  .f4x5  { width: 1080px; height: 1350px; }
+
+  /* Safe content box. 9:16: 96 px left margin, clear of top 270, the bottom 35% (y 1250 down) and the right 120 (Reels buttons). 4:5: 96 px margins. */
+  .safe { position: absolute; z-index: 2; display: flex; flex-direction: column; }
+  .f9x16 .safe { left: 96px; top: 300px; width: 864px; height: 950px; }
+  .f4x5  .safe { left: 96px; top: 96px; width: 888px; height: 1158px; }
+
+  /* Plain mono label with a hairline. No chip. */
+  .label { display: flex; align-items: center; gap: 24px; font-family: "Geist Mono", monospace; font-weight: 500;
+           font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); flex: none; }
+  .label i { flex: 1; height: 1px; background: var(--hair); }
+
+  h1 { font-weight: 600; line-height: 1.02; letter-spacing: -0.03em; color: var(--text); flex: none; }
+  .f9x16 h1 { font-size: 96px; }
+  .f4x5  h1 { font-size: 96px; }
+  h1 .m { color: var(--mute); }
+  .kicker { font-weight: 500; font-size: 40px; line-height: 1.2; letter-spacing: -0.01em; color: var(--sub); flex: none; }
+
+  /* Window frame for the real product screen */
+  .win { position: relative; border-radius: 24px; overflow: hidden; flex: none; background: #13101C;
+         border: 1px solid var(--hair); box-shadow: 0 40px 120px rgba(0, 0, 0, 0.5); }
+  .win::after { content: ""; position: absolute; inset: 0; border-radius: 24px; pointer-events: none;
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10); }
+  .win img.crop { position: absolute; display: block; }
+
+  .pose { display: block; object-fit: contain; flex: none; }
+
+  .pill { display: inline-block; background: var(--lime); color: var(--on-lime); font-weight: 600; font-size: 36px;
+          line-height: 1; padding: 28px 44px; border-radius: 999px; white-space: nowrap; letter-spacing: -0.01em; flex: none; }
+  .bottom { position: relative; display: flex; align-items: center; margin-top: auto; flex: none; }
+  .bottom .pose { position: absolute; }
+
+  /* Task message, laid out like Octo's direct message in the demo */
+  .msg { background: #FFFFFF; color: var(--light-text); border-radius: 24px; flex: none; position: relative;
+         box-shadow: 0 40px 120px rgba(0, 0, 0, 0.5); }
+  .msg .hd { display: flex; align-items: center; gap: 16px; }
+  .msg .hd img { object-fit: contain; flex: none; }
+  .msg .hd b { font-weight: 600; }
+  .msg .hd span { color: #8A8296; font-weight: 400; }
+  .msg hr { border: 0; height: 1px; background: #E8E4EE; }
+  .msg .lb { font-family: "Geist Mono", monospace; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8296; }
+  .msg .tt { font-weight: 600; letter-spacing: -0.02em; line-height: 1.08; }
+  .msg .due { color: #5A5268; font-weight: 500; }
+  .msg .q { border-left: 3px solid var(--light-text); color: var(--light-text); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; }
+  .msg .done { display: flex; align-items: center; gap: 16px; font-weight: 600; }
+  .msg .done .box { display: grid; place-items: center; background: var(--brand); border-radius: 10px; }
+
+  /* Generic summary email (no brand, no logo) */
+  .mail { background: #E9E6EF; color: #3A3448; border-radius: 24px; position: relative; overflow: hidden; flex: none; }
+  .mail .in { position: absolute; inset: 34px; }
+  .mail .tt { font-weight: 600; letter-spacing: -0.02em; }
+  .mail .bar { height: 14px; border-radius: 7px; background: #CBC5D5; }
+  .mail .fade { position: absolute; left: 0; right: 0; bottom: 0; height: 45%;
+                background: linear-gradient(180deg, rgba(233, 230, 239, 0) 0%, rgba(233, 230, 239, 1) 92%); }
+
+  /* End card wordmark */
+  .wordmark { display: flex; align-items: baseline; gap: 18px; flex: none; }
+  .wordmark .w { font-weight: 600; font-size: 56px; letter-spacing: -0.03em; color: var(--text); }
+  .wordmark .by { font-family: "Geist Mono", monospace; font-weight: 500; font-size: 24px; text-transform: uppercase;
+                  letter-spacing: 0.14em; color: var(--label); }
+
+  .guide { position: absolute; background: rgba(255, 0, 80, 0.28); z-index: 50; }
+</style>
+<script src="ads-data.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+(function () {
+  const q = new URLSearchParams(location.search);
+  const id = q.get('id') || 'creative-2';
+  const fmt = q.get('fmt') || '9x16';
+  const guides = q.get('guides') === '1';
+  const S = window.OCTO_SHARED;
+  const POSES = '../../../../assets/octo-poses/';
+  const SHOTS = '../../../../assets/screenshots/';
+  const T = fmt === '9x16';
+
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  const head = s => esc(s).replace(/\{\{(.+?)\}\}/g, '<span class="m">$1</span>');
+  const sp = h => `<div style="height:${h}px;flex:none"></div>`;
+  const label = (txt = 'Octo by Octocrew') => `<div class="label"><span>${txt}</span><i></i></div>`;
+  const pill = () => `<span class="pill">${S.cta}</span>`;
+  const BOX = { '13-task-card': [0.19, 0.97, 0.75], '03-wink': [0.22, 0.79, 0.74], '02-happy': [0.22, 0.79, 0.74], '01-neutral': [0.2, 0.8, 0.74] };
+  // Octo as an accent at the right end of the CTA row: visible art right-aligned to the content edge.
+  const accent = (name, size) => { const [l, r, b] = BOX[name];
+    return pose(name, size, `right:${-Math.round((1 - r) * size)}px;bottom:${-Math.round((1 - b) * size) + 4}px`); };
+  const pose = (name, size, style = '') =>
+    `<img class="pose" src="${POSES}${name}.png" alt="" style="width:${size}px;height:${size}px;${style}">`;
+
+  // Octo's tile inside the 1920x1080 screenshots, cropped inside the product's own lime border.
+  const CROP = { x: 80, y: 62, w: 862, h: 350 };
+  function shot(name, width) {
+    const inner = width - 2, s = inner / CROP.w, h = Math.round(CROP.h * s);
+    return `<div class="win" style="width:${width}px;height:${h + 2}px">
+      <img class="crop" src="${SHOTS}octo-tile-${name}.png" alt="" style="width:${Math.round(1920 * s)}px;height:${Math.round(1080 * s)}px;left:${-Math.round(CROP.x * s)}px;top:${-Math.round(CROP.y * s)}px">
+    </div>`;
+  }
+
+  // Task message. z = size set: 'L' (close-up), 'S' (half-width column)
+  function msg(z, withDone) {
+    const L = z === 'L';
+    const k = L ? (T ? { pad: 40, av: 84, hd: 32, lb: 22, tt: 54, due: 34, q: 38, gap: 22, box: 46, done: 34 }
+                     : { pad: 48, av: 92, hd: 34, lb: 22, tt: 60, due: 36, q: 42, gap: 28, box: 52, done: 38 })
+                : { pad: 34, av: 76, hd: 30, lb: 22, tt: 44, due: 32, q: 34, gap: 22, box: 44, done: 32 };
+    return `<div class="msg" style="padding:${k.pad}px">
+      <div class="hd" style="font-size:${k.hd}px;margin:-12px 0 0 -14px">
+        <img src="${POSES}01-neutral.png" alt="" style="width:${k.av}px;height:${k.av}px;margin:-8px -10px -8px 0">
+        <div><b>Octo</b>${L ? ' <span>&nbsp;direct message</span>' : ''}</div>
+      </div>
+      <hr style="margin:${k.gap - 4}px 0 ${k.gap}px">
+      <div class="lb" style="font-size:${k.lb}px">Task</div>
+      <div class="tt" style="font-size:${k.tt}px;margin-top:${Math.round(k.gap * 0.5)}px">${S.task.title}</div>
+      <div class="due" style="font-size:${k.due}px;margin-top:${Math.round(k.gap * 0.5)}px">${S.task.due}</div>
+      <div class="q" style="font-size:${k.q}px;margin-top:${k.gap}px;padding-left:${Math.round(k.gap * 0.9)}px">${S.task.quote}</div>
+      ${withDone ? `<hr style="margin:${k.gap}px 0">
+      <div class="done" style="font-size:${k.done}px">
+        <span class="box" style="width:${k.box}px;height:${k.box}px"><svg width="${Math.round(k.box * 0.6)}" height="${Math.round(k.box * 0.6)}" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        Done
+      </div>` : ''}
+    </div>`;
+  }
+
+  function mail(height) {
+    const ws = [62, 100, 94, 0, 100, 88, 96, 70, 0, 100, 92, 100, 84, 0, 98, 100, 76, 90, 100, 66, 0, 100, 94, 88];
+    return `<div class="mail" style="height:${height}px"><div class="in">
+      <div class="tt" style="font-size:34px">Meeting summary</div>
+      <div class="bar" style="width:48%;margin:18px 0 30px;background:#BDB6C9"></div>
+      ${ws.map(w => w ? `<div class="bar" style="width:${w}%;margin-bottom:16px"></div>` : '<div style="height:20px"></div>').join('')}
+      </div><div class="fade"></div>
+    </div>`;
+  }
+
+  let html = '', glow = '';
+  const W = T ? 864 : 888;
+
+  if (id === 'end') {
+    glow = '--gx:82%;--gy:46%';
+    html = `<div class="safe">
+        <h1>${head('{{' + S.oneLinerA + '}} ' + S.oneLinerB)}</h1>
+        <div class="bottom" style="margin-top:auto">
+          ${pill()}
+          ${accent('02-happy', 330)}
+        </div>
+        ${sp(T ? 120 : 64)}
+        <div class="wordmark"><span class="w">Octo</span><span class="by">by Octocrew</span></div>
+      </div>`;
+  } else {
+    const ad = window.OCTO_ADS.find(a => a.id === id);
+    if (!ad) throw new Error('unknown id ' + id);
+    const h1 = `<h1>${head(ad.card)}</h1>`;
+
+    if (ad.layout === 'shot') {
+      glow = '--gx:80%;--gy:44%';
+      html = `<div class="safe" style="justify-content:space-between">
+        <div>${label()}${sp(T ? 40 : 44)}
+        ${ad.kicker ? `<div class="kicker">${esc(ad.kicker)}</div>${sp(18)}` : ''}
+        ${h1}</div>
+        ${shot(ad.shot, W)}
+        <div class="bottom" style="margin-top:0">
+          ${pill()}
+          ${accent(ad.pose, ad.pose === '13-task-card' ? 260 : 330)}
+        </div>
+      </div>`;
+    } else if (ad.layout === 'receipt') {
+      glow = '--gx:76%;--gy:52%';
+      html = `<div class="safe" style="justify-content:space-between">
+        <div>${label()}${sp(T ? 40 : 44)}
+        ${h1}</div>
+        ${msg('L', true)}
+        <div class="bottom" style="margin-top:0">${pill()}</div>
+      </div>`;
+    } else if (ad.layout === 'split') {
+      glow = '--gx:74%;--gy:58%';
+      const colW = Math.floor((W - 32) / 2);
+      const col = (lab, body) => `<div style="width:${colW}px;display:flex;flex-direction:column">
+          <div class="label" style="margin-bottom:24px"><span>${lab}</span><i></i></div>${body}</div>`;
+      const octo = msg('S', false);
+      html = `<div class="safe" style="justify-content:space-between">
+        <div>${label()}${sp(T ? 40 : 44)}
+        ${h1}</div>
+        <div id="split" style="display:flex;gap:32px;align-items:flex-start;flex:none">
+          ${col('Your note-taker', mail(T ? 420 : 560))}
+          ${col('Octo', octo)}
+        </div>
+        <div class="bottom" style="margin-top:0">${pill()}</div>
+      </div>`;
+    } else if (ad.layout === 'poster') {
+      glow = '--gx:78%;--gy:62%';
+      html = `<div class="safe">
+        ${label()}${sp(56)}
+        ${h1}
+        <div class="bottom" style="height:240px">
+          ${accent(ad.pose, 360)}
+        </div>
+      </div>`;
+    }
+  }
+
+  let guideHtml = '';
+  if (guides) {
+    const g = T ? [[0, 0, 1080, 270], [0, 1250, 1080, 670], [960, 0, 120, 1920], [0, 0, 96, 1920]]
+                : [[0, 0, 1080, 96], [0, 1254, 1080, 96], [0, 0, 96, 1350], [984, 0, 96, 1350]];
+    guideHtml = g.map(([x, y, w, h]) => `<div class="guide" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px"></div>`).join('');
+  }
+  // 9:16: drop the glow lower so the light sits behind the product and runs into the Reels UI zone.
+  if (T && glow) glow = glow.replace(/--gy:(\d+)%/, (m, y) => '--gy:' + Math.min(78, Number(y) + 22) + '%');
+  document.getElementById('root').innerHTML =
+    `<div class="canvas f${fmt}" id="card" style="${glow}">${html}${guideHtml}</div>`;
+
+})();
+</script>
+</body>
+</html>

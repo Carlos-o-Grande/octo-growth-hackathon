@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Octo GTM on one page</title>
+<style>
+@font-face{font-family:Inter;src:url(../website/landing/fonts/Inter-Regular.ttf);font-weight:400}
+@font-face{font-family:Inter;src:url(../website/landing/fonts/Inter-Medium.ttf);font-weight:500}
+@font-face{font-family:Inter;src:url(../website/landing/fonts/Inter-SemiBold.ttf);font-weight:600}
+@font-face{font-family:GeistMono;src:url(../website/landing/fonts/GeistMono-Medium.ttf);font-weight:500}
+:root{--deep:#0D0818;--ink:#1A0033;--brand:#3F007F;--lime:#C4E833;--text:#F3EEFB;--sub:#CBC0DD;--muted:#9A8FAE;--line:rgba(255,255,255,.10);--panel:rgba(255,255,255,.035)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--deep);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{width:1600px;margin:0 auto;color:var(--text);font-family:Inter,system-ui,sans-serif;font-weight:400;
+ background:radial-gradient(1100px 700px at 82% 4%,rgba(63,0,127,.55),transparent 70%),radial-gradient(900px 700px at 8% 92%,rgba(63,0,127,.28),transparent 70%),linear-gradient(180deg,var(--deep),var(--ink));
+ position:relative;padding:80px 96px 64px;-webkit-font-smoothing:antialiased}
+body:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.035;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+p,li,td,h1,h2{text-wrap:pretty}
+h1,h2{text-wrap:balance}
+.mono{font-family:GeistMono,ui-monospace,monospace;font-weight:500;text-transform:uppercase;letter-spacing:.14em;font-size:14px;color:var(--muted)}
+header{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:56px;align-items:center;padding-bottom:40px;border-bottom:1px solid var(--line)}
+header .mono{margin-bottom:26px}
+h1{font-weight:600;font-size:74px;line-height:1.02;letter-spacing:-.035em}
+h1 span{color:var(--muted)}
+.lede{margin-top:22px;font-size:21px;line-height:1.5;color:var(--sub);max-width:900px}
+.plan{margin-top:18px;font-size:21px;line-height:1.5;color:var(--text);max-width:900px;padding-left:18px;border-left:2px solid rgba(255,255,255,.18)}
+.window{border-radius:24px;border:1px solid rgba(255,255,255,.12);overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08);background:#121019}
+.window img{display:block;width:100%}
+.window-cap{margin-top:12px;font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;margin-top:36px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:30px 32px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c12{grid-column:span 12}
+.card>.mono{display:flex;gap:14px;align-items:baseline;margin-bottom:18px}
+.card>.mono b{color:var(--sub);font-weight:500}
+h2{font-weight:600;font-size:28px;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
+p,li{font-size:18px;line-height:1.55;color:var(--sub)}
+ul{list-style:none}
+li{padding:9px 0;border-top:1px solid var(--line)}
+li:first-child{border-top:0;padding-top:0}
+strong{color:var(--text);font-weight:500}
+.note{margin-top:16px;font-size:15px;line-height:1.5;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:16.5px}
+th{font-family:GeistMono,monospace;font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 10px 12px 0;vertical-align:bottom}
+td{padding:12px 10px 12px 0;border-top:1px solid var(--line);color:var(--muted);vertical-align:top;line-height:1.4}
+td:first-child{color:var(--text)}
+.octo-row td{color:var(--text)}
+.octo-row td:first-child{font-weight:600}
+.num{font-variant-numeric:tabular-nums}
+.budget{display:flex;flex-direction:column;gap:14px}
+.bar{display:grid;grid-template-columns:170px minmax(0,1fr) 70px;gap:16px;align-items:center;font-size:17px}
+.bar .track{height:10px;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden}
+.bar .fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#5B2BA0,#A98AD8)}
+.bar span:last-child{text-align:right;color:var(--text)}
+.bar small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.math{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.math b{display:block;font-weight:600;font-size:26px;letter-spacing:-.02em;color:var(--text)}
+.math span{font-size:14px;color:var(--muted)}
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.step{border:1px solid var(--line);border-radius:16px;padding:16px 16px 18px;background:rgba(255,255,255,.02)}
+.step .mono{margin-bottom:10px;font-size:13px}
+.step p{font-size:16px;line-height:1.4;color:var(--text)}
+.step.cta{border-color:rgba(196,232,51,.6)}
+.step.cta p{color:var(--lime)}
+.loop{margin-top:14px;display:flex;gap:14px;align-items:center;font-size:16px;color:var(--sub)}
+.loop .mono{font-size:13px}
+.loop i{flex:0 0 auto;width:120px;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.35),rgba(255,255,255,.05))}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+.day{border-left:1px solid var(--line);padding:2px 0 0 14px}
+.day .mono{margin-bottom:8px;font-size:13px}
+.day p{font-size:16px;line-height:1.5}
+.hooks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px}
+.hooks li span{font-family:GeistMono,monospace;color:var(--muted);font-size:14px;padding-top:3px}
+.kpi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
+.kpi div{border-top:1px solid var(--line);padding-top:14px}
+.kpi b{display:block;font-weight:600;font-size:42px;letter-spacing:-.03em;color:var(--text);line-height:1}
+.kpi p{margin-top:8px;font-size:16px}
+.lever{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;padding:14px 0;border-top:1px solid var(--line)}
+.lever:first-of-type{border-top:0;padding-top:0}
+.lever .mono{font-size:13px;padding-top:5px}
+.lever h3{font-weight:600;font-size:21px;letter-spacing:-.01em;margin-bottom:4px}
+.lever p{font-size:16.5px}
+.pick h3{color:var(--text)}
+.pick .mono{color:var(--text)}
+.bold{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:20px;align-items:start}
+.bold img{width:120px;margin-top:6px}
+.risks td:first-child{width:22%}
+.risks td{color:var(--sub)}
+footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:40px}
+footer p{font-size:14px;color:var(--muted);max-width:1150px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="mono">Octo by Octocrew &nbsp;·&nbsp; Go-to-market on one page &nbsp;·&nbsp; Growth Marketing Hackathon, Portugal, 8 Nov 2026</div>
+    <h1><span>Note-takers record the meeting.</span> Octo takes part in it.</h1>
+    <p class="lede">Octo joins your team’s calls, answers when you call it by name, and after the call does the follow-up: everyone gets their own tasks, and ClickUp or Asana stays up to date. For a small team, it works like the junior project manager it hasn’t hired&nbsp;yet.</p>
+    <p class="plan"><strong>The plan:</strong> €700 on Meta and €300 on YouTube creators bring small teams to one button, “Invite Octo to your next call”. Goal: 10+ invites in 7&nbsp;days.</p>
+  </div>
+  <div>
+    <div class="window"><img src="../../assets/screenshots/octo-tile-status.png" alt="Octo on a Google Meet call showing task status on its own tile"></div>
+    <p class="window-cap">Octo on a call, answering on its own tile. People in the demo are made up.</p>
+  </div>
+</header>
+
+<section class="grid">
+  <div class="card c4">
+    <div class="mono"><b>01</b>Who we sell to</div>
+    <h2>Small teams with no project manager yet</h2>
+    <ul>
+      <li><strong>Up to 50 people.</strong> The founder or an ops lead runs the calls and is the only one who follows&nbsp;up.</li>
+      <li><strong>Sharpest slice: remote agencies.</strong> Many client calls, on whatever platform the client picks; work in ClickUp, Asana, Trello or Notion.</li>
+      <li><strong>Trigger:</strong> “Did that get done?” about something said on last week’s call, and nobody wrote it&nbsp;down.</li>
+    </ul>
+  </div>
+  <div class="card c4">
+    <div class="mono"><b>02</b>The problem</div>
+    <h2>Every call ends with “so who’s doing what?”</h2>
+    <ul>
+      <li>There is no PM to chase follow-ups, so it falls on the founder.</li>
+      <li>Note-takers send a summary nobody acts on.</li>
+      <li>The tracker goes stale the day after the call.</li>
+      <li>The same status questions come back every week.</li>
+    </ul>
+  </div>
+  <div class="card c4">
+    <div class="mono"><b>03</b>Offer</div>
+    <h2>Invite Octo to your next call</h2>
+    <ul>
+      <li><strong>One button</strong> on the landing page. Today it opens an email; we set up the call and Octo joins it.</li>
+      <li><strong>Now:</strong> early access, set up by our team. <strong>Later:</strong> self-serve SaaS for small teams.</li>
+      <li><strong>Price:</strong> open. Per seat, per team or a free tier is the next decision.</li>
+    </ul>
+  </div>
+
+  <div class="card c7">
+    <div class="mono"><b>04</b>Why Octo wins</div>
+    <table>
+      <tr><th style="width:20%"></th><th>In the call</th><th>Tasks after the call</th><th>Updates the task on “done”</th><th>Platforms</th></tr>
+      <tr><td>AI note-takers (Otter, Fireflies)</td><td>Voice Q&amp;A on a wake word</td><td>Summary and action items</td><td>Not claimed</td><td>Meet, Zoom, Teams</td></tr>
+      <tr><td>Sembly</td><td>“Ask Sembly”, by text</td><td>With owners and deadlines</td><td>Not claimed</td><td>Zoom, Meet, Teams, Webex</td></tr>
+      <tr><td>AI built into the suite (ZoomMate, Teams)</td><td>In-meeting questions</td><td>Follow-ups in its own suite</td><td>Not claimed</td><td>Tied to its own suite</td></tr>
+      <tr class="octo-row"><td>Octo</td><td>By voice and on its own tile</td><td>Each person’s own, by DM, with the exact quote</td><td>On the next call</td><td>Meet, Teams, Zoom, Slack Huddles, Webex, GoTo</td></tr>
+    </table>
+    <p class="note">From the vendors’ own pages, checked 7 and 8 Nov. None of about 12 pages claims all four. “AI teammate”, “meeting agent” and “follow-up” are taken, so we lead with what Octo does on the call.</p>
+  </div>
+  <div class="card c5">
+    <div class="mono"><b>05</b>Channels and the €1,000</div>
+    <div class="budget">
+      <div class="bar"><span>Meta ads<small>Main channel</small></span><div class="track"><div class="fill" style="width:70%"></div></div><span class="num">€700</span></div>
+      <div class="bar"><span>YouTube creators<small>Second channel</small></span><div class="track"><div class="fill" style="width:30%"></div></div><span class="num">€300</span></div>
+      <div class="bar"><span>LinkedIn<small>Organic, one-liner A/B</small></span><div class="track"><div class="fill" style="width:0"></div></div><span class="num">€0</span></div>
+      <div class="bar"><span>Reddit, communities<small>Organic, no link spam</small></span><div class="track"><div class="fill" style="width:0"></div></div><span class="num">€0</span></div>
+    </div>
+    <div class="math">
+      <div><b class="num">€1–2</b><span>per click on Meta</span></div>
+      <div><b class="num">350–700</b><span>clicks from €700</span></div>
+      <div><b class="num">7–28</b><span>requests at 2 to 4%</span></div>
+    </div>
+    <p class="note">Assumptions to check against Meta’s forecast. Creators: 2 or 3 small productivity or AI-tools channels, a 30 to 60 second segment each.</p>
+  </div>
+
+  <div class="card c12">
+    <div class="mono"><b>06</b>Funnel</div>
+    <div class="flow">
+      <div class="step"><div class="mono">Reach</div><p>Meta ad, creator segment or founder post</p></div>
+      <div class="step"><div class="mono">Land</div><p>Landing page with the demo and the note-taker comparison</p></div>
+      <div class="step cta"><div class="mono">Convert</div><p>Invite Octo to your next call</p></div>
+      <div class="step"><div class="mono">Set up</div><p>Work email in; Oleksii invites them to a call</p></div>
+      <div class="step"><div class="mono">Activate</div><p>Octo joins the call and shows what it does</p></div>
+    </div>
+    <div class="loop"><span class="mono">Recover</span><i></i><span>Visitors who land but don’t invite Octo go into Meta retargeting from day 3.</span></div>
+  </div>
+
+  <div class="card c7">
+    <div class="mono"><b>07</b>Growth levers</div>
+    <div class="lever pick"><div class="mono">Our pick</div><div><h3>Make every call a demo</h3><p>A product-led loop: every call Octo joins shows it working to everyone on it. Guests assigned a task get it by DM, with the host’s approval and an opt-out, plus a way to get Octo for their own team.</p></div></div>
+    <div class="lever"><div class="mono">Next</div><div><h3>Win the AI answers</h3><p>Turn the note-taker comparison into a page that answers “which meeting assistant updates my tracker?”, so ChatGPT and Perplexity can cite it. Week two onward.</p></div></div>
+    <div class="lever"><div class="mono">Focus</div><div><h3>One narrow use case</h3><p>The weekly team call of a small team with no PM. Every creative, page and creator script speaks to that one call.</p></div></div>
+  </div>
+  <div class="card c5">
+    <div class="mono"><b>08</b>Bold idea</div>
+    <div class="bold">
+      <div>
+        <h2>Talk to Octo, not a sales rep</h2>
+        <p><strong>Next:</strong> the button books a call where Octo runs its own demo, answers questions by voice and sends the prospect a task afterwards, with Oleksii on every call in week one.</p>
+        <p style="margin-top:10px">To check first: Octo switches to a reduced mode when an outside guest joins, and the prospect is a guest.</p>
+      </div>
+      <img src="../../assets/octo-poses/02-happy.png" alt="Octo">
+    </div>
+  </div>
+
+  <div class="card c6">
+    <div class="mono"><b>09</b>Five Meta creatives</div>
+    <ul class="hooks">
+      <li><span>1</span><div><strong>The demo.</strong> “This meeting bot talks back.”</div></li>
+      <li><span>2</span><div><strong>The junior PM.</strong> “Your team doesn’t have a project manager. Now it does.”</div></li>
+      <li><span>3</span><div><strong>Note-taker vs Octo.</strong> “Your note-taker writes it down. Octo does it.”</div></li>
+      <li><span>4</span><div><strong>The receipt.</strong> “No more ‘I never said that.’”</div></li>
+      <li><span>5</span><div><strong>Founder to camera.</strong> “We don’t have a PM. We have Octo.”</div></li>
+    </ul>
+  </div>
+  <div class="card c6">
+    <div class="mono"><b>10</b>Success after 7 days</div>
+    <div class="kpi">
+      <div><b class="num">10+</b><p>Invites from teams of up to 50 people</p></div>
+      <div><b class="num">1</b><p>Meta creative that wins on hook rate and cost per request</p></div>
+      <div><b class="num">1</b><p>One-liner that wins on LinkedIn</p></div>
+      <div><b class="num">1+</b><p>Creator segment published</p></div>
+    </div>
+    <p class="note">Targets are assumptions. There are no real results yet.</p>
+  </div>
+
+  <div class="card c12">
+    <div class="mono"><b>11</b>The first 7 days</div>
+    <div class="days">
+      <div class="day"><div class="mono">Day 1</div><p>Landing live. Meta starts with 5 creatives. One-liner 1 on LinkedIn. 5 creators contacted.</p></div>
+      <div class="day"><div class="mono">Day 2</div><p>One-liner 2. Answer 5 Reddit threads.</p></div>
+      <div class="day"><div class="mono">Day 3</div><p>Pause the 2 weakest creatives. Retargeting on. One-liner 3.</p></div>
+      <div class="day"><div class="mono">Day 4</div><p>Confirm 2 or 3 creator segments. One-liner 4.</p></div>
+      <div class="day"><div class="mono">Day 5</div><p>Move budget to the best creative.</p></div>
+      <div class="day"><div class="mono">Day 6</div><p>First creator segment goes live.</p></div>
+      <div class="day"><div class="mono">Day 7</div><p>Read the numbers. Keep, kill or double.</p></div>
+    </div>
+  </div>
+
+  <div class="card c12">
+    <div class="mono"><b>12</b>Risks we are designing around</div>
+    <table class="risks">
+      <tr><td>Bots in meetings</td><td>Consent and bot fatigue run through 18 of 34 public quotes about note-takers (Hacker News, Zoom Community, Trustpilot). Teams choose which calls Octo joins, and it joins visibly as a participant.</td></tr>
+      <tr><td>Client calls</td><td>When an outside guest joins, Octo switches to a reduced client mode. We lead with the team’s own calls and add client calls once that mode is ready.</td></tr>
+      <tr><td>The audience is a bet</td><td>No public quote so far comes from a founder-led team without a PM. Five buyer conversations this week validate or change the ICP.</td></tr>
+      <tr><td>Sembly</td><td>Sells “AI meeting agent” to the same client-facing teams: $10 to $30 per user per month billed annually, 7-day free trial. We lead with voice on the call, tasks updated on “done”, and six platforms.</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p>Sources in the team repo: brief/campaign-brief.md, outputs/positioning/campaign-plan.md, outputs/positioning/bold-idea-v1.md, outputs/ads/meta-ads-v2.md, outputs/research/market-research-v1.md, product/live-demo.md, growth-kit/outputs/research/ (competitor teardown, voice of customer). Growth levers: team research, 8 Nov.</p>
+  <p class="mono" style="white-space:nowrap">octo-landing-47q.pages.dev</p>
+</footer>
+</body>
+</html>
