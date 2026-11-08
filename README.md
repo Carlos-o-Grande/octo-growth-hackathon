@@ -12,17 +12,20 @@ The product works today. What it doesn't have yet is a launch. This repo is the 
 
 **Six things in three hours** (Plan, Landing page, Targeting & campaign, Social, Paid, Bold idea): see [`launch/hackathon-plan.md`](launch/hackathon-plan.md) for who does what and when.
 
-First drafts, ready to argue with:
+**Decided at ~14:40:** small teams of up to 50 with no PM, one campaign ("Who's doing what?"), Meta ads as the main channel, YouTube creators second. Details: [`launch/hackathon-plan.md`](launch/hackathon-plan.md).
+
+Drafts, ready to argue with:
 
 | Deliverable | Draft |
 |---|---|
 | Brief (every agent reads it first) | [`brief/campaign-brief.md`](brief/campaign-brief.md) |
 | Plan | [`outputs/positioning/campaign-plan.md`](outputs/positioning/campaign-plan.md) |
-| Landing page | Live at https://octo-landing-47q.pages.dev, source in [`outputs/website/`](outputs/website/) |
-| Paid | [`outputs/ads/`](outputs/ads/): LinkedIn, Meta, Google Search |
+| Landing page | Live at https://octo-landing-47q.pages.dev (Grona installed), source in [`outputs/website/`](outputs/website/), comparison section: [`outputs/website/comparison.md`](outputs/website/comparison.md) |
+| Paid (main channel: Meta) | [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md): 5 vertical creatives |
 | Social | [`outputs/social/social-posts-v1.md`](outputs/social/social-posts-v1.md) |
 | Bold idea | [`outputs/positioning/bold-idea-v1.md`](outputs/positioning/bold-idea-v1.md) |
-| Targeting | [`launch/audiences.md`](launch/audiences.md), and the targeting sections in each ad file |
+| Targeting | Audiences in [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md) |
+| Market research | [`outputs/research/market-research-v1.md`](outputs/research/market-research-v1.md) |
 
 ## Start here (10 minutes)
 

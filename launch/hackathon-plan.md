@@ -2,6 +2,25 @@
 
 The brief: ship **Plan, Landing page, Targeting & campaign, Social, Paid, Bold idea** in three hours. Only the Grona work goes live, so that's the landing page and the targeting.
 
+## Decided at ~14:40 (this overrides the defaults below)
+
+- **ICP:** small teams of up to 50 people with no project manager. Remote agencies are the slice we name.
+- **Positioning:** "For founders and ops leaders at remote agencies, Octo is a teammate that joins every client and team call on whatever platform the client picks. It answers when you call it by name. Afterwards, each person gets their own tasks with exact quotes and deadlines, and ClickUp or Asana stays up to date until the work is done."
+- **Model:** self-serve SaaS for small teams, not enterprise sales. Octo as a junior project manager.
+- **One campaign, one main channel:** "Who's doing what?" on **Meta ads** (vertical video). Second channel: **YouTube creators** with sponsored segments. LinkedIn is organic, for A/B testing one-liners.
+- **Comparison with note-takers** (Granola, Fireflies, Otter, Fathom) goes on the landing page.
+
+## The six deliverables, after the decision
+
+| Deliverable (from the stage slide) | Goes live? | Owner | Start from |
+|---|---|---|---|
+| **Plan**: one page on audience, offer, channels, €1,000 | No | A · Oleksii | [`outputs/positioning/campaign-plan.md`](../outputs/positioning/campaign-plan.md) |
+| **Landing page**: live in Grona | **Yes** | B · Builder | Live page https://octo-landing-47q.pages.dev (Grona installed), add the section in [`outputs/website/comparison.md`](../outputs/website/comparison.md), copy from [`brief/campaign-brief.md`](../brief/campaign-brief.md) |
+| **Targeting and campaign**: set up in Grona | **Yes** | C · Growth | Audiences in [`outputs/ads/meta-ads-v2.md`](../outputs/ads/meta-ads-v2.md). Grona currently says "No active campaigns", so one has to be created and switched on |
+| **Social**: posts ready to publish | No | D · Content | [`outputs/social/social-posts-v1.md`](../outputs/social/social-posts-v1.md) and the one-liners in the plan |
+| **Paid**: ads ready to run | No | C, with D's creatives | [`outputs/ads/meta-ads-v2.md`](../outputs/ads/meta-ads-v2.md): 5 vertical creatives |
+| **Bold idea**: one move a normal campaign wouldn't make | No | D, with A | [`outputs/positioning/bold-idea-v1.md`](../outputs/positioning/bold-idea-v1.md) |
+
 ## Who does what
 
 | Person | Owns | Also helps with |

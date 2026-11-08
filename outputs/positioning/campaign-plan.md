@@ -1,64 +1,70 @@
-# Campaign plan: Octo early access
+# Campaign plan v2: Octo early access
 
-One page. Built from [`brief/campaign-brief.md`](../../brief/campaign-brief.md), [`launch/audiences.md`](../../launch/audiences.md) and [`launch/hackathon-plan.md`](../../launch/hackathon-plan.md). Numbers marked *assumption* are rough guesses to check in each ad tool's forecast. There are no real results yet.
+**Decided by the team on 8 Nov, ~14:40:** one campaign, one main channel. Meta ads lead, YouTube creators come second. The audience is small teams of up to 50 people with no project manager yet. Source of truth for copy: [`brief/campaign-brief.md`](../../brief/campaign-brief.md). Numbers marked *assumption* are guesses to check in Meta's forecast. There are no real results yet.
 
-## Audience
+## The campaign: "Who's doing what?"
 
-**Primary:** founders, managing directors and heads of ops at remote agencies and studios, 10 to 50 people. Many client calls a week on mixed platforms, work tracked in ClickUp, Asana or Trello. The owner buys without procurement.
-
-**Second:** people already paying for a note-taker (Otter, Fireflies, Fathom) who search for an alternative.
-
-**Always on:** retargeting landing visitors and people who watched half the demo video.
-
-## Problem
-
-Every call ends with "so who's doing what?". What the client asked for gets lost before it reaches the tracker, and the AI note-taker's summary sits unread.
-
-## Offer
-
-**Get early access.** We put Octo on your team's calls and connect it to your tracker. No self-serve sign-up or public price yet, so early access is a conversation, not a checkout.
+**Idea:** every small team without a PM ends its calls with "so who's doing what?". Octo is the junior project manager that joins the call, answers it, and makes sure every task lands with an owner in ClickUp or Asana.
 
 **One-liner:** Note-takers record the meeting. Octo takes part in it.
 
-**Proof:** the live demo on a Google Meet call, the 36-second video, per-person task messages with the exact quote, tasks that update when someone says "done" on the next call.
+**Offer:** Get early access. Self-serve SaaS later; for now, a work email on the landing page.
+
+**Proof:** the 36-second demo (9:16 for Meta), the per-person task message with the exact quote, the comparison with note-takers ([`outputs/website/comparison.md`](../website/comparison.md)).
+
+## Audience
+
+- **Primary:** founders and ops leads at teams of up to 50 people with no project manager. Remote agencies are the sharpest slice: many client calls, on whatever platform the client picks.
+- **Second:** people who already pay for Granola, Fireflies, Otter or Fathom. The comparison speaks to them.
 
 ## Channels and the €1,000
 
-| Channel | € | Audience | Creative | Metric | *Assumption* |
+| Channel | Role | € | What runs | Metric | *Assumption* |
 |---|---|---|---|---|---|
-| LinkedIn Sponsored Content | 400 | Primary: titles + industries + 11 to 50 employees | 16:9 demo video, Octo tile screenshot | Cost per early-access request | ~€6 to 10 per click, 40 to 65 clicks |
-| Meta (Instagram Reels, Facebook) | 250 | Primary by interests (ClickUp, Asana, Monday.com) + retargeting | 9:16 demo video | Cost per landing view, 50% video views | ~€1 to 2 per click, 125 to 250 clicks |
-| Google Search | 200 | Second: "Otter alternative", "meeting notes to tasks" | Text ads | Cost per early-access request | ~€2 to 4 per click, 50 to 100 clicks |
-| Test reserve | 150 | Whichever hook wins in week one, or a Reddit / newsletter test | Best performer | Same as its channel | Spend only after day 4 |
+| Meta ads (Instagram Reels, Stories, Facebook) | **Main** | 700 | 5 vertical creatives, cold for 7 days, retargeting from day 3. [`outputs/ads/meta-ads-v2.md`](../ads/meta-ads-v2.md) | Cost per early-access request | €1 to 2 per click, 350 to 700 clicks, 2 to 4% sign up: 7 to 28 requests |
+| YouTube creators | Second | 300 | 2 or 3 small productivity or AI-tools creators, a 30 to 60 second sponsored segment each, or free access plus a flat fee | Requests per creator, via a tagged link | Small creators charge €100 to 300 per segment, not verified |
+| LinkedIn | Organic, €0 | 0 | Founder posts A/B testing three one-liners (below) | Comments and profile clicks per post | n/a |
+| Reddit and communities | Organic, €0 | 0 | Answer threads about note-takers that don't follow up and tasks lost after calls. No link spam | Replies, sign-ups by tagged link | n/a |
 
-Total: €1,000 over 7 days. Ad copy: [`outputs/ads/`](../ads/). Organic posts: [`outputs/social/`](../social/).
+**Later, not this week:** the Claude Code and Grok Bot plugins as an awareness channel, AI-influencer demos, ads inside AI assistants and marketplaces. See [`bold-idea-v1.md`](bold-idea-v1.md) #4.
+
+## One-liners to A/B test on LinkedIn
+
+1. Note-takers record the meeting. Octo takes part in it.
+2. The AI agent that doesn't just record your call. It joins it.
+3. Say it on the call. It's in ClickUp, in your words, before you hang up.
+4. The project manager your team doesn't have yet.
+
+The winner goes on the landing hero and into the Meta creatives in week two.
 
 ## Funnel
 
-Ad or post → landing page in Grona (one CTA: Get early access) → email to hello@octocrew.ai → Oleksii books a 20-minute call where Octo joins and demos itself.
+Meta ad, creator video or post → landing page with Grona (one CTA: Get early access) → work email → Oleksii invites them to a call where Octo joins.
 
-Everyone who visits but doesn't click goes into retargeting.
+Visitors who don't sign up go into Meta retargeting.
 
 ## 7 days
 
 | Day | What happens |
 |---|---|
-| 1 | Landing live in Grona. LinkedIn + Google start. Founder post on LinkedIn with the 16:9 video. |
-| 2 | Meta starts with the 9:16 video. Post: "the task DM with the exact quote" screenshot. |
-| 3 | Check: CTR by hook. Pause the weakest LinkedIn ad. |
-| 4 | Retargeting on. Post: "Your note-taker writes it down. Octo does it." Decide where the €150 goes. |
-| 5 | Test reserve live on the best hook. |
-| 6 | Post: behind the scenes, Octo on our own calls. |
-| 7 | Read the numbers: requests per channel, cost per request, which hook won. Keep, kill or double. |
+| 1 | Landing with the comparison section live. Meta cold campaign starts with 5 creatives. LinkedIn post: one-liner 1. Outreach to the first 5 creators. |
+| 2 | LinkedIn post: one-liner 2. Answer 5 Reddit threads. |
+| 3 | Meta: pause the 2 weakest creatives by hook rate. Retargeting starts. LinkedIn: one-liner 3. |
+| 4 | Creators: confirm 2 or 3 segments, send access and the brief. LinkedIn: one-liner 4. |
+| 5 | Meta: move budget to the best creative. |
+| 6 | First creator segment goes live. |
+| 7 | Read: requests per channel, cost per request, winning creative and one-liner. Keep, kill or double. |
 
-## What success looks like after 7 days
+## Success after 7 days
 
-- At least 10 early-access requests from the primary audience (*assumption*: 1 to 2% of ~500 clicks, and not all from the right people).
-- One hook that clearly beats the others on CTR.
-- 3 or more booked calls where Octo runs its own demo.
+- At least 10 early-access requests from teams of up to 50 people (*assumption*).
+- One Meta creative that clearly wins on hook rate and cost per request.
+- One one-liner that clearly wins on LinkedIn.
+- At least one creator segment published.
 
-## Open, for the team to decide
+## Open questions
 
-- Is "remote agencies" the right first audience, or startups on Jira / Linear?
-- Do we show a price on the page or keep it a conversation?
-- Does "Octo" stay the name, or does each customer name their own agent?
+- The statement names remote agencies; the audience is any small team without a PM. Keep agencies as the slice we name, or widen the statement?
+- CTA: "Get early access" or "Invite Octo to your next call"?
+- Price for self-serve: per seat, per team, free tier?
+- Grok Bot: is there a public plugin API? Not confirmed.
