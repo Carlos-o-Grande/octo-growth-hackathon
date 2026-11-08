@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://cdn.grona.ai">
+<script src="https://cdn.grona.ai/workspaces/6af085eeaff6c24aa3090993/main.js" async></script>
+<title>Octo vs Granola, Fireflies, Otter and Fathom</title>
+<meta name="description" content="How Octo compares with AI note-takers Granola, Fireflies, Otter and Fathom: who takes part in the call, who sends each person their tasks, and who keeps your tracker up to date.">
+<meta property="og:title" content="Octo vs Granola, Fireflies, Otter and Fathom">
+<meta property="og:description" content="Note-takers give you notes. Octo gives everyone their tasks.">
+<meta property="og:image" content="media/octo-call.jpg">
+<link rel="canonical" href="https://octo-landing-47q.pages.dev/compare">
+<link rel="icon" href="media/octo-320.png">
+<style>
+@font-face { font-family: Inter; src: url(fonts/Inter-Regular.ttf); font-weight: 400; font-display: swap; }
+@font-face { font-family: Inter; src: url(fonts/Inter-SemiBold.ttf); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url(fonts/GeistMono-Medium.ttf); font-weight: 500; font-display: swap; }
+:root { --main: #3F007F; --deep: #1A0033; --lime: #C4E833; --on-lime: #1A2200; --ink: #0B0B0E; --sub: #2E2E36; --muted: #6B6B76; --line: #E2E2E7; --bg: #FAFAFB; --card: #FFFFFF; --soft: #E4DAF7; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--bg); font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: var(--main); }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+header { background: var(--deep); color: #fff; }
+header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 600; font-size: 20px; padding: 10px 0; }
+.logo img { width: 34px; height: 34px; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 14px; font-weight: 600; text-decoration: none; background: var(--lime); color: var(--on-lime); }
+.eb { font-family: "Geist Mono", monospace; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--main); margin: 0 0 12px; }
+h1, h2 { letter-spacing: -0.02em; font-weight: 600; margin: 0; }
+h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.06; }
+h2 { font-size: clamp(24px, 3vw, 32px); margin-bottom: 16px; }
+main section { padding: 56px 0; }
+.lede { font-size: 20px; color: var(--sub); max-width: 720px; margin: 18px 0 0; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+table { border-collapse: collapse; width: 100%; min-width: 860px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+thead th { font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+thead th.octo { color: var(--main); }
+tbody th { font-weight: 600; width: 18%; }
+td { color: var(--sub); }
+td.octo { color: var(--ink); background: rgba(196,232,51,.14); }
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+sup { font-size: 11px; }
+.note { color: var(--muted); font-size: 15px; margin-top: 14px; }
+.pick { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.pick div { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+.pick b { display: block; margin-bottom: 6px; }
+ol.src { color: var(--muted); font-size: 14px; padding-left: 20px; }
+ol.src a { color: var(--muted); word-break: break-all; }
+.cta { background: var(--deep); color: #fff; border-radius: 22px; padding: 36px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between; }
+.cta p { margin: 0; font-size: 22px; font-weight: 600; max-width: 560px; }
+footer { color: var(--muted); font-size: 14px; padding: 32px 0 48px; }
+@media (max-width: 640px) { main section { padding: 40px 0; } .cta { padding: 24px; } .cta .btn { width: 100%; justify-content: center; } }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Octo vs Granola, Fireflies, Otter and Fathom","about":{"@type":"SoftwareApplication","name":"Octo","applicationCategory":"BusinessApplication","publisher":{"@type":"Organization","name":"Octocrew","url":"https://octocrew.ai"}}}</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="./"><img src="media/octo-320.png" alt="">Octo</a>
+    <a class="btn" href="./#access">Invite Octo</a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <p class="eb">Octo vs note-takers</p>
+      <h1>Note-takers give you notes. Octo gives everyone their tasks.</h1>
+      <p class="lede">Granola, Fireflies, Otter and Fathom are good at writing the meeting down. Octo takes part in the call and does the follow-up: each person gets their own tasks with the exact quote, and ClickUp, Asana, Notion or Trello stays up to date.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Side by side</h2>
+      <div class="tbl">
+        <table>
+          <thead><tr><th></th><th class="octo">Octo</th><th>Granola</th><th>Fireflies</th><th>Otter</th><th>Fathom</th></tr></thead>
+          <tbody>
+            <tr><th>Joins the call as a participant</th><td class="octo">Yes, a visible participant</td><td>No bot, uses your device audio<sup>1</sup></td><td>Yes, bot</td><td>Yes, bot</td><td>Yes, bot, plus a bot-free option<sup>2</sup></td></tr>
+            <tr><th>Speaks on the call</th><td class="octo">Yes, when called by name</td><td>No</td><td>Yes, "Talk to Fireflies" on a wake word<sup>3</sup></td><td>Yes, "Hey Otter" Meeting Agent, Zoom first<sup>4</sup></td><td>Not found</td></tr>
+            <tr><th>Shows answers on its own video tile</th><td class="octo">Yes: lists, tables, tasks by owner</td><td>No</td><td>Not found</td><td>Not found</td><td>Not found</td></tr>
+            <tr><th>Tasks after the call</th><td class="octo">Each person gets their own tasks by message, with a deadline and the exact quote</td><td>Notes, sent to Notion, Attio or HubSpot<sup>1</sup></td><td>Creates tasks automatically after every meeting<sup>5</sup></td><td>Action items, follow-up email drafts<sup>4</sup></td><td>Summaries and action items, Asana and Zapier integrations<sup>2</sup></td></tr>
+            <tr><th>Updates the tracker when plans change on a later call</th><td class="octo">Yes, when someone says "done" or "changed"</td><td>Not found</td><td>Not found</td><td>Not found</td><td>Not found</td></tr>
+            <tr><th>Brief before the call</th><td class="octo">Yes: who's coming, what's still open</td><td>Not found</td><td>Not found</td><td>Not found</td><td>Not found</td></tr>
+            <tr><th>Platforms</th><td class="octo">Google Meet, Teams, Zoom, Slack Huddles, Webex, GoTo</td><td>Any, via device audio</td><td>Not checked</td><td>Agent is Zoom first<sup>4</sup></td><td>Not checked</td></tr>
+            <tr><th>Its own name and voice per team</th><td class="octo">Yes</td><td>n/a</td><td>Not found</td><td>Not found</td><td>Not found</td></tr>
+            <tr><th>Price per user per month</th><td class="octo">Early access, no public price yet</td><td>Business $14<sup>1</sup></td><td>Pro about $10 yearly, $18 monthly<sup>6</sup></td><td>Pro $8.33 yearly, $16.99 monthly<sup>7</sup></td><td>Free tier, Premium $16 yearly, $20 monthly<sup>8</sup></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Checked on vendor pages and reviews on 7 to 8 November 2026. "Not found" means it didn't show up on the vendor's homepage or pricing page during that check. It doesn't mean the product can't do it. Spotted something out of date? Tell us at hello@octocrew.ai.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Which one fits you</h2>
+      <div class="pick">
+        <div><b>You want notes with no bot in the room</b>Granola writes notes from your device audio, so nothing joins the call.</div>
+        <div><b>You want a free recorder with summaries</b>Fathom has a free tier with summaries and action items.</div>
+        <div><b>You want transcripts and voice Q&amp;A</b>Fireflies and Otter record the call and answer on a wake word.</div>
+        <div><b>You want the follow-up done</b>Octo takes part, sends each person their tasks with the exact quote, and keeps your tracker current from call to call.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta">
+        <p>Let your next call end with a plan, not a question.</p>
+        <a class="btn" href="mailto:hello@octocrew.ai?subject=Invite%20Octo%20to%20our%20next%20call">Invite Octo to your next call →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Sources</h2>
+      <ol class="src">
+        <li><a href="https://www.granola.ai/pricing">granola.ai/pricing</a></li>
+        <li><a href="https://www.fathom.ai/">fathom.ai</a>, <a href="https://www.fathom.ai/pricing">fathom.ai/pricing</a></li>
+        <li><a href="https://guide.fireflies.ai/articles/8186888414-talk-to-fireflies-in-live-meetings">Fireflies guide: Talk to Fireflies</a></li>
+        <li><a href="https://otter.ai/">otter.ai</a>, <a href="https://www.uctoday.com/unified-communications/otter-revolutionises-meetings-with-ai-agent-that-speaks-up-during-calls/">UC Today on the Otter Meeting Agent</a></li>
+        <li><a href="https://fireflies.ai/">fireflies.ai</a></li>
+        <li><a href="https://sonix.ai/resources/fireflies-ai-pricing/">Fireflies pricing, third-party summary</a></li>
+        <li><a href="https://otter.ai/pricing">otter.ai/pricing</a></li>
+        <li><a href="https://www.fathom.ai/pricing">fathom.ai/pricing</a></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Octocrew · <a href="./">Back to Octo</a></div>
+</footer>
+</body>
+</html>
