@@ -33,7 +33,8 @@ Note-takers record the meeting. Octo takes part in it, and makes sure every task
 1. Runs every day on the Octocrew team's own calls and is offered as part of Octocrew's AI implementation work. ([source](../../product/overview.md), team, self-reported)
 2. Works on Google Meet, Microsoft Teams, Zoom, Slack Huddles, Webex and GoTo. ([source](../../product/overview.md), team, self-reported)
 3. Live demo: tasks by owner on its tile in about 9 seconds, a calendar event booked after a spoken "yes", a one-line recap in about 3 seconds. ([source](../../product/live-demo.md), team)
-4. [TO ADD] Any external user, pilot or usage number for Octo. Note: Octocrew's public case studies and testimonials (Podavach, seed-stage fintech) are about its marketing agents, not Octo, and must not be used as Octo proof.
+4. Founder, verbal, 2026-11-08 (team, self-reported): Octo reads the calendar and joins those events on its own; it sits silent and speaks only when called; on Octocrew's own calls it analyses the transcript and updates their CRM and Notion, "we're not writing anything, we just speak and discuss and then all the information in our Notion, in our CRM is being updated"; benefit named: faster decisions, because "everything [is] integrated" and nobody has to go to other tools.
+5. [TO ADD] Any external user, pilot or usage number for Octo (internal numbers from Octocrew's own use would also help: calls per week, CRM or Notion records updated). Note: Octocrew's public case studies and testimonials (Podavach, seed-stage fintech) are about its marketing agents, not Octo, and must not be used as Octo proof.
 
 ## Conversion goal
 
@@ -47,6 +48,8 @@ Direct, practical, a little cheeky. ([source](../../brief/campaign-brief.md), fo
 
 - "Otter and Fireflies can't talk in calls": false, both ship voice on a wake word. ([source](../../market/landscape.md))
 - "AI teammate" as the differentiator on its own: Fireflies and ZoomMate use the same words.
+- "Joins only when you invite it": false. Octo auto-joins the events on the calendar (founder, verbal, 2026-11-08).
+- "CRM sync" as a differentiator: Otter, Fathom and ZoomMate already sync to CRMs (`market/landscape.md`, `outputs/research/market-landscape.md`).
 - Any customer name, number or testimonial from Octocrew's marketing-agent case studies as if it were about Octo.
 - "Sign up now", a public price or self-serve claims until they exist. ([source](../../product/overview.md))
 - The demo videos' people or project as real; they are made up. Nothing public without Oleksii's OK. ([source](../../assets/README.md))
