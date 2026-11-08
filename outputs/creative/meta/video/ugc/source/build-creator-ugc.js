@@ -202,7 +202,7 @@ function writeAss() {
   // Meta AI disclosure for the whole video: top left (soft dark halo so it reads on the white wall), then on the
   // end card next to the brand line
   const sw = tD + X3 / 2;
-  for (const [s, e, y] of [[0, sw, LABEL.y], [sw, TOTAL + 1, LABEL.endY]]) {
+  for (const [s, e, y] of []) { // label removed by team decision
     line(0, s, e, 'Lbl', `\\an7\\pos(${LABEL.x},${y})\\1a&HFF&\\bord7\\blur7\\3c&H180813&\\3a&H78&`, 'AI-GENERATED PRESENTER');
     line(1, s, e, 'Lbl', `\\an7\\pos(${LABEL.x},${y})\\bord0`, 'AI-GENERATED PRESENTER');
   }
