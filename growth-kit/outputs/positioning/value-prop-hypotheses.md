@@ -10,7 +10,7 @@ The team keeps one persona (founders, heads of ops and delivery leads at remote 
 |---|---|---|---|
 | V1 Follow-through | Every task reaches the tracker and updates itself | "Your client said it on the call. Did it make it into Asana?" | Tasks by DM with quote; tracker create and update (`product/overview.md`) |
 | V2 Prep | Walk into every call already knowing what matters | "The brief is ready before you join." | Pre-call brief: attendees, last discussion, open items (`product/overview.md`) |
-| V3 Presence | Talk instead of taking notes | "Nobody on your team has to be the note-taker." | Octo captures and distributes tasks (`product/overview.md`) |
+| V3 Nobody types (updated after the founder's input) | Just talk: tracker, CRM and Notion update from the conversation | "Nobody on the call typed a word. Asana, the CRM and Notion are already updated." | Founder, verbal: "we just speak and discuss and then all the information in our Notion, in our CRM is being updated" (brief Proof 4) |
 | V4 Decide on the call | Status answered on the spot, so the decision happens in the meeting | "Where are we on the launch? Octo puts it on its tile." | Answers from tracker, CRM and knowledge base; shows it on its tile (`product/overview.md`, `product/live-demo.md`) |
 
 "Shorter meetings" is a benefit we may describe, never a measured claim: there is no number behind it. The client-facing side of V2 (objections, pertinent info for the client) stays out of ads until Oleksii confirms what client mode allows (H2 below).
