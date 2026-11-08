@@ -39,7 +39,7 @@ p { margin: 0; }
 .s-title { justify-content: center; }
 .s-title .octo { position: absolute; right: 70px; bottom: 60px; width: 470px; filter: drop-shadow(0 40px 80px rgba(0,0,0,.5)); }
 .s-title .sub { font-size: 32px; line-height: 1.35; color: var(--soft); max-width: 900px; margin-top: 34px; }
-.s-title .url { margin-top: 48px; font-family: "Geist Mono", monospace; font-size: 20px; color: var(--soft2); letter-spacing: .06em; }
+.s-title .url { margin-top: 28px; font-family: "Geist Mono", monospace; font-size: 20px; color: var(--soft2); letter-spacing: .06em; }
 
 /* 2 icp */
 .icp { display: grid; grid-template-columns: 640px 1fr; gap: 72px; margin-top: 48px; align-items: center; }
@@ -180,6 +180,73 @@ p { margin: 0; }
 .close { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .close .url { font-family: "Geist Mono", monospace; font-size: 22px; color: var(--soft2); }
 
+
+/* insight */
+.ins { display: grid; grid-template-columns: 640px 1fr; gap: 70px; margin-top: 30px; align-items: center; flex: 1; }
+.ins-l { display: grid; gap: 24px; }
+.who { display: grid; grid-template-columns: 96px 1fr; gap: 24px; align-items: center; padding: 28px 30px; }
+.who .av { width: 96px; height: 96px; border-radius: 50%; background: var(--lime); color: var(--on-lime); display: grid; place-items: center; font-size: 40px; font-weight: 600; }
+.who p { font-size: 21px; color: var(--soft2); margin-top: 8px; }
+.moment { padding: 28px 30px; display: grid; gap: 16px; }
+.moment .mono { font-size: 15px; color: var(--soft2); }
+.bubble { background: #fff; color: #15111F; border-radius: 22px 22px 22px 6px; padding: 20px 24px; font-size: 27px; font-weight: 500; line-height: 1.3; max-width: 520px; }
+.moment p { font-size: 21px; color: var(--soft2); }
+.truth { font-size: 84px; line-height: 1.02; margin: 18px 0 30px; }
+.so { font-size: 30px; line-height: 1.35; color: var(--soft); max-width: 680px; }
+.so b { color: var(--lime); font-weight: 600; }
+/* website */
+.match { display: grid; grid-template-columns: auto 60px 1fr; gap: 26px; align-items: center; margin-top: 34px; }
+.match .phones { display: flex; gap: 18px; }
+.match .phone { width: 210px; }
+.arrow { font-size: 56px; color: var(--lime); text-align: center; }
+.page { position: relative; }
+.page img { width: 100%; border-radius: 20px; border: 1px solid var(--line); display: block; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.callouts { display: grid; gap: 12px; margin-top: 18px; }
+.callouts div { display: flex; gap: 14px; align-items: center; font-size: 21px; }
+.callouts b { width: 34px; height: 34px; border-radius: 50%; background: var(--lime); color: var(--on-lime); display: grid; place-items: center; font-size: 17px; flex: none; }
+.flow { display: flex; gap: 10px; align-items: center; margin-top: 30px; flex-wrap: wrap; }
+.flow span { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 11px 16px; font-size: 19px; }
+.flow i { color: var(--soft2); font-style: normal; }
+.flow span.end { background: var(--lime); color: var(--on-lime); border-color: var(--lime); font-weight: 600; }
+/* reality */
+.real { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 40px; position: relative; }
+.rcol { padding: 30px; display: grid; gap: 14px; align-content: start; }
+.rcol .mono { font-size: 15px; color: var(--lime); }
+.rcol h3 { font-size: 32px; }
+.rcol ul { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 10px; font-size: 20px; color: var(--soft); }
+.rcol li code { font-family: "Geist Mono", monospace; font-size: 15px; color: var(--soft2); display: block; margin-top: 2px; }
+.rcol .hero-ex { background: #fff; color: #15111F; border-radius: 14px; padding: 16px 18px; font-size: 22px; font-weight: 600; line-height: 1.2; }
+.rcol .hero-ex small { display: block; font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .08em; color: #6B6B76; font-weight: 500; margin-bottom: 6px; text-transform: uppercase; }
+.status { white-space: nowrap; flex: none; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 10px 18px; font-family: "Geist Mono", monospace; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+.status.setup { background: rgba(240,196,106,.15); color: #F0C46A; }
+.status.live { background: rgba(196,232,51,.15); color: var(--lime); }
+.paid { margin-top: 26px; font-size: 21px; color: var(--soft2); }
+.paid b { color: var(--text); }
+/* agents */
+.ag { display: grid; grid-template-columns: 700px 1fr; gap: 50px; margin-top: 30px; }
+.tree { display: grid; gap: 0; justify-items: center; }
+.tnode { padding: 16px 22px; font-size: 20px; text-align: center; line-height: 1.25; }
+.tnode b { display: block; font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--lime); font-weight: 500; margin-bottom: 4px; }
+.tnode.human { background: var(--lime); color: var(--on-lime); border-radius: 18px; font-weight: 600; }
+.tnode.human b { color: var(--on-lime); }
+.vline { width: 2px; height: 26px; background: var(--soft2); opacity: .5; }
+.kids { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; width: 100%; margin-top: 0; }
+.kids .tnode { font-size: 18px; }
+.octo-node { margin-top: 18px; width: 100%; display: flex; align-items: center; gap: 18px; padding: 16px 22px; border: 2px solid var(--lime); border-radius: 18px; font-size: 20px; }
+.octo-node img { width: 64px; }
+.changes { display: grid; gap: 12px; align-content: start; }
+.changes h3 { font-size: 26px; margin-bottom: 6px; }
+.chg { display: grid; grid-template-columns: 150px 1fr 30px 1fr; gap: 14px; align-items: center; padding: 14px 18px; font-size: 18px; line-height: 1.25; }
+.chg .who2 { font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--soft2); }
+.chg .bef { color: var(--mute); text-decoration: line-through; text-decoration-color: rgba(244,160,151,.8); }
+.chg .arr { color: var(--lime); text-align: center; }
+.chg .aft { color: var(--text); }
+
+.kpis { display: flex; gap: 18px; margin-top: 40px; }
+.kpis div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px 22px; font-size: 19px; color: var(--soft2); }
+.kpis b { display: block; font-size: 38px; color: var(--text); letter-spacing: -0.03em; line-height: 1.05; }
+.tgt { margin-top: 22px; font-size: 18px; line-height: 1.4; color: var(--soft2); }
+.tgt b { color: var(--text); font-weight: 600; }
 /* chrome */
 #bar { position: fixed; left: 0; top: 0; height: 4px; background: var(--lime); transition: width .25s ease; z-index: 5; }
 #ctl { position: fixed; right: 18px; bottom: 14px; display: flex; gap: 8px; align-items: center; z-index: 5; font-family: "Geist Mono", monospace; font-size: 13px; color: var(--mute); }
@@ -204,40 +271,31 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <p class="eb">Growth hackathon · Portugal · 8 Nov 2026 · Go-to-market</p>
     <h1>Note-takers record the meeting. <span class="lime">Octo takes part in it.</span></h1>
     <p class="sub">An AI teammate on every call, for small teams that don't have a project manager yet. Here's how we take it to market, and what we shipped today.</p>
+    <div class="kpis"><div><b>€1,000</b>7 days</div><div><b>2</b>paid channels</div><div><b>4+1</b>Meta videos</div><div><b>10+</b>invites, target</div></div>
     <p class="url">octo-landing-47q.pages.dev</p>
     <img class="octo" src="media/pitch/octo-10-talking.png" alt="">
   </section>
 
   <!-- 2 -->
-  <section class="slide" aria-label="Who we sell to">
-    <p class="eb">01 · Who we sell to</p>
-    <h2>Small teams with <span class="lime">no project manager</span></h2>
-    <div class="icp">
-      <div class="team card">
-        <div class="big">≤ 50 <small>people</small></div>
-        <div class="dots" aria-hidden="true">
-          <i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="pm"></i>
-        </div>
-        <div class="legend"><span><b style="background:var(--lime)"></b>Founder chases every follow-up</span><span><b style="border:2px dashed var(--soft2)"></b>PM: none</span></div>
+  <section class="slide" aria-label="Insight">
+    <p class="eb">Insight · the buyer</p>
+    <div class="ins">
+      <div class="ins-l">
+        <div class="who card"><div class="av">F</div><div><h3>The founder of a 15-person remote agency</h3><p>12 client calls a week · ClickUp · no project manager</p></div></div>
+        <div class="moment card"><span class="mono">The moment · Thursday, 4 pm</span><div class="bubble">"Did that get done? We agreed on it on Tuesday."</div><p>The AI summary went to everyone on the call. Nobody did it.</p></div>
       </div>
       <div>
-        <div class="traits">
-          <div class="trait card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/></svg></div><p>Lots of calls<span>Client and team, on whatever platform the client picks</span></p></div>
-          <div class="trait card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><p>Work lives in a tracker<span>ClickUp, Asana, Notion, Trello</span></p></div>
-          <div class="trait card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><p>Follow-ups cost the founder<span>Sharpest slice: remote agencies, where it's billable time</span></p></div>
-        </div>
-        <p class="trigger">Trigger: <b>"Did that get done?"</b> about last week's call.</p>
+        <span class="mono lime" style="font-size:16px">The truth</span>
+        <h2 class="truth">A summary sent to everyone belongs to no one.</h2>
+        <p class="so">So Octo sends <b>each person their own tasks</b>, in their own words, and closes them when someone says "done".</p>
       </div>
     </div>
+    <p class="src">A composite of the buyer we target, not a real customer · teams of up to 50 with no PM, remote agencies first</p>
   </section>
 
   <!-- 3 -->
   <section class="slide" aria-label="Market">
-    <p class="eb">02 · The market</p>
+    <p class="eb">Insight · why it makes you nod</p>
     <h2>The pain is everywhere. <span class="lime">Buyers are switching.</span></h2>
     <div class="stats">
       <div class="stat card">
@@ -264,22 +322,22 @@ body.scroll #ctl, body.scroll #bar { display: none; }
 
   <!-- 4 -->
   <section class="slide" aria-label="Why we win">
-    <p class="eb">03 · Why we win</p>
+    <p class="eb">Insight · why we win</p>
     <h2>Nobody else claims <span class="lime">all four</span></h2>
     <div class="matrix" role="table">
       <div class="hd"></div><div class="hd">Speaks on the call</div><div class="hd">Each person's tasks, with the quote</div><div class="hd">Closes tasks on "done"</div><div class="hd">Any of 6 platforms</div>
       <div class="rowname">Note-takers<small>Otter, Fireflies</small></div><div><i class="d y"></i><span class="cell-note">On a wake word</span></div><div><i class="d h"></i><span class="cell-note">Summary, action items</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">Meet, Zoom, Teams</span></div>
-      <div class="rowname">Sembly<small>AI meeting agent</small></div><div><i class="d h"></i><span class="cell-note">By text</span></div><div><i class="d h"></i><span class="cell-note">Owners, deadlines</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">4 platforms</span></div>
-      <div class="rowname">Suite AI<small>ZoomMate, Teams</small></div><div><i class="d h"></i><span class="cell-note">In-meeting questions</span></div><div><i class="d h"></i><span class="cell-note">Inside its suite</span></div><div><i class="d n"></i></div><div><i class="d n"></i><span class="cell-note">Own suite only</span></div>
+      <div class="rowname">Sembly<small>AI meeting agent</small></div><div><i class="d h"></i><span class="cell-note">In the meeting, voice not claimed</span></div><div><i class="d h"></i><span class="cell-note">Owners, deadlines</span></div><div><i class="d n"></i></div><div><i class="d h"></i><span class="cell-note">4 platforms</span></div>
+      <div class="rowname">Suite AI<small>ZoomMate, Teams</small></div><div><i class="d h"></i><span class="cell-note">In-meeting questions</span></div><div><i class="d h"></i><span class="cell-note">Inside its suite</span></div><div><i class="d n"></i></div><div><i class="d n"></i><span class="cell-note">Needs Zoom Workplace or Microsoft 365</span></div>
       <div class="rowname us last">Octo</div><div class="us last"><i class="d y"></i><span class="cell-note">By voice and on its tile</span></div><div class="us last"><i class="d y"></i><span class="cell-note">By DM, exact quote</span></div><div class="us last"><i class="d y"></i><span class="cell-note">On the next call</span></div><div class="us last"><i class="d y"></i><span class="cell-note">Meet to GoTo</span></div>
     </div>
     <div class="keyline"><span><i class="d y"></i>Claims it</span><span><i class="d h"></i>Partly</span><span><i class="d n"></i>Not claimed</span><span style="margin-left:auto">"AI teammate", "meeting agent", "follow-up": taken. These four: open.</span></div>
-    <p class="src">From each vendor's own pages, checked 7 to 8 Nov 2026 · full table: octo-landing-47q.pages.dev/compare</p>
+    <p class="src">From the vendors' own pages, checked 7 to 8 Nov 2026. Absence on a page is not proof · full table: octo-landing-47q.pages.dev/compare</p>
   </section>
 
   <!-- 5 -->
   <section class="slide" aria-label="Live demo">
-    <p class="eb">04 · Live</p>
+    <p class="eb">The product · live</p>
     <h2>Octo on a Google Meet call</h2>
     <div class="demo">
       <video controls playsinline preload="none" poster="media/octo-call.jpg" src="media/octo-demo.mp4" aria-label="Backup: 36-second Octo demo"></video>
@@ -292,15 +350,57 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <p class="src">The video is the backup if the live call fails · people in the demo are made up</p>
   </section>
 
+  <!-- W -->
+  <section class="slide" aria-label="Website">
+    <p class="eb">Website · the ad matches the page</p>
+    <h2>Same line, same buyer, <span class="lime">same button</span></h2>
+    <div class="match">
+      <div class="phones">
+        <div class="phone"><img src="media/pitch/retargeting-9x16.jpg" alt="Meta ad: Still ending calls with so who's doing what?"></div>
+        <div class="phone"><img src="media/pitch/creative-2-9x16.jpg" alt="Meta ad: The PM your team doesn't have yet"></div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="page">
+        <img src="media/pitch/page-home.jpg" alt="Landing page hero">
+        <div class="callouts">
+          <div><b>1</b>Ad and hero: "so who's doing what?"</div>
+          <div><b>2</b>Same buyer: small teams without a project manager</div>
+          <div><b>3</b>One button everywhere: Invite Octo to your next call</div>
+        </div>
+      </div>
+    </div>
+    <div class="flow"><span>Ad</span><i>→</i><span>Hero</span><i>→</i><span>Live demo</span><i>→</i><span>How it works</span><i>→</i><span>vs note-takers</span><i>→</i><span>Pricing</span><i>→</i><span class="end">Invite Octo to your next call</span></div>
+  </section>
+
+  <!-- R -->
+  <section class="slide" aria-label="Reality">
+    <p class="eb">Reality · live in Grona</p>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:30px">
+      <h2>Live page. Targeting. <span class="lime">A campaign behind it.</span></h2>
+      <span class="status setup" id="grona-status">● Setting up in Grona</span>
+    </div>
+    <div class="real">
+      <div class="rcol card"><span class="mono">1 · Page</span><h3>Live, Grona on every page</h3>
+        <ul><li>octo-landing-47q.pages.dev</li><li>Home, comparison, pricing</li><li>Demo videos, one CTA</li></ul></div>
+      <div class="rcol card"><span class="mono">2 · Targeting</span><h3>Four audiences</h3>
+        <ul><li>Meta ad visitors<code>utm_source = meta</code></li><li>Note-taker switchers<code>visited /compare</code></li><li>Creator viewers<code>utm_source = youtube</code></li><li>Returning visitors<code>no invite yet</code></li></ul></div>
+      <div class="rcol card"><span class="mono">3 · Campaign</span><h3>"Who's doing what?"</h3>
+        <div class="hero-ex"><small>Meta visitors see</small>Your team doesn't have a project manager. Now it does.</div>
+        <div class="hero-ex"><small>Switchers see</small>Your note-taker writes it down. Octo does it.</div></div>
+    </div>
+    <p class="paid">Paid side, ready to run: <b>Meta campaign, 5 creatives, €700</b>, retargeting from day 3. Every ad links with UTM tags, so Grona knows who arrived.</p>
+  </section>
+
   <!-- 6 -->
   <section class="slide" aria-label="Go-to-market plan">
-    <p class="eb">05 · Go-to-market</p>
+    <p class="eb">Reality · the campaign</p>
     <h2>One campaign: <span class="lime">"Who's doing what?"</span></h2>
     <div class="gtm">
       <div class="budget">
         <div class="total">€1,000 <small>for 7 days</small></div>
         <div class="split"><div class="meta">€700</div><div class="yt">€300</div></div>
         <div class="blabels"><div><b>Meta ads · main channel</b>5 vertical creatives, retargeting from day 3</div><div><b>YouTube creators</b>2 or 3 segments</div></div>
+        <p class="tgt"><b>Meta targeting:</b> ages 25 to 55 · ClickUp, Asana, Trello, Notion, Monday.com, small business · Founder, Owner, CEO, Ops Manager, Agency Owner · PT, ES, UK, IE, NL, DE, Nordics</p>
         <div class="organic"><span>LinkedIn one-liner A/B · €0</span><span>Reddit answers · €0</span><span>AI answers (/compare, llms.txt) · €0</span></div>
       </div>
       <div>
@@ -316,47 +416,39 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     </div>
   </section>
 
-  <!-- 7 -->
-  <section class="slide" aria-label="Ad creatives">
-    <p class="eb">06 · Creatives, ready to run</p>
-    <h2>Built from the real product</h2>
-    <div class="ads">
-      <div class="phone rel"><span class="tag">VIDEO · 9:16</span><video autoplay muted loop playsinline preload="metadata" poster="media/pitch/creative-1-9x16-poster.jpg" src="media/pitch/creative-1-9x16.mp4" aria-label="Meta video creative 1"></video></div>
-      <div class="phone"><img src="media/pitch/creative-2-9x16.jpg" alt="Meta ad: The PM your team doesn't have yet"></div>
-      <div class="phone"><img src="media/pitch/creative-3-9x16.jpg" alt="Meta ad: Note-takers record. Octo acts."></div>
-      <div class="phone"><img src="media/pitch/creative-4-9x16.jpg" alt="Meta ad: No more 'I never said that.'"></div>
-      <div class="sqcol"><div class="sq"><img src="media/pitch/li-oneliner-2.jpg" alt="LinkedIn one-liner card"></div><div class="sq"><img src="media/pitch/li-task-message.jpg" alt="LinkedIn post: the message after the call"></div></div>
+  <!-- A -->
+  <section class="slide" aria-label="Agents">
+    <p class="eb">Agents · AI did the work, we stayed in charge</p>
+    <h2>Agents that <span class="lime">check each other</span></h2>
+    <div class="ag">
+      <div class="tree">
+        <div class="tnode human"><b>Decides</b>Oleksii and the team</div>
+        <div class="vline"></div>
+        <div class="tnode card"><b>Owner agent</b>Claude Code: plans, writes, ships, checks every claim</div>
+        <div class="vline"></div>
+        <div class="kids">
+          <div class="tnode card"><b>Research agents ×4</b>Market, creators, influencers, promotion</div>
+          <div class="tnode card"><b>Sales-test agent</b>A separate Claude Code agent</div>
+          <div class="tnode card"><b>Reviewer agent</b>Design, copy, phone layout</div>
+          <div class="tnode card"><b>Grona marketing agents</b>Brief, campaign, copy, in VS Code</div>
+        </div>
+        <div class="octo-node"><img src="media/pitch/octo-10-talking.png" alt=""><span><b class="mono lime" style="font-size:12px;display:block">The agent we built</b>Octo, live on calls</span></div>
+      </div>
+      <div class="changes">
+        <h3>What changed when they challenged each other</h3>
+        <div class="chg card"><span class="who2">AI landing draft</span><span class="bef">"SOC-2 certified", "1,400+ standups"</span><span class="arr">→</span><span class="aft">Blocked: not true</span></div>
+        <div class="chg card"><span class="who2">Research</span><span class="bef">"69% of time in meetings"</span><span class="arr">→</span><span class="aft">"meetings or team management", checked at source</span></div>
+        <div class="chg card"><span class="who2">Reviewer</span><span class="bef">50-word hero, Octo column off-screen on phones</span><span class="arr">→</span><span class="aft">31 words, both columns visible</span></div>
+        <div class="chg card"><span class="who2">Sales test</span><span class="bef">"Sell to sales teams"</span><span class="arr">→</span><span class="aft">Only internal pipeline reviews, not prospect calls</span></div>
+        <div class="chg card"><span class="who2">Tests</span><span class="bef">Calculator: $123 at 41 hours</span><span class="arr">→</span><span class="aft">Team $99 + $3 top-up</span></div>
+      </div>
     </div>
-    <div class="counts">
-      <div><b>8</b>Meta videos</div>
-      <div><b>10</b>Meta statics</div>
-      <div><b>10</b>social visuals</div>
-      <div><b>2</b>formats each: 9:16, 4:5</div>
-      <div><b>1</b>CTA everywhere</div>
-    </div>
-  </section>
-
-  <!-- 8 -->
-  <section class="slide" aria-label="What we shipped">
-    <p class="eb">07 · Shipped today</p>
-    <h2>Not a plan on slides. <span class="lime">It's live.</span></h2>
-    <div class="ship">
-      <a class="tile card" href="./"><img src="media/pitch/page-home.jpg" alt=""><div><span class="live">● LIVE · GRONA ON</span><h3>Landing page</h3><p>Two demo videos, one CTA</p></div></a>
-      <a class="tile card" href="compare"><img src="media/pitch/page-compare.jpg" alt=""><div><span class="live">● LIVE</span><h3>Octo vs note-takers</h3><p>Sourced comparison, for AI answers</p></div></a>
-      <a class="tile card" href="pricing"><img src="media/pitch/page-pricing.jpg" alt=""><div><span class="live">● LIVE</span><h3>Pricing</h3><p>Per company, credits, calculator</p></div></a>
-      <a class="tile card" href="https://github.com/pandore/octo-growth-hackathon/blob/main/outputs/report/gtm-one-pager.pdf"><img src="media/pitch/gtm-one-pager.jpg" alt=""><div><span class="live" style="color:var(--soft2)">PDF</span><h3>GTM one-pager</h3><p>The whole plan on one page</p></div></a>
-    </div>
-    <div class="numrow">
-      <div class="num card"><b>28</b><span>ad and social creatives</span></div>
-      <div class="num card"><b>45</b><span>creators shortlisted: 18 YouTube, 27 more</span></div>
-      <div class="num card"><b>12</b><span>competitor pages checked</span></div>
-      <div class="num card"><b>5</b><span>research reports, all sourced</span></div>
-    </div>
+    <p class="src">Every number on these slides traces to a source in the team repo: github.com/pandore/octo-growth-hackathon</p>
   </section>
 
   <!-- 9 -->
   <section class="slide" aria-label="Growth loop and pricing">
-    <p class="eb">08 · Growth engine</p>
+    <p class="eb">Go-to-market · growth engine</p>
     <h2>Every call is a demo</h2>
     <div class="loopwrap">
       <div class="loop">
@@ -385,7 +477,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
 
   <!-- 10 -->
   <section class="slide" aria-label="First 7 days">
-    <p class="eb">09 · The first 7 days</p>
+    <p class="eb">Go-to-market · the first 7 days</p>
     <h2>Launch, learn, <span class="lime">double what works</span></h2>
     <div class="week">
       <div class="day k"><i></i><b>DAY 1</b><span>Meta live, 5 creatives</span></div>
@@ -403,7 +495,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
       <div class="card"><b>1+</b><span>creator segment published</span></div>
     </div>
     <div class="close">
-      <a class="pill" href="./#access">Invite Octo to your next call →</a>
+      <a class="pill" href="index.html#access">Invite Octo to your next call →</a>
       <span class="url">octo-landing-47q.pages.dev</span>
       <img src="media/pitch/octo-02-happy.png" alt="" style="width:150px">
     </div>
@@ -411,7 +503,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
 
 </main>
 </div>
-<div id="ctl"><span id="count">1 / 10</span><button id="prev" aria-label="Previous slide">←</button><button id="next" aria-label="Next slide">→</button><button id="fs" aria-label="Full screen">⛶</button></div>
+<div id="ctl"><span id="count">1 / 11</span><button id="prev" aria-label="Previous slide">←</button><button id="next" aria-label="Next slide">→</button><button id="fs" aria-label="Full screen">⛶</button></div>
 <script>
 const deck = document.getElementById('deck'), fit = document.getElementById('fit');
 const slides = [...deck.querySelectorAll('.slide')];

@@ -27,6 +27,8 @@ Drafts, ready to argue with:
 | Targeting | Audiences in [`outputs/ads/meta-ads-v2.md`](outputs/ads/meta-ads-v2.md) |
 | Market research | [`outputs/research/market-research-v1.md`](outputs/research/market-research-v1.md) |
 | Final pitch (2 min, with live demo) | [`pitch/final-pitch.md`](pitch/final-pitch.md) |
+| Pitch deck (11 slides, mapped to the judging criteria) | https://octo-landing-47q.pages.dev/pitch (hidden, noindex) |
+| Grona setup: audiences and campaign | [`outputs/website/grona-setup.md`](outputs/website/grona-setup.md) |
 | Pricing | Live at https://octo-landing-47q.pages.dev/pricing, source `outputs/website/landing/pricing.html` |
 | Influencers beyond YouTube (27) and YouTube re-check | [`outputs/research/influencers-v1.md`](outputs/research/influencers-v1.md) |
 | Promotion strategies, top 10 for 30 days | [`outputs/research/promotion-strategies-v1.md`](outputs/research/promotion-strategies-v1.md) |
