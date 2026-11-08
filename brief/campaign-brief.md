@@ -39,7 +39,7 @@ Sources: [`product/overview.md`](../product/overview.md), [`product/live-demo.md
 
 ## Proof
 
-- The live demo on a real Google Meet call, today. The 36-second video (16:9 and 9:16). Oleksii's OK needed before the video runs in ads or on social.
+- The live demo on a real Google Meet call, today. The 36-second video (16:9 and 9:16), the screenshots and the Octo poses: cleared by Oleksii for ads and social (8 Nov). The people in the video are made up; say so where the format allows.
 - Octocrew runs on Octo every day: "we're not writing anything, we just speak and discuss and then all the information in our Notion, in our CRM is being updated" (Oleksii, 8 Nov).
 - No customer names, counts or usage numbers exist yet. Do not invent any.
 
