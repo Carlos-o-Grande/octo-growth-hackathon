@@ -7,7 +7,7 @@ The brief: ship **Plan, Landing page, Targeting & campaign, Social, Paid, Bold i
 | Person | Owns | Also helps with |
 |---|---|---|
 | **A: Oleksii** (product + strategy) | **Plan** (one page) · facts about Octo for everyone | Bold idea, final check |
-| **B: Builder** | **Landing page in Grona** (copy it from our [v0 landing](https://octocrew-hq.github.io/octo-landing/)) | Hooks the campaign to the page |
+| **B: Builder** | **Landing page in Grona** (copy it from our [v0 landing](https://octo-landing-47q.pages.dev)) | Hooks the campaign to the page |
 | **C: Growth / performance** | **Targeting & campaign in Grona** · **Paid** ads | €1,000 split in the plan |
 | **D: Content / creative** | **Social** posts · ad creatives | **Bold idea** (co-owner with A) |
 
@@ -57,7 +57,7 @@ Change any of them in the first 20 minutes, then freeze.
 
 ## Ready to use
 
-- Copy and structure: [v0 landing](https://octocrew-hq.github.io/octo-landing/), [product overview](../product/overview.md), [FAQ](../pitch/faq.md).
+- Copy and structure: [v0 landing](https://octo-landing-47q.pages.dev), [product overview](../product/overview.md), [FAQ](../pitch/faq.md).
 - Creatives: `assets/octo-demo-36s-9x16.mp4` (Reels, TikTok, Shorts), `assets/octo-demo-36s-16x9.mp4`, `assets/screenshots/`, `assets/slides/`.
 - Competitors for ad angles: [market/landscape.md](../market/landscape.md).
 - Audience and loop ideas: [hypotheses.md](hypotheses.md), targeting-ready audiences: [audiences.md](audiences.md).

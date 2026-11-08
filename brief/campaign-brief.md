@@ -43,7 +43,7 @@ People who already pay for a note-taker (Otter, Fireflies, Fathom) and are searc
 
 ## Landing page URL
 
-v0: https://octocrew-hq.github.io/octo-landing/ (replace with the Grona page once it is live)
+https://octo-landing-47q.pages.dev (replace with the Grona page once it is live)
 
 ## Competitors
 
