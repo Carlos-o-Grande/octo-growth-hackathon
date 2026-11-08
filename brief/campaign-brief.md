@@ -12,7 +12,7 @@ For founders and ops leaders at remote agencies, Octo is a teammate that joins e
 
 ## Audience
 
-Small teams of up to 50 people that don't have a project manager yet. The founder or an ops lead runs the calls and is the only one who follows up. Remote agencies are the sharpest slice: many client calls, on whatever platform the client picks, and work tracked in ClickUp, Asana, Trello or Notion.
+Small teams of up to 50 people that don't have a project manager yet. The founder or an ops lead runs the calls and is the only one who follows up. On the landing page: "small teams without a project manager, from remote agencies to startups". Remote agencies are the sharpest slice: many client calls, on whatever platform the client picks, and work tracked in ClickUp, Asana, Trello or Notion.
 
 Trigger moment: a client or teammate asks "did that get done?" about something said on last week's call, and nobody wrote it down.
 
@@ -37,11 +37,11 @@ Do not invent customer counts, percentages, certifications or logos. There are n
 
 ## How it's sold
 
-Self-serve SaaS for small teams, not enterprise sales. For now: early access from the landing page.
+Self-serve SaaS for small teams, not enterprise sales. For now: early access, by inviting Octo to a call.
 
 ## Conversion goal
 
-Get early access: leave a work email on the landing page. One button.
+Invite Octo to your next call (decided 8 Nov, ~15:10). One button. Today it opens an email to hello@octocrew.ai; someone has to answer and set up the call.
 
 ## Main channel
 
