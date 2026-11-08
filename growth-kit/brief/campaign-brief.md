@@ -58,7 +58,7 @@ Every call ends with "so who's doing what?": someone takes notes and stops takin
 
 ## Landing page URL
 
-[TO ADD] No Octo page exists. https://www.octocrew.ai/ sells Octocrew's marketing agents and does not mention Octo.
+[TO ADD] exact URL. Decision (team, verbal, 2026-11-08): Octo lives on a subdomain of the official site, octocrew.ai. No Octo page exists yet; https://www.octocrew.ai/ sells Octocrew's marketing agents and does not mention Octo.
 
 ## Competitors
 
