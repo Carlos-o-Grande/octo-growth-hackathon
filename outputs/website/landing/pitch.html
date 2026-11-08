@@ -68,7 +68,7 @@ p { margin: 0; }
 .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
 .ring .n { position: absolute; inset: 0; display: grid; place-items: center; font-size: 64px; font-weight: 600; letter-spacing: -0.04em; }
 .stat p { font-size: 25px; line-height: 1.3; }
-.stat .who { font-family: "Geist Mono", monospace; font-size: 15px; letter-spacing: .06em; color: var(--mute); }
+.stat .srcline { font-family: "Geist Mono", monospace; font-size: 15px; letter-spacing: .06em; color: var(--mute); }
 .bars { height: 230px; display: flex; align-items: flex-end; gap: 34px; padding-left: 10px; }
 .bar { width: 96px; border-radius: 14px 14px 6px 6px; position: relative; }
 .bar span { position: absolute; top: -40px; left: 0; right: 0; text-align: center; font-size: 28px; font-weight: 600; }
@@ -200,11 +200,11 @@ p { margin: 0; }
 .match .phone { width: 210px; }
 .arrow { font-size: 56px; color: var(--lime); text-align: center; }
 .page { position: relative; }
-.page img { width: 100%; border-radius: 20px; border: 1px solid var(--line); display: block; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
-.callouts { display: grid; gap: 12px; margin-top: 18px; }
+.page img { width: 100%; max-height: 400px; object-fit: cover; object-position: top; border-radius: 20px; border: 1px solid var(--line); display: block; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.callouts { display: grid; gap: 10px; margin-top: 16px; }
 .callouts div { display: flex; gap: 14px; align-items: center; font-size: 21px; }
 .callouts b { width: 34px; height: 34px; border-radius: 50%; background: var(--lime); color: var(--on-lime); display: grid; place-items: center; font-size: 17px; flex: none; }
-.flow { display: flex; gap: 10px; align-items: center; margin-top: 30px; flex-wrap: wrap; }
+.flow { display: flex; gap: 10px; align-items: center; margin-top: 22px; flex-wrap: wrap; }
 .flow span { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 11px 16px; font-size: 19px; }
 .flow i { color: var(--soft2); font-style: normal; }
 .flow span.end { background: var(--lime); color: var(--on-lime); border-color: var(--lime); font-weight: 600; }
@@ -247,6 +247,18 @@ p { margin: 0; }
 .kpis b { display: block; font-size: 38px; color: var(--text); letter-spacing: -0.03em; line-height: 1.05; }
 .tgt { margin-top: 22px; font-size: 18px; line-height: 1.4; color: var(--soft2); }
 .tgt b { color: var(--text); font-weight: 600; }
+/* moves */
+.moves { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 44px; flex: 1; min-height: 0; }
+.move { padding: 30px 26px; display: flex; flex-direction: column; gap: 14px; position: relative; }
+.move .no { font-family: "Geist Mono", monospace; font-size: 15px; letter-spacing: .14em; color: var(--lime); }
+.move .ic { width: 72px; height: 72px; border-radius: 20px; background: rgba(196,232,51,.12); display: grid; place-items: center; }
+.move h3 { font-size: 34px; line-height: 1.05; }
+.move p { font-size: 21px; line-height: 1.3; color: var(--soft); }
+.move .chips { margin-top: auto; display: grid; gap: 8px; }
+.move .chips span { border-radius: 12px; padding: 10px 14px; font-size: 17px; background: rgba(255,255,255,.06); color: var(--soft); }
+.move .chips span.ok { background: rgba(196,232,51,.14); color: var(--lime); }
+.move.star { border: 2px solid var(--lime); }
+.move.star .badge2 { position: absolute; top: -14px; right: 22px; background: var(--lime); color: var(--on-lime); font-family: "Geist Mono", monospace; font-size: 12px; letter-spacing: .12em; padding: 5px 10px; border-radius: 999px; }
 /* chrome */
 #bar { position: fixed; left: 0; top: 0; height: 4px; background: var(--lime); transition: width .25s ease; z-index: 5; }
 #ctl { position: fixed; right: 18px; bottom: 14px; display: flex; gap: 8px; align-items: center; z-index: 5; font-family: "Geist Mono", monospace; font-size: 13px; color: var(--mute); }
@@ -270,10 +282,25 @@ body.scroll #ctl, body.scroll #bar { display: none; }
   <section class="slide s-title" aria-label="Title">
     <p class="eb">Growth hackathon · Portugal · 8 Nov 2026 · Go-to-market</p>
     <h1>Note-takers record the meeting. <span class="lime">Octo takes part in it.</span></h1>
-    <p class="sub">An AI teammate on every call, for small teams that don't have a project manager yet. Here's how we take it to market, and what we shipped today.</p>
+    <p class="sub">An AI teammate on every call, for small teams with no project manager. Here's how we launch it.</p>
     <div class="kpis"><div><b>€1,000</b>7 days</div><div><b>2</b>paid channels</div><div><b>4+1</b>Meta videos</div><div><b>10+</b>invites, target</div></div>
     <p class="url">octo-landing-47q.pages.dev</p>
     <img class="octo" src="media/pitch/octo-10-talking.png" alt="">
+  </section>
+
+  <!-- 5 -->
+  <section class="slide" aria-label="Live demo">
+    <p class="eb">First · the product, live</p>
+    <h2>Meet Octo. <span class="lime">It's on this call.</span></h2>
+    <div class="demo">
+      <video controls playsinline preload="none" poster="media/octo-call.jpg" src="media/octo-demo.mp4" aria-label="Backup: 36-second Octo demo"></video>
+      <div class="lines">
+        <div class="line card"><span class="mono">Ask</span>"Octo, show our high-priority tasks by owner, on your tile."</div>
+        <div class="line card"><span class="mono">Ask</span>"Octo, sum up this call in one sentence."</div>
+        <div class="line card"><span class="mono">After the call</span>Everyone gets their tasks, with the quote. The tracker updates itself.</div>
+      </div>
+    </div>
+    <p class="src">The video is the backup if the live call fails · people in the demo are made up</p>
   </section>
 
   <!-- 2 -->
@@ -281,32 +308,32 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <p class="eb">Insight · the buyer</p>
     <div class="ins">
       <div class="ins-l">
-        <div class="who card"><div class="av">F</div><div><h3>The founder of a 15-person remote agency</h3><p>12 client calls a week · ClickUp · no project manager</p></div></div>
-        <div class="moment card"><span class="mono">The moment · Thursday, 4 pm</span><div class="bubble">"Did that get done? We agreed on it on Tuesday."</div><p>The AI summary went to everyone on the call. Nobody did it.</p></div>
+        <div class="who card"><div class="av">F</div><div><h3>Founder, 15-person remote agency</h3><p>12 client calls a week · ClickUp · no project manager</p></div></div>
+        <div class="moment card"><span class="mono">The moment · Thursday, 4 pm</span><div class="bubble">"Did that get done? We agreed on it on Tuesday."</div><p>The AI summary went to everyone. Nobody did it.</p></div>
       </div>
       <div>
         <span class="mono lime" style="font-size:16px">The truth</span>
         <h2 class="truth">A summary sent to everyone belongs to no one.</h2>
-        <p class="so">So Octo sends <b>each person their own tasks</b>, in their own words, and closes them when someone says "done".</p>
+        <p class="so">So Octo hands <b>each person their own tasks</b>, with the quote. Closed on "done".</p>
       </div>
     </div>
-    <p class="src">A composite of the buyer we target, not a real customer · teams of up to 50 with no PM, remote agencies first</p>
+    <p class="src">A composite buyer, not a real customer · teams of up to 50, no PM, remote agencies first</p>
   </section>
 
   <!-- 3 -->
   <section class="slide" aria-label="Market">
-    <p class="eb">Insight · why it makes you nod</p>
-    <h2>The pain is everywhere. <span class="lime">Buyers are switching.</span></h2>
+    <p class="eb">Insight · you've been on this call</p>
+    <h2>Every team feels it. <span class="lime">Buyers are switching.</span></h2>
     <div class="stats">
       <div class="stat card">
         <div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="14"/><circle cx="60" cy="60" r="50" fill="none" stroke="#C4E833" stroke-width="14" stroke-linecap="round" stroke-dasharray="172.8 314.2"/></svg><div class="n">55%</div></div>
-        <p>of workers say next steps after a meeting are <b>unclear</b></p>
-        <span class="who">Microsoft Work Trend Index, 31,000 people</span>
+        <p>say next steps after a meeting are <b>unclear</b></p>
+        <span class="srcline">Microsoft Work Trend Index, 31,000 people</span>
       </div>
       <div class="stat card">
         <div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="14"/><circle cx="60" cy="60" r="50" fill="none" stroke="#C4E833" stroke-width="14" stroke-linecap="round" stroke-dasharray="216.8 314.2"/></svg><div class="n">69%</div></div>
         <p>of agency leaders' time goes to <b>meetings or team management</b></p>
-        <span class="who">Teamwork.com, 500+ agencies (vendor survey)</span>
+        <span class="srcline">Teamwork.com, 500+ agencies (vendor survey)</span>
       </div>
       <div class="stat card">
         <div class="bars" aria-label="Fireflies share of note-taker buyers: 74% a year ago, 40% now">
@@ -314,8 +341,8 @@ body.scroll #ctl, body.scroll #bar { display: none; }
           <div class="bar" style="height:111px;background:#C4E833"><span>40%</span><em>2026</em></div>
           <div class="delta">−34<br><span style="font-size:24px;color:var(--soft2);font-weight:500">pts</span></div>
         </div>
-        <p style="margin-top:20px">Fireflies' share of companies buying a note-taker, in <b>one year</b></p>
-        <span class="who">Ramp spend data, Nov 2026</span>
+        <p style="margin-top:20px">Fireflies' share of note-taker buyers, in <b>one year</b></p>
+        <span class="srcline">Ramp spend data, Nov 2026</span>
       </div>
     </div>
   </section>
@@ -335,19 +362,28 @@ body.scroll #ctl, body.scroll #bar { display: none; }
     <p class="src">From the vendors' own pages, checked 7 to 8 Nov 2026. Absence on a page is not proof · full table: octo-landing-47q.pages.dev/compare</p>
   </section>
 
-  <!-- 5 -->
-  <section class="slide" aria-label="Live demo">
-    <p class="eb">The product · live</p>
-    <h2>Octo on a Google Meet call</h2>
-    <div class="demo">
-      <video controls playsinline preload="none" poster="media/octo-call.jpg" src="media/octo-demo.mp4" aria-label="Backup: 36-second Octo demo"></video>
-      <div class="lines">
-        <div class="line card"><span class="mono">Ask</span>"Octo, show our high-priority tasks by owner, on your tile."</div>
-        <div class="line card"><span class="mono">Ask</span>"Octo, sum up this call in one sentence."</div>
-        <div class="line card"><span class="mono">After the call</span>Everyone gets their tasks, with the quote. The tracker updates itself.</div>
-      </div>
+  <!-- M -->
+  <section class="slide" aria-label="Four moves">
+    <p class="eb">Go-to-market · the plan, in order</p>
+    <h2>Four moves. <span class="lime">One button.</span></h2>
+    <div class="moves">
+      <div class="move card"><span class="no">01</span>
+        <div class="ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
+        <h3>Meta ads, as a test</h3><p>Five creatives, seven days. Kill the losers, double the winner.</p>
+        <div class="chips"><span>€700 · 7 days</span><span class="ok">5 creatives ready</span><span>Metric: cost per invite</span></div></div>
+      <div class="move card"><span class="no">02</span>
+        <div class="ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3V9z"/></svg></div>
+        <h3>Influencer integrations</h3><p>Meeting-tool reviewers show Octo on a real call.</p>
+        <div class="chips"><span>€300 · 2 to 3 segments</span><span class="ok">45 creators shortlisted</span><span>Metric: invites per creator</span></div></div>
+      <div class="move card"><span class="no">03</span>
+        <div class="ic"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C4E833" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>AEO, GEO, SEO</h3><p>Be AI's answer to "which meeting tool updates my tracker?"</p>
+        <div class="chips"><span>€0</span><span class="ok">/compare, llms.txt, schema: live</span><span>Metric: Octo named in AI answers</span></div></div>
+      <div class="move card star"><span class="badge2">BOLD MOVE</span><span class="no">04</span>
+        <div class="ic"><img src="media/pitch/octo-02-happy.png" alt="" style="width:62px"></div>
+        <h3>Octo promotes Octo</h3><p>Every call it joins is a demo. Every guest, a lead.</p>
+        <div class="chips"><span>€0 · built into the product</span><span class="ok">Seen on every call today</span><span>Guest invite link: next</span><span>Metric: guests who invite Octo</span></div></div>
     </div>
-    <p class="src">The video is the backup if the live call fails · people in the demo are made up</p>
   </section>
 
   <!-- W -->
@@ -388,7 +424,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
         <div class="hero-ex"><small>Meta visitors see</small>Your team doesn't have a project manager. Now it does.</div>
         <div class="hero-ex"><small>Switchers see</small>Your note-taker writes it down. Octo does it.</div></div>
     </div>
-    <p class="paid">Paid side, ready to run: <b>Meta campaign, 5 creatives, €700</b>, retargeting from day 3. Every ad links with UTM tags, so Grona knows who arrived.</p>
+    <p class="paid">Ready to run: <b>Meta, 5 creatives, €700</b>, retargeting from day 3. UTM tags tell Grona who arrived.</p>
   </section>
 
   <!-- 6 -->
@@ -418,8 +454,8 @@ body.scroll #ctl, body.scroll #bar { display: none; }
 
   <!-- A -->
   <section class="slide" aria-label="Agents">
-    <p class="eb">Agents · AI did the work, we stayed in charge</p>
-    <h2>Agents that <span class="lime">check each other</span></h2>
+    <p class="eb">Agents · AI did the work, we decided</p>
+    <h2>Agents that <span class="lime">call each other out</span></h2>
     <div class="ag">
       <div class="tree">
         <div class="tnode human"><b>Decides</b>Oleksii and the team</div>
@@ -435,7 +471,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
         <div class="octo-node"><img src="media/pitch/octo-10-talking.png" alt=""><span><b class="mono lime" style="font-size:12px;display:block">The agent we built</b>Octo, live on calls</span></div>
       </div>
       <div class="changes">
-        <h3>What changed when they challenged each other</h3>
+        <h3>What they caught. What changed.</h3>
         <div class="chg card"><span class="who2">AI landing draft</span><span class="bef">"SOC-2 certified", "1,400+ standups"</span><span class="arr">→</span><span class="aft">Blocked: not true</span></div>
         <div class="chg card"><span class="who2">Research</span><span class="bef">"69% of time in meetings"</span><span class="arr">→</span><span class="aft">"meetings or team management", checked at source</span></div>
         <div class="chg card"><span class="who2">Reviewer</span><span class="bef">50-word hero, Octo column off-screen on phones</span><span class="arr">→</span><span class="aft">31 words, both columns visible</span></div>
@@ -489,7 +525,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
       <div class="day k"><i></i><b>DAY 7</b><span>Keep, kill or double</span></div>
     </div>
     <div class="targets">
-      <div class="card"><b>10+</b><span>invites from teams of up to 50</span></div>
+      <div class="card"><b>10+</b><span>invites from teams of up to 50 (target)</span></div>
       <div class="card"><b>1</b><span>Meta creative that wins on cost per invite</span></div>
       <div class="card"><b>1</b><span>one-liner that wins on LinkedIn</span></div>
       <div class="card"><b>1+</b><span>creator segment published</span></div>
@@ -503,7 +539,7 @@ body.scroll #ctl, body.scroll #bar { display: none; }
 
 </main>
 </div>
-<div id="ctl"><span id="count">1 / 11</span><button id="prev" aria-label="Previous slide">←</button><button id="next" aria-label="Next slide">→</button><button id="fs" aria-label="Full screen">⛶</button></div>
+<div id="ctl"><span id="count">1 / 12</span><button id="prev" aria-label="Previous slide">←</button><button id="next" aria-label="Next slide">→</button><button id="fs" aria-label="Full screen">⛶</button></div>
 <script>
 const deck = document.getElementById('deck'), fit = document.getElementById('fit');
 const slides = [...deck.querySelectorAll('.slide')];
