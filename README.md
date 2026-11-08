@@ -12,6 +12,18 @@ The product works today. What it doesn't have yet is a launch. This repo is the 
 
 **Six things in three hours** (Plan, Landing page, Targeting & campaign, Social, Paid, Bold idea): see [`launch/hackathon-plan.md`](launch/hackathon-plan.md) for who does what and when.
 
+First drafts, ready to argue with:
+
+| Deliverable | Draft |
+|---|---|
+| Brief (every agent reads it first) | [`brief/campaign-brief.md`](brief/campaign-brief.md) |
+| Plan | [`outputs/positioning/campaign-plan.md`](outputs/positioning/campaign-plan.md) |
+| Landing page | Live at https://octo-landing-47q.pages.dev, source in [`outputs/website/`](outputs/website/) |
+| Paid | [`outputs/ads/`](outputs/ads/): LinkedIn, Meta, Google Search |
+| Social | [`outputs/social/social-posts-v1.md`](outputs/social/social-posts-v1.md) |
+| Bold idea | [`outputs/positioning/bold-idea-v1.md`](outputs/positioning/bold-idea-v1.md) |
+| Targeting | [`launch/audiences.md`](launch/audiences.md), and the targeting sections in each ad file |
+
 ## Start here (10 minutes)
 
 1. Watch the 36-second demo: [`assets/octo-demo-36s-16x9.mp4`](assets/octo-demo-36s-16x9.mp4)
