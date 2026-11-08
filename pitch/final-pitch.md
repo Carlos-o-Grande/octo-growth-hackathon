@@ -10,21 +10,22 @@ The judges score four questions, 15 points each: **Insight**, **Website**, **Rea
 
 | Time | Slide | Criterion | Say (short) |
 |---|---|---|---|
-| 0:00 | 1 · Title | | "Note-takers record the meeting. Octo takes part in it. Here's how we take it to market." |
-| 0:08 | 2 · The buyer | Insight | "The founder of a fifteen-person agency, no project manager. Thursday, a client asks: did that get done? The AI summary went to everyone. A summary sent to everyone belongs to no one. So Octo gives each person their own tasks." |
-| 0:25 | 3 · Market | Insight | "Fifty-five percent leave meetings without clear next steps, and buyers are switching note-takers fast." |
-| 0:32 | 4 · Why we win | Insight | "Nobody else claims all four." |
-| 0:38 | 5 · Live (switch to Meet) | Product | Line 1 to Octo, then: "after the call, everyone gets their own tasks." |
-| 1:00 | 6 · Website | Website | "The ad and the page say the same thing, to the same buyer, with one button." |
-| 1:10 | 7 · Reality | Reality | "Live page, Grona on every page, four audiences, and the headline changes for each one." |
-| 1:22 | 8 · Campaign | Reality | "Seven hundred on Meta, three hundred on creators, one funnel to the invite." |
-| 1:32 | 9 · Agents | Agents | "Claude Code agents did the work and checked each other: here's what they caught and what changed." |
-| 1:45 | 10 · Growth engine | | "Every call is a demo. Per company pricing from forty-nine dollars." |
-| 1:53 | 11 · First 7 days | | "Ten invites in seven days. Invite Octo to your next call. Thank you." |
+| 0:00 | 1 · Title |  | "Note-takers record the meeting. Octo takes part in it. Here's how we launch it." |
+| 0:07 | 2 · The buyer | Insight | "A founder. Fifteen-person agency, no project manager. Thursday, 4 pm, a client asks: did that get done? The AI summary went to everyone. Nobody did it. A summary sent to everyone belongs to no one. So Octo hands each person their own tasks." |
+| 0:22 | 3 · Market | Insight | "Every team feels it: fifty-five percent say next steps after a meeting are unclear. And buyers are switching note-takers." |
+| 0:28 | 4 · Why we win | Insight | "Nobody else claims all four." |
+| 0:33 | 5 · Live (switch to Meet) | Product | Line 1 to Octo, then: "It answers by name. After the call, everyone gets their own tasks, with the quote." |
+| 0:53 | 6 · Four moves | Go-to-market | "Four moves, one button. Meta ads as a test. Influencer integrations. AEO, GEO, SEO. And Octo promotes Octo: every call it joins is a demo." |
+| 1:05 | 7 · Website | Website | "Same line, same buyer, same button." |
+| 1:13 | 8 · Reality | Reality | "Live page. Grona on every page. Four audiences, each sees its own headline." |
+| 1:22 | 9 · Campaign | Reality | "Seven hundred on Meta, three hundred on creators, one funnel to the invite." |
+| 1:30 | 10 · Agents | Agents | "Claude Code agents did the work and called each other out. Here's what they caught, and what changed." |
+| 1:42 | 11 · Growth engine |  | "Every call is a demo. Per company pricing from forty-nine dollars." |
+| 1:50 | 12 · First 7 days |  | "Seven days: launch, learn, double what works. Target: ten invites. Invite Octo to your next call. Thank you." |
 
 ## 90-second cut
 
-Skip slides 3, 8 and 10. Keep one slide per criterion: 2 (Insight), 6 (Website), 7 (Reality), 9 (Agents), plus the demo.
+Skip slides 3, 9 and 11. Keep the four moves (6) and one slide per criterion: 2 (Insight), 7 (Website), 8 (Reality), 10 (Agents), plus the demo.
 
 ## Before going on stage
 
