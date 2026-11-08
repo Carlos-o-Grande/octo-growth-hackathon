@@ -28,6 +28,8 @@
 
 **Later, not this week:** the Claude Code and Grok Bot plugins as an awareness channel, AI-influencer demos, ads inside AI assistants and marketplaces. See [`bold-idea-v1.md`](bold-idea-v1.md) #4.
 
+**Growth beyond paid:** a product-led loop where every Meet call is a demo (Oleksii's pick), winning AI answers (AEO), and one narrow use case. See [`growth-strategies-v1.md`](growth-strategies-v1.md).
+
 ## One-liners to A/B test on LinkedIn
 
 1. Note-takers record the meeting. Octo takes part in it.
@@ -65,5 +67,5 @@ Visitors who don't sign up go into Meta retargeting.
 ## Open questions
 
 - Decided: landing copy says "small teams without a project manager, from remote agencies to startups". ClickUp sync confirmed by Oleksii.
-- Price for self-serve: per seat, per team, free tier?
+- Decided: pricing per company with credits. Pay as you go (100 credits per $1, from $20), Starter $49, Team $99, Business $249, Enterprise. See https://octo-landing-47q.pages.dev/pricing
 - Grok Bot: is there a public plugin API? Not confirmed.

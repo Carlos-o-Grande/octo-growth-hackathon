@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import worker, { rangeResponse } from './landing/_worker.js';
+const body = new Uint8Array(100).map((_, i) => i);
+const mk = () => new Response(body, { headers: { 'Content-Type': 'video/mp4' } });
+const bytes = async r => [...new Uint8Array(await r.arrayBuffer())];
+let r = await rangeResponse(mk(), 'bytes=0-1');
+assert.equal(r.status, 206); assert.equal(r.headers.get('Content-Range'), 'bytes 0-1/100'); assert.deepEqual(await bytes(r), [0, 1]);
+r = await rangeResponse(mk(), 'bytes=98-'); assert.equal(r.headers.get('Content-Range'), 'bytes 98-99/100'); assert.deepEqual(await bytes(r), [98, 99]);
+r = await rangeResponse(mk(), 'bytes=-3'); assert.deepEqual(await bytes(r), [97, 98, 99]);
+r = await rangeResponse(mk(), 'bytes=90-500'); assert.equal(r.headers.get('Content-Range'), 'bytes 90-99/100');
+r = await rangeResponse(mk(), 'bytes=200-'); assert.equal(r.status, 416); assert.equal(r.headers.get('Content-Range'), 'bytes */100');
+r = await rangeResponse(mk(), 'bytes=0-1,5-6'); assert.equal(r.status, 200);
+assert.equal(r.headers.get('Content-Type'), 'video/mp4');
+// worker passthrough: non-mp4 untouched, mp4 without Range gets Accept-Ranges
+const env = { ASSETS: { fetch: async req => new Response(req.url.endsWith('.mp4') ? body : 'html', { headers: { 'Content-Type': req.url.endsWith('.mp4') ? 'video/mp4' : 'text/html' } }) } };
+r = await worker.fetch(new Request('https://x/index.html', { headers: { Range: 'bytes=0-1' } }), env); assert.equal(r.status, 200); assert.equal(await r.text(), 'html');
+r = await worker.fetch(new Request('https://x/media/a.mp4'), env); assert.equal(r.status, 200); assert.equal(r.headers.get('Accept-Ranges'), 'bytes');
+r = await worker.fetch(new Request('https://x/media/a.mp4', { headers: { Range: 'bytes=10-11' } }), env); assert.equal(r.status, 206); assert.deepEqual(await bytes(r), [10, 11]);
+r = await worker.fetch(new Request('https://x/media/a.mp4', { method: 'HEAD', headers: { Range: 'bytes=0-1' } }), env); assert.equal(r.status, 200); assert.equal(r.headers.get('Accept-Ranges'), 'bytes');
+console.log('all range tests passed');

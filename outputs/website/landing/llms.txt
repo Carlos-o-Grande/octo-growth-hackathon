@@ -1,0 +1,39 @@
+# Octo
+
+> Octo is an AI teammate that joins your team's video calls, answers when you call it by name, and does the follow-up after the call: each person gets their own tasks with a deadline and the exact quote, and ClickUp, Asana, Notion or Trello stays up to date. Made by Octocrew (https://octocrew.ai).
+
+Octo is built for small teams of up to 50 people that don't have a project manager yet, from remote agencies to startups. It works like a junior project manager on your calls.
+
+## What Octo does
+
+- Before the call: a brief with who's attending, what was discussed last time and what's still open.
+- During the call: joins visibly as a participant, speaks only when called by name, answers from your knowledge base and CRM, searches the web, shows lists and tables on its own video tile, and books calendar events after confirming.
+- After the call: sends each person their own tasks by message, with a deadline and the exact quote from the call. Tasks land in ClickUp, Asana, Notion, Trello and other trackers, and update when someone says "done" or "changed" on a later call. A page for every meeting and a weekly task review by voice.
+- Platforms: Google Meet, Microsoft Teams, Zoom, Slack Huddles, Webex and GoTo.
+- Each team can give the agent its own name and voice.
+
+## How it differs from AI note-takers
+
+Note-takers such as Granola, Fireflies, Otter and Fathom record the meeting and produce summaries and action items; Fireflies and Otter also answer on a wake word. Octo takes part in the call and closes the loop: per-person tasks with the exact quote, kept up to date in the team's own tracker from call to call.
+
+## Pages
+
+- [Home](https://octo-landing-47q.pages.dev/): what Octo does, the demo videos, FAQ
+- [Octo vs Granola, Fireflies, Otter and Fathom](https://octo-landing-47q.pages.dev/compare): side-by-side comparison with sources
+- [Pricing](https://octo-landing-47q.pages.dev/pricing): plans, credits and pay as you go
+
+## Pricing
+
+Priced per company, not per seat. Octo runs on credits shared by the whole team, about 300 credits per hour of calls (an average).
+
+- Pay as you go: 100 credits per $1, top up from $20.
+- Starter: $49 a month, 6,000 credits, about 20 hours of calls.
+- Team: $99 a month, 12,000 credits, about 40 hours.
+- Business: $249 a month, 30,000 credits, about 100 hours.
+- Enterprise: custom credits and volume pricing.
+
+Plans include about 20% more credits than pay as you go. Unused plan credits roll over one month.
+
+## Status
+
+Early access. No self-serve checkout yet. To try it, invite Octo to your next call: hello@octocrew.ai.
